@@ -6,18 +6,18 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   position: absolute;
   bottom: 0;
-  right: 1rem;
+  right: 3.5rem;
   gap: -0.5rem;
 `;
 
 export const ParallelogramButton = styled.div`
   display: block;
-  width: 155px;
-  height: 100px;
-  background-color: darkgreen;
+  width: 197.49px;
+  height: 127.41px;
+  background-color: #004C2F;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   overflow: hidden;
-  margin-left: -1.25rem;
+  margin-left: -1.9rem;
 
   &:first-of-type {
     margin: 0;
