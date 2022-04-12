@@ -129,7 +129,6 @@ export const Grid = styled.div`
     display: block;
     width: 294.83px;
     height: 274.92px;
-    /* background-color: #004c2f; */
     clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
     overflow: hidden;
 
