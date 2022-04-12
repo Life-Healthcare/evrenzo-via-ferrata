@@ -9,6 +9,9 @@ const ScreenSaver = React.lazy(
 const Home = React.lazy(
   () => import("@/pages/home/home")
 );
+const LivingAtHigh = React.lazy(
+  () => import("@/pages/living-at-high/living-at-high")
+);
 
 export default function App() {
   const navigate = useNavigate();
@@ -32,11 +35,12 @@ export default function App() {
 //   }, [handleUserTouch]);
 
   return (
-    <React.Suspense fallback="Loading...">
+    <React.Suspense>
       <AppReset />
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/living-at-high" element={<LivingAtHigh />} />
       </Routes>
     </React.Suspense>
   );
