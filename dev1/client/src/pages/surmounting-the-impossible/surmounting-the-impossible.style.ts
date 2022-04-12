@@ -83,7 +83,7 @@ export const Footer = styled.div`
       }
     }
 
-	& div:nth-child(2) {
+    & div:nth-child(2) {
       & img {
         margin-top: 2rem;
       }
