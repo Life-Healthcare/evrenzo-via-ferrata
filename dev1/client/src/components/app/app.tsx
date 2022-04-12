@@ -12,6 +12,9 @@ const Home = React.lazy(
 const LivingAtHigh = React.lazy(
   () => import("@/pages/living-at-high/living-at-high")
 );
+const Impossible = React.lazy(
+  () => import("@/pages/surmounting-the-impossible/surmounting-the-impossible")
+);
 
 export default function App() {
   const navigate = useNavigate();
@@ -41,6 +44,7 @@ export default function App() {
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/home" element={<Home />} />
         <Route path="/living-at-high" element={<LivingAtHigh />} />
+        <Route path="/surmounting-the-impossible" element={<Impossible />} />
       </Routes>
     </React.Suspense>
   );
