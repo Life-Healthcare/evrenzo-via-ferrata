@@ -16,9 +16,7 @@ export default function LivingAtHigh() {
   return (
     <Section>
       <Header>
-        <FlexRow>
-          <img src={`${imgPath}/title.png`} />
-        </FlexRow>
+        <p>A fundamental role in sustaining life</p>
       </Header>
       <Main>
         <Left>

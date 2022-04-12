@@ -25,9 +25,6 @@ export const Section = styled.section`
   padding-left: 5.5rem;
   padding-right: 5.5rem;
   padding-top: 6.4rem;
-  font-family: "Trade Gothic LT Std";
-  font-weight: lighter;
-  letter-spacing: 0.04rem;
 
   &:-webkit-scrollbar {
     display: none;
@@ -35,6 +32,11 @@ export const Section = styled.section`
 `;
 
 export const Header = styled.div`
+  color: #007a33;
+  font-size: 2.6rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06rem;
+  font-weight: bold;
   & img {
     margin: 1rem;
   }
@@ -81,6 +83,9 @@ export const Footer = styled.div`
   flex-direction: column;
   justify-content: start;
   color: #4d4d4f;
+  font-family: "Trade Gothic LT Std";
+  font-weight: lighter;
+  letter-spacing: 0.04rem;
   gap: 2rem;
 
   & div:first-child {
@@ -107,7 +112,7 @@ export const Footer = styled.div`
   }
 
   & div:nth-child(2) {
-	font-size: 1.15rem;
+    font-size: 1.15rem;
     align-items: start;
     justify-content: start;
   }
