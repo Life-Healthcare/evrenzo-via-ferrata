@@ -14,7 +14,7 @@ export const ParallelogramButton = styled.div`
   display: block;
   width: 197.49px;
   height: 127.41px;
-  background-color: #004C2F;
+  background-color: #004c2f;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   overflow: hidden;
   margin-left: -1.9rem;

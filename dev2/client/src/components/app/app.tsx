@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import SustainingLife from "@/pages/sustaining-life/sustaining-life";
-import LivingAtHigh from "@/pages/living-at-high/living-at-high";
+import UncoveringTheMechanism from "@/pages/uncovering-the-mechanism/uncovering-the-mechanism";
 import Impossible from "@/pages/surmounting-the-impossible/surmounting-the-impossible";
 
 export default function App() {
@@ -32,7 +32,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/sustaining-life" element={<SustainingLife />} />
-        <Route path="/living-at-high" element={<LivingAtHigh />} />
+        <Route path="/uncovering-the-mechanism" element={<UncoveringTheMechanism />} />
         <Route path="/surmounting-the-impossible" element={<Impossible />} />
       </Routes>
     </>
