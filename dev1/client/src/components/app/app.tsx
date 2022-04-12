@@ -1,18 +1,11 @@
-import React from "react";
+import React, { ComponentType, createElement } from "react";
 import { Route, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { AppReset } from "@/components/app/app.styles";
-
-const ScreenSaver = React.lazy(
-  () => import("@/pages/screen-saver/screen-saver")
-);
-const Home = React.lazy(() => import("@/pages/home/home"));
-const LivingAtHigh = React.lazy(
-  () => import("@/pages/living-at-high/living-at-high")
-);
-const Impossible = React.lazy(
-  () => import("@/pages/surmounting-the-impossible/surmounting-the-impossible")
-);
+import ScreenSaver from "@/pages/screen-saver/screen-saver";
+import Home from "@/pages/home/home";
+import LivingAtHigh from "@/pages/living-at-high/living-at-high";
+import Impossible from "@/pages/surmounting-the-impossible/surmounting-the-impossible";
 
 export default function App() {
   const navigate = useNavigate();
@@ -36,7 +29,7 @@ export default function App() {
   }, [handleUserTouch]);
 
   return (
-    <React.Suspense>
+    <>
       <AppReset />
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
@@ -44,6 +37,6 @@ export default function App() {
         <Route path="/living-at-high" element={<LivingAtHigh />} />
         <Route path="/surmounting-the-impossible" element={<Impossible />} />
       </Routes>
-    </React.Suspense>
+    </>
   );
 }
