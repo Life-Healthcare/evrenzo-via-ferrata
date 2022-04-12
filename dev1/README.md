@@ -1,6 +1,7 @@
 # Via Ferrata Device 1 
 
 Website will be used on the tables and the via ferrata
+2160-by-1620-pixel resolution
 
 ### Getting Started
 

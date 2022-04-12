@@ -1,10 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Section } from "@/pages/screen-saver/screen-saver.style";
 
 export default function ScreenSaver() {
-  return (
-    <main>
-      <h1>ScreenSaver</h1>
-    </main>
-  );
+  const navigate = useNavigate();
+  const handleOnClick = () => {
+    navigate(`/home`);
+  };
+  return <Section onClick={handleOnClick} />;
 }
