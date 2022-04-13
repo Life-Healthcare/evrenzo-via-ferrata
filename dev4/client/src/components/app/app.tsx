@@ -4,27 +4,28 @@ import { useNavigate } from "react-router-dom";
 import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import EvrenzoAtWork from "@/pages/evrenzo-at-work/evrenzo-at-work";
 import FirstTreatment from "@/pages/first-treatment/first-treatment";
+import Congratulations from "@/pages/congratulations/congratulations";
 
 export default function App() {
   const navigate = useNavigate();
-//   const [usertouched, setUsertouched] = React.useState(0);
+  const [usertouched, setUsertouched] = React.useState(0);
 
-//   const handleUserTouch = () => {
-//     setUsertouched(+new Date());
-//   };
+  const handleUserTouch = () => {
+    setUsertouched(+new Date());
+  };
 
-//   React.useEffect(() => {
-//     const delay = 60;
-//     window.addEventListener("touchstart", handleUserTouch);
-//     let timer1 = setTimeout(() => {
-//       navigate("/");
-//     }, delay * 1000);
+  React.useEffect(() => {
+    const delay = 60;
+    window.addEventListener("touchstart", handleUserTouch);
+    let timer1 = setTimeout(() => {
+      navigate("/");
+    }, delay * 1000);
 
-//     return () => {
-//       clearTimeout(timer1);
-//       window.removeEventListener("touchstart", handleUserTouch);
-//     };
-//   }, [handleUserTouch]);
+    return () => {
+      clearTimeout(timer1);
+      window.removeEventListener("touchstart", handleUserTouch);
+    };
+  }, [handleUserTouch]);
 
   return (
     <>
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/first-treatment" element={<FirstTreatment />} />
         <Route path="/evrenzo-at-work" element={<EvrenzoAtWork />} />
+        <Route path="/congratulations" element={<Congratulations />} />
       </Routes>
     </>
   );
