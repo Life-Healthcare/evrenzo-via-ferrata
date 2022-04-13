@@ -16,6 +16,10 @@ const fadeUp = keyframes`
   }
 `;
 
+interface Props {
+  backgroundColor?: string;
+}
+
 export const Section = styled.section`
   background: url("./assets/uncovering-the-mechanism/background.png");
   background-size: cover;
@@ -153,6 +157,10 @@ export const Grid = styled.div`
 
       & p {
         width: 10rem;
+
+        & sub {
+          font-size: medium;
+        }
       }
     }
   }
@@ -176,5 +184,59 @@ export const Grid = styled.div`
   }
   & .item:nth-child(9) {
     background-color: #005893;
+  }
+`;
+
+export const Card = styled.div<Props>`
+  ${(Props) => `background-color: ${Props.backgroundColor};`}
+  aspect-ratio: 1 / 1;
+  width: 37.888rem;
+  height: 35.3295rem;
+  clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trade Gothic LT Std Extended";
+  position: relative;
+
+  & > div {
+    text-align: center;
+    width: 28.9rem;
+  }
+
+  & .title {
+    font-size: 2.6rem;
+    line-height: 2.65rem;
+    margin-bottom: 1rem;
+
+    & sub {
+      font-size: xx-large;
+    }
+  }
+
+  & .content {
+    font-family: "Trade Gothic LT Std";
+    font-weight: lighter;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  & > button {
+    font-family: "Trade Gothic LT Std";
+    font-weight: lighter;
+    background: url("./assets/close-button.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    width: 1.537rem;
+    height: 1.537rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
 `;
