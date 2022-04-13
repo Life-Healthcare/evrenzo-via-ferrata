@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"scripts": {
+		"postinstall": "concurrently -n dev1,dev2,dev3,dev4 \"npm --prefix dev1/client install\" \"npm --prefix dev2/client install\" \"npm --prefix dev3/client install\" \"npm --prefix dev4/client install\"",
+		"build": "concurrently -n dev1,dev2,dev3,dev4 \"npm --prefix dev1/client run build\" \"npm --prefix dev2/client run build\" \"npm --prefix dev3/client run build\" \"npm --prefix dev4/client run build\""
+	},
+	"devDependencies": {
+		"concurrently": "^7.0.0",
+		"prettier": "^2.5.1"
+	  }
+}
