@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import ScreenSaver from "@/pages/screen-saver/screen-saver";
+import Hlf from "@/pages/hlf/hlf";
 
 export default function App() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
+        <Route path="/hlf" element={<Hlf />} />
       </Routes>
     </>
   );

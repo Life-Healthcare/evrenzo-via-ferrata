@@ -5,7 +5,7 @@ import { Section } from "@/pages/screen-saver/screen-saver.style";
 export default function ScreenSaver() {
   const navigate = useNavigate();
   const handleOnClick = () => {
-    navigate(`/sustaining-life`);
+    navigate(`/hlf`);
   };
   return <Section onClick={handleOnClick} />;
 }
