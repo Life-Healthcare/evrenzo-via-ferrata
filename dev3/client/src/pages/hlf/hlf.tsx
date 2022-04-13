@@ -113,7 +113,7 @@ export default function LivingAtHigh() {
           </FlexRow>
         </Right>
       </Main>
-      <Nav back={-1} forward="/uncovering-the-mechanism" />
+      <Nav back={-1} forward="/hlf-pathway-in-action" />
     </Section>
   );
 }
