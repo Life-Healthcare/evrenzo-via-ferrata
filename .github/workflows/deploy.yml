@@ -19,14 +19,13 @@ jobs:
         run: |
           rm -rf node_modules package-lock.json
           npm install
-          mkdir build
           PUBLIC_PATH=./ npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: build
+          folder: ./
           clean: true
 
       - name: Slack Notification
