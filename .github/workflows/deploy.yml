@@ -20,12 +20,18 @@ jobs:
           rm -rf node_modules package-lock.json
           npm install
           PUBLIC_PATH=./ npm run build
+          mkdir build
+          cp -R dev1/client/src/ build/dev1
+          cp -R dev2/client/src/ build/dev2
+          cp -R dev3/client/src/ build/dev3
+          cp -R dev4/client/src/ build/dev4
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: ./
+          folder: build
           clean: true
 
       - name: Slack Notification
