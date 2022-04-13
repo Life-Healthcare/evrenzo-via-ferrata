@@ -20,7 +20,7 @@ export default function LivingAtHigh() {
           </video>
         </div>
       </Main>
-      <Nav back={-1} />
+      <Nav back={-1} forward="/congratulations"/>
     </Section>
   );
 }

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import EvrenzoAtWork from "@/pages/evrenzo-at-work/evrenzo-at-work";
+import FirstTreatment from "@/pages/first-treatment/first-treatment";
 
 export default function App() {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ export default function App() {
     <>
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
+        <Route path="/first-treatment" element={<FirstTreatment />} />
         <Route path="/evrenzo-at-work" element={<EvrenzoAtWork />} />
       </Routes>
     </>
