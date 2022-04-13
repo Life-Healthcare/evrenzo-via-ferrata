@@ -17,7 +17,7 @@ const fadeUp = keyframes`
 `;
 
 export const Section = styled.section`
-  background: url("./assets/surmounting-the-impossible/background.png");
+  background: url("./assets/anaemia/background.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -31,40 +31,53 @@ export const Section = styled.section`
 `;
 
 export const Header = styled.div`
-  & img {
-    margin: 1rem;
-  }
-
-  & div {
-    justify-content: start;
-    align-items: flex-start;
-    gap: 8rem;
-  }
+  color: #007a33;
+  font-size: 2.6rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.08rem;
+  font-weight: bold;
 `;
 
 export const Main = styled.main`
+  margin-top: 3.5rem;
   display: flex;
   justify-content: start;
+  color: #4d4d4f;
+  font-family: "Trade Gothic LT Std";
+  font-weight: lighter;
+  letter-spacing: 0.06rem;
   gap: 2.4rem;
 
-  & img {
-    margin: 1rem;
-  }
+  & > div:first-of-type {
+    width: 45.6rem;
+    & p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-bottom: 1rem;
+      & .dashed {
+        list-style-type: none;
+      }
+      & sup {
+        font-size: medium;
+      }
+    }
 
-  & div:first-child {
-    & div:first-child {
-      & img {
-        margin-top: 2.7rem;
-      }
+    & .bold {
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 0.06rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
-    & div:nth-child(2) {
-      & img {
-        margin-top: 0.6rem;
+
+    & .smaller {
+      & ul {
+        list-style-type: none;
       }
-    }
-    & div:nth-child(3) {
-      & img {
-        margin-top: 0.5rem;
+      & p {
+        font-weight: lighter;
+        font-size: 1.15rem;
+        line-height: 1.7rem;
       }
     }
   }

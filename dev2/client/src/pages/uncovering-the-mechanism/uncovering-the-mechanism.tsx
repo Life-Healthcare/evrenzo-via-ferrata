@@ -213,7 +213,7 @@ export default function LivingAtHigh() {
             <p>1. https://www.nobelprize.org/prizes/medicine/2019/summary/</p>
           </FlexRow>
         </Footer>
-        <Nav back={-1} forward="/surmounting-the-impossible" />
+        <Nav back={-1} forward="/anaemia" />
       </Section>
     </>
   );
