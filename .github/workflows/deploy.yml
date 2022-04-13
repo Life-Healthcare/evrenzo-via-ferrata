@@ -21,10 +21,10 @@ jobs:
           npm install
           PUBLIC_PATH=./ npm run build
           mkdir build
-          cp -R dev1/client/src/ build/dev1
-          cp -R dev2/client/src/ build/dev2
-          cp -R dev3/client/src/ build/dev3
-          cp -R dev4/client/src/ build/dev4
+          cp -R dev1/client/build build/dev1
+          cp -R dev2/client/build build/dev2
+          cp -R dev3/client/build build/dev3
+          cp -R dev4/client/build build/dev4
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
