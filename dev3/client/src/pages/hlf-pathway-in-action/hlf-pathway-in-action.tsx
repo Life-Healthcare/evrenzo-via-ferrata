@@ -16,11 +16,12 @@ export default function LivingAtHigh() {
         <p>See the HIF pathway in action</p>
       </Header>
       <Main>
-        <div>
-          <video poster={`${imgPath}/poster.png`}>
-            {/* <source src="Evrenzo_MOA.mp4" type="video/mp4"> */}
-          </video>
-        </div>
+        <video
+          poster={`${imgPath}/poster.png`}
+          src="https://mz-website.uat.finervision.com/assets/@cms/videos/test.mp4"
+		  playsInline
+          controls
+        ></video>
       </Main>
       <Footer>
         <Left>

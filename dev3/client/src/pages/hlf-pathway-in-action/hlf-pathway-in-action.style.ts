@@ -26,6 +26,14 @@ export const Main = styled.main`
   margin-top: 2rem;
   display: flex;
   justify-content: start;
+  width: 100%;
+  max-width: 1848px;
+
+  & video {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
 `;
 
 export const Footer = styled.div`
