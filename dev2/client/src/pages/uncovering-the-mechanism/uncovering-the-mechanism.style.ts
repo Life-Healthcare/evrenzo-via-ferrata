@@ -26,8 +26,8 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 5.5rem;
-  padding-top: 6.4rem;
+  padding-left: calc(110px * var(--scale-x)); 
+  padding-top: calc(128px * var(--scale-y)); 
 
   &:-webkit-scrollbar {
     display: none;
@@ -36,41 +36,59 @@ export const Section = styled.section`
 
 export const Header = styled.div`
   color: #007a33;
-  font-size: 2.6rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.08rem;
+  font-size: calc(52px * var(--scale-x)); 
+  line-height: calc(46px * var(--scale-x)); 
+  letter-spacing: calc(1.6px * var(--scale-x)); 
   font-weight: bold;
 `;
 
 export const Main = styled.main`
-  margin-top: 3.5rem;
+  margin-top: calc(70px * var(--scale-y)); 
   display: flex;
   justify-content: start;
   color: #4d4d4f;
   font-family: "Trade Gothic LT Std";
   font-weight: lighter;
-  letter-spacing: 0.06rem;
-  gap: 2.4rem;
+  letter-spacing: calc(1.2px * var(--scale-x)); 
+  gap: calc(48px * var(--scale-x)); 
 
   & img {
-    margin: 1rem;
+    margin-top: calc(20px * var(--scale-y)); 
+    margin-bottom: calc(20px * var(--scale-y)); 
+    margin-left: calc(20px * var(--scale-x)); 
+    margin-right: calc(20px * var(--scale-x)); 
   }
 
   & > div:first-of-type {
-    width: 39rem;
+    width: calc(780px * var(--scale-x));
     & p {
-      font-size: 1.6rem;
-      line-height: 2.2rem;
+      font-size: calc(32px * var(--scale-x)); 
+      line-height: calc(44px * var(--scale-x)); 
+      margin-bottom: calc(40px * var(--scale-y)); 
       & sup {
-        font-size: medium;
+        font-size: x-small;
       }
     }
+  }
+
+  .tap-img {
+    width: calc(214px * var(--scale-x)); 
+  }
+
+  h3 {
+    font-size: calc(40px * var(--scale-x));
+    text-align: center;
+    margin-bottom: calc(50px * var(--scale-y)); 
+
+    & sup {
+        font-size: x-small;
+      }
   }
 `;
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 8.5rem;
+  bottom: calc(170px * var(--scale-y)); 
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -78,10 +96,10 @@ export const Footer = styled.div`
   & p {
     font-family: "Trade Gothic LT Std";
     font-weight: lighter;
-    letter-spacing: 0.06rem;
+    letter-spacing: calc(1.2px * var(--scale-x)); 
     color: #4d4d4f;
-    font-size: 1.15rem;
-    line-height: 1.7rem;
+    font-size: calc(23px * var(--scale-x)); 
+    line-height: calc(34px * var(--scale-x)); 
   }
 `;
 
@@ -93,9 +111,13 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
+
+  & > div:first-child {
+    width:100%;
+  }
 `;
 
 export const FlexRow = styled.div`
@@ -112,7 +134,7 @@ export const Animation = styled.div`
 export const Grid = styled.div`
   width: 100%;
   max-width: 50vw;
-  gap: 2.5em;
+  gap: calc(50px * var(--scale-x)); 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -131,8 +153,8 @@ export const Grid = styled.div`
   & .item {
     aspect-ratio: 1 / 1;
     display: block;
-    width: 294.83px;
-    height: 274.92px;
+    width: calc(294.83px * var(--scale-x)); 
+    height: calc(274.92px * var(--scale-y)); 
     clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
     overflow: hidden;
 
@@ -140,12 +162,12 @@ export const Grid = styled.div`
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 3rem;
+      margin-top: calc(60px * var(--scale-y)); 
     }
 
     & button {
-      font-size: 1.55rem;
-      line-height: 1.75rem;
+      font-size: calc(31px * var(--scale-x)); 
+      line-height: calc(35px * var(--scale-x)); 
       width: inherit;
       height: inherit;
       background-color: transparent;
@@ -156,10 +178,10 @@ export const Grid = styled.div`
       align-items: center;
 
       & p {
-        width: 10rem;
+        width: calc(200px * var(--scale-x)); 
 
         & sub {
-          font-size: medium;
+          font-size: x-small;
         }
       }
     }
@@ -190,8 +212,8 @@ export const Grid = styled.div`
 export const Card = styled.div<Props>`
   ${(Props) => `background-color: ${Props.backgroundColor};`}
   aspect-ratio: 1 / 1;
-  width: 37.888rem;
-  height: 35.3295rem;
+  width: calc(757.76px * var(--scale-x)); 
+  height: calc(706.59px * var(--scale-y)); 
   clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
   overflow: hidden;
   display: flex;
@@ -203,24 +225,24 @@ export const Card = styled.div<Props>`
 
   & > div {
     text-align: center;
-    width: 28.9rem;
+    width: calc(578px * var(--scale-x)); 
   }
 
   & .title {
-    font-size: 2.6rem;
-    line-height: 2.65rem;
-    margin-bottom: 1rem;
+    font-size: calc(52px * var(--scale-x)); 
+    line-height: calc(53px * var(--scale-x)); 
+    margin-bottom: calc(20px * var(--scale-y)); 
 
     & sub {
-      font-size: xx-large;
+      font-size: x-small;
     }
   }
 
   & .content {
     font-family: "Trade Gothic LT Std";
     font-weight: lighter;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    font-size: calc(32px * var(--scale-x)); 
+    line-height: calc(44px * var(--scale-x)); 
   }
 
   & > button {
@@ -233,10 +255,10 @@ export const Card = styled.div<Props>`
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    width: 1.537rem;
-    height: 1.537rem;
+    width: calc(30.74px * var(--scale-x)); 
+    height: calc(30.74px * var(--scale-y)); 
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: calc(40px * var(--scale-y)); 
+    right: calc(40px * var(--scale-x)); 
   }
 `;

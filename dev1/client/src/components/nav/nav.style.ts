@@ -7,7 +7,7 @@ export const ButtonContainer = styled.div`
   position: absolute;
   bottom: 0;
   right: calc(70px * var(--scale-x)); 
-  gap: calc(10px * var(--scale-x));
+  gap: calc(-10px * var(--scale-x));
 
   .icon1, .icon2 {
     width: calc(46px * var(--scale-x));
@@ -27,7 +27,7 @@ export const ParallelogramButton = styled.div`
   background-color: #004c2f;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   overflow: hidden;
-  margin-left: calc(-38px * var(--scale-x));; 
+  margin-left: calc(-38px * var(--scale-x));
 
   &:first-of-type {
     margin: 0;

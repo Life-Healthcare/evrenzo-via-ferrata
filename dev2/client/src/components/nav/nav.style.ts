@@ -6,18 +6,32 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   position: absolute;
   bottom: 0;
-  right: 3.5rem;
-  gap: -0.5rem;
+  right: calc(70px * var(--scale-x));
+  gap: calc(-10px * var(--scale-x));
+
+  .icon1, .icon2 {
+    width: calc(46px * var(--scale-x));
+    height: calc(46px * var(--scale-y));
+  }
+  
+  .icon3 {
+    width: calc(42px * var(--scale-x));
+    height: calc(46px * var(--scale-y));
+  }
+
+  & img {
+    margin-top: calc(20px * var(--scale-y));
+  }
 `;
 
 export const ParallelogramButton = styled.div`
   display: block;
-  width: 197.49px;
-  height: 127.41px;
+  width: calc(197.49px * var(--scale-x));
+  height: calc(127.41px * var(--scale-y));
   background-color: #004c2f;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   overflow: hidden;
-  margin-left: -1.9rem;
+  margin-left: calc(-38px * var(--scale-x));; 
 
   &:first-of-type {
     margin: 0;

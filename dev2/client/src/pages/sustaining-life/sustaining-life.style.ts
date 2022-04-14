@@ -22,55 +22,69 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 5.5rem;
-  padding-right: 5.5rem;
-  padding-top: 6.4rem;
+  padding-left: calc(110px * var(--scale-x));
+  padding-right: calc(110px * var(--scale-x));
+  padding-top: calc(128px * var(--scale-y)); 
 
   &:-webkit-scrollbar {
     display: none;
+  }
+
+  .content {
+    width: calc(1094px * var(--scale-x)); 
   }
 `;
 
 export const Header = styled.div`
   color: #007a33;
-  font-size: 2.6rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.06rem;
+  font-size: calc(52px * var(--scale-x)); 
+  line-height: calc(46px * var(--scale-x)); 
+  letter-spacing: calc(1.2px * var(--scale-y)); 
   font-weight: bold;
   & img {
-    margin: 1rem;
+    margin-top: calc(20px * var(--scale-y)); 
+    margin-bottom: calc(20px * var(--scale-y)); 
+    margin-left: calc(20px * var(--scale-x)); 
+    margin-right: calc(20px * var(--scale-x)); 
   }
 
   & div {
     justify-content: start;
     align-items: flex-start;
-    gap: 8rem;
+    gap: calc(160px * var(--scale-x)); 
   }
 `;
 
 export const Main = styled.main`
   display: flex;
   justify-content: center;
-  gap: 2.4rem;
+  gap: calc(48px * var(--scale-x)); 
 
   & img {
-    margin: 1rem;
+    margin-top: calc(20px * var(--scale-y)); 
+    margin-bottom: calc(20px * var(--scale-y)); 
+    margin-left: calc(20px * var(--scale-x)); 
+    margin-right: calc(20px * var(--scale-x)); 
   }
+
+  & sup {
+        font-size: medium;
+      }
 
   & div:first-child {
     & div:first-child {
       & img {
-        margin-top: 2.7rem;
+        margin-top: calc(100px * var(--scale-y)); 
       }
     }
     & div:nth-child(2) {
       & img {
-        margin-top: 0.6rem;
+        margin-top: calc(12px * var(--scale-y)); 
       }
     }
     & div:nth-child(3) {
       & img {
-        margin-top: 0.5rem;
+        margin-top: calc(10px * var(--scale-y)); 
       }
     }
   }
@@ -78,41 +92,41 @@ export const Main = styled.main`
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 8.5rem;
+  bottom: calc(170px * var(--scale-y)); 
   display: flex;
   flex-direction: column;
   justify-content: start;
   color: #4d4d4f;
   font-family: "Trade Gothic LT Std";
   font-weight: lighter;
-  letter-spacing: 0.04rem;
-  gap: 2rem;
+  letter-spacing: calc(0.8px * var(--scale-x)); 
+  gap: calc(40px * var(--scale-x)); 
 
   & div:first-child {
-    gap: 6rem;
+    gap: calc(120px * var(--scale-x)); 
 
     & p {
-      font-size: 1.6rem;
-      line-height: 2.2rem;
+      font-size: calc(32px * var(--scale-x)); 
+      line-height: calc(44px * var(--scale-y)); 
       & sup {
-        font-size: medium;
+        font-size: x-small;
       }
     }
 
     & div {
-      gap: 2rem;
+      gap: calc(40px * var(--scale-x)); 
     }
 
     & div:first-child {
-      width: 45rem;
+      width: calc(900px * var(--scale-x)); 
     }
     & div:last-child {
-      width: 44.85rem;
+      width: calc(897px * var(--scale-x)); 
     }
   }
 
   & div:nth-child(2) {
-    font-size: 1.15rem;
+    font-size: calc(23px * var(--scale-x)); 
     align-items: start;
     justify-content: start;
   }

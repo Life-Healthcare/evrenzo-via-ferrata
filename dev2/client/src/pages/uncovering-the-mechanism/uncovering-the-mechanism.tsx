@@ -85,6 +85,9 @@ export default function LivingAtHigh() {
           </Left>
           <Right>
             <Animation>
+              <h3>How the threads came together<sup>1</sup></h3>
+            </Animation>
+            <Animation>
               <Grid>
                 <div className="item">
                   <button
@@ -117,7 +120,10 @@ export default function LivingAtHigh() {
                   </button>
                 </div>
                 <div className="item">
-                  <img src="./assets/uncovering-the-mechanism/tap-to-select.png" />
+                  <img
+                    src="./assets/uncovering-the-mechanism/tap-to-select.png"
+                    className="tap-img"
+                  />
                 </div>
                 <div className="item">
                   <button

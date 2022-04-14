@@ -22,7 +22,7 @@ export default function LivingAtHigh() {
         <Left>
           <Animation>
             <div>
-              <img src={`${imgPath}/content.png`} />
+              <img src={`${imgPath}/content.png`} className="content"/>
             </div>
           </Animation>
         </Left>
