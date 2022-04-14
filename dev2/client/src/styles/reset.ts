@@ -146,6 +146,8 @@ export default createGlobalStyle`
     height: 100%;
     /* Disable overscroll history navigation (touch gesture) */
     overscroll-behavior: none;
+    position: fixed;
+    inset: 0;
     overflow: hidden;
   }
 

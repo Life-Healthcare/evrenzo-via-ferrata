@@ -30,31 +30,31 @@ export const Section = styled.section`
   }
 
   .title {
-    width: calc(1146px * var(--scale-x) * 0.9);
+    width: calc(1146px * var(--scale-x) * 1);
   }
   .leftContent1 {
-    width: calc(897px * var(--scale-x) * 0.9);
+    width: calc(897px * var(--scale-x) *1);
   }
   .leftContent2 {
-    width: calc(742px * var(--scale-x) * 0.9);
+    width: calc(742px * var(--scale-x) * 1);
   }
   .leftContent3 {
-    width: calc(829px * var(--scale-x) * 0.9);
+    width: calc(829px * var(--scale-x) * 1);
   }
   .rightContent1 {
-    width: calc(742px * var(--scale-x) * 0.9);
+    width: calc(742px * var(--scale-x) * 1);
   }
   .rightContent2 {
-    width: calc(804px * var(--scale-x) * 0.9);
+    width: calc(804px * var(--scale-x) * 1);
   }
   .rightContent3 {
-    width: calc(648px * var(--scale-x) * 0.9);
+    width: calc(648px * var(--scale-x) * 1);
   }
   .footer1 {
-    width: calc(1424px * var(--scale-x) * 0.9);
+    width: calc(1424px * var(--scale-x) * 1);
   }
   .footer2 {
-    width: calc(496px * var(--scale-x) * 0.9);
+    width: calc(496px * var(--scale-x) * 1);
   }
 
 
@@ -79,24 +79,26 @@ export const Main = styled.main`
   gap: calc(48px * var(--scale-x));
 
   & img {
-    margin: calc(20px * var(--scale-x));
+    margin-top: calc(20px * var(--scale-y));
+    margin-right: calc(20px * var(--scale-x));
+    margin-right: calc(20px * var(--scale-y));
     margin-left: 0;
   }
 
   & div:first-child {
     & div:first-child {
       & img {
-        margin-top: calc(54px * var(--scale-x));
+        margin-top: calc(54px * var(--scale-y));
       }
     }
     & div:nth-child(2) {
       & img {
-        margin-top:c alc(12px * var(--scale-x));
+        margin-top: calc(12px * var(--scale-y));
       }
     }
     & div:nth-child(3) {
       & img {
-        margin-top: calc(10px * var(--scale-x));
+        margin-top: calc(10px * var(--scale-y));
       }
     }
   }
@@ -104,7 +106,7 @@ export const Main = styled.main`
   & div:last-child {
     & div:first-child {
       & img {
-        margin-top: calc(54px * var(--scale-x));
+        margin-top: calc(54px * var(--scale-y));
       }
     }
   }
@@ -119,13 +121,13 @@ export const Footer = styled.div`
   & div:first-child {
     & div:first-child {
       & img {
-        margin-bottom: calc(20px * var(--scale-x));;
+        margin-bottom: calc(20px * var(--scale-y));
       }
     }
 
     & div:nth-child(2) {
       & img {
-        margin-top: calc(16px * var(--scale-x));;
+        margin-top: calc(16px * var(--scale-y));
       }
     }
   }

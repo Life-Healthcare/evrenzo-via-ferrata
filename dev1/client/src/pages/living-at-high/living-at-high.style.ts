@@ -19,8 +19,8 @@ const fadeUp = keyframes`
 export const Section = styled.section`
   background: url("./assets/living-at-high/background.png");
   background-size: cover;
-  width: calc(2048px * var(--scale-x));
-  height: calc(1536px * var(--scale-y));
+  width: 100vw;
+  height: 100vh;
   display: inline-block;
   padding-left: calc(90px * var(--scale-x));
   padding-top: calc(128px * var(--scale-y));

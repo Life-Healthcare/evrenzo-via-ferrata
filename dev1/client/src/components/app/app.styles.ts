@@ -2,8 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const AppReset = createGlobalStyle`
   :root {
-    --artwork-width: 2048;
-    --artwork-height: 1536;
+    /* --artwork-width: 2048; */
+    /* --artwork-height: 1536; */
+    --artwork-width: 2160;
+    --artwork-height: 1620;
     --device-width: 1080;
     --device-height: 790;
     --scale-x: calc(var(--device-width) / var(--artwork-width));
