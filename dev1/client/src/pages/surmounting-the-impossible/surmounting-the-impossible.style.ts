@@ -22,49 +22,89 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 4.5rem;
-  padding-top: 6.4rem;
+  padding-left: calc(90px * var(--scale-x));
+  padding-top: calc(128px * var(--scale-y));
 
   &:-webkit-scrollbar {
     display: none;
   }
+
+  .title {
+    width: calc(1146px * var(--scale-x) * 0.9);
+  }
+  .leftContent1 {
+    width: calc(897px * var(--scale-x) * 0.9);
+  }
+  .leftContent2 {
+    width: calc(742px * var(--scale-x) * 0.9);
+  }
+  .leftContent3 {
+    width: calc(829px * var(--scale-x) * 0.9);
+  }
+  .rightContent1 {
+    width: calc(742px * var(--scale-x) * 0.9);
+  }
+  .rightContent2 {
+    width: calc(804px * var(--scale-x) * 0.9);
+  }
+  .rightContent3 {
+    width: calc(648px * var(--scale-x) * 0.9);
+  }
+  .footer1 {
+    width: calc(1424px * var(--scale-x) * 0.9);
+  }
+  .footer2 {
+    width: calc(496px * var(--scale-x) * 0.9);
+  }
+
+
 `;
 
 export const Header = styled.div`
   & img {
-    margin: 1rem;
+    margin: calc(20px * var(--scale-x));
+    margin-left: 0;
   }
 
   & div {
     justify-content: start;
     align-items: flex-start;
-    gap: 8rem;
+    gap: calc(160px * var(--scale-x));
   }
 `;
 
 export const Main = styled.main`
   display: flex;
   justify-content: start;
-  gap: 2.4rem;
+  gap: calc(48px * var(--scale-x));
 
   & img {
-    margin: 1rem;
+    margin: calc(20px * var(--scale-x));
+    margin-left: 0;
   }
 
   & div:first-child {
     & div:first-child {
       & img {
-        margin-top: 2.7rem;
+        margin-top: calc(54px * var(--scale-x));
       }
     }
     & div:nth-child(2) {
       & img {
-        margin-top: 0.6rem;
+        margin-top:c alc(12px * var(--scale-x));
       }
     }
     & div:nth-child(3) {
       & img {
-        margin-top: 0.5rem;
+        margin-top: calc(10px * var(--scale-x));
+      }
+    }
+  }
+
+  & div:last-child {
+    & div:first-child {
+      & img {
+        margin-top: calc(54px * var(--scale-x));
       }
     }
   }
@@ -72,20 +112,20 @@ export const Main = styled.main`
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 4rem;
+  bottom: calc(80px * var(--scale-x));
   display: flex;
   flex-direction: row;
   justify-content: start;
   & div:first-child {
     & div:first-child {
       & img {
-        margin-bottom: 1rem;
+        margin-bottom: calc(20px * var(--scale-x));;
       }
     }
 
     & div:nth-child(2) {
       & img {
-        margin-top: 2rem;
+        margin-top: calc(16px * var(--scale-x));;
       }
     }
   }
