@@ -26,7 +26,10 @@ export const ModalOverLay = styled.div`
   top: 10vh;
   left: 5%;
   width: 90%;
-  padding: 1rem;
+  padding-left: calc(20px * var(--scale-x)); // 1rem;
+  padding-right: calc(20px * var(--scale-x)); // 1rem;
+  padding-top: calc(20px * var(--scale-y)); // 1rem;
+  padding-bottom: calc(20px * var(--scale-y)); // 1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   justify-content: center;
@@ -36,6 +39,9 @@ export const ModalOverLay = styled.div`
   animation: ${SlideDown} 300ms ease-out forwards;
 
   & > .content {
-    padding: 1rem;
+    padding-left: calc(20px * var(--scale-x)); // 1rem;
+    padding-right: calc(20px * var(--scale-x)); // 1rem;
+    padding-top: calc(20px * var(--scale-y)); // 1rem;
+    padding-bottom: calc(20px * var(--scale-y)); // 1rem;
   }
 `;
