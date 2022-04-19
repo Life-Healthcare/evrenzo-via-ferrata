@@ -15,12 +15,15 @@ export default function LivingAtHigh() {
       </Header>
       <Main>
         <div>
-          <video poster={`${imgPath}/poster.png`}>
-            {/* <source src="Evrenzo_MOA.mp4" type="video/mp4"> */}
-          </video>
+          <video
+            poster={`${imgPath}/poster.png`}
+            src="https://mz-website.uat.finervision.com/assets/@cms/videos/test.mp4"
+            playsInline
+            controls
+          ></video>
         </div>
       </Main>
-      <Nav back={-1} forward="/congratulations"/>
+      <Nav back={-1} forward="/congratulations" />
     </Section>
   );
 }

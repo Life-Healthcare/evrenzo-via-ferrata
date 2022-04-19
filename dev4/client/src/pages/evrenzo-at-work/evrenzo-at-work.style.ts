@@ -6,8 +6,8 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 4.5rem;
-  padding-top: 7.4rem;
+  padding-left: calc(90px * var(--scale-x)); // 4.5rem;
+  padding-top: calc(148px * var(--scale-y)); // 7.4rem;
 
   &:-webkit-scrollbar {
     display: none;
@@ -16,28 +16,38 @@ export const Section = styled.section`
 
 export const Header = styled.div`
   color: #007a33;
-  font-size: 2.6rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.08rem;
+  font-size: calc(52px * var(--scale-x)); // 2.6rem;
+  line-height: calc(46px * var(--scale-y)); // 2.3rem;
+  letter-spacing: calc(1.6px * var(--scale-x)); // 0.08rem;
   font-weight: bold;
 `;
 
 export const Main = styled.main`
-  margin-top: 2rem;
+  margin-top: calc(40px * var(--scale-y)); // 2rem;
   display: flex;
   justify-content: start;
+  width: 100%;
+  max-width: calc(1848px * var(--scale-x)); // 1848px;
+
+  & video {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
 `;
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 3rem;
+  bottom: calc(60px * var(--scale-y)); // 3rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
   & div:first-child {
     & div:first-child {
       & img {
-        margin-bottom: 1rem;
+        margin-bottom: calc(20px * var(--scale-y)); // 1rem;
+		width: calc(496px * var(--scale-x));
+		height: calc(108px * var(--scale-y));
       }
     }
   }
