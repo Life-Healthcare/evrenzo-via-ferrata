@@ -129,6 +129,15 @@ export default createGlobalStyle`
     font-display: swap;
 }
 
+:root {
+    --artwork-width: 2160;
+    --artwork-height: 1620;
+    --device-width: 1080;
+    --device-height: 790;
+    --scale-x: calc(var(--device-width) / var(--artwork-width));
+    --scale-y: calc(var(--device-height) / var(--artwork-height));
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -146,6 +155,8 @@ export default createGlobalStyle`
     height: 100%;
     /* Disable overscroll history navigation (touch gesture) */
     overscroll-behavior: none;
+	position: fixed;
+    inset: 0;
     overflow: hidden;
   }
 

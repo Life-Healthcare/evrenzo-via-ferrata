@@ -47,7 +47,7 @@ export default function LivingAtHigh() {
           <Animation>
             <h3>Normal oxygen</h3>
             <div>
-              <img src={`${imgPath}/left-content.png`} />
+              <img src={`${imgPath}/left-content.png`} className='leftContentImg'/>
             </div>
           </Animation>
           <Animation className="smaller">
