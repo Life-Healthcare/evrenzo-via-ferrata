@@ -6,9 +6,9 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-  padding-top: 7.4rem;
+  padding-left: calc(90px * var(--scale-x)); // 4.5rem;
+  padding-right: calc(90px * var(--scale-x)); // 4.5rem;
+  padding-top: calc(148px * var(--scale-y)); // 7.4rem;
 
   &:-webkit-scrollbar {
     display: none;
@@ -16,7 +16,7 @@ export const Section = styled.section`
 `;
 
 export const Main = styled.main`
-  margin-top: 23rem;
+  margin-top: calc(460px * var(--scale-x)); // 23rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,34 +25,40 @@ export const Main = styled.main`
   text-align: center;
 
   & h1 {
-    font-size: 2.6rem;
-    line-height: 3.3rem;
+    font-size: calc(52px * var(--scale-x)); // 2.6rem;
+    line-height: calc(66px * var(--scale-y)); // 3.3rem;
   }
   & h2 {
-    font-size: 2.1rem;
-    line-height: 3.3rem;
+    font-size: calc(42px * var(--scale-x)); // 2.1rem;
+    line-height: calc(66px * var(--scale-y)); // 3.3rem;
   }
 
   & p {
     font-family: "Trade Gothic LT Std";
     font-weight: lighter;
-    margin-top: 2.5rem;
-    width: 43.3rem;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    margin-top: calc(50px * var(--scale-y)); //2.5rem;
+    width: calc(866px * var(--scale-x)); // 43.3rem;
+    font-size: calc(32px * var(--scale-x)); // 1.6rem;
+    line-height: calc(44px * var(--scale-y)); // 2.2rem;
   }
 `;
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 3rem;
+  bottom: calc(60px * var(--scale-y)); // 3rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
+
+  & img {
+    width: calc(496px * var(--scale-x));
+    height: calc(108px * var(--scale-y));
+  }
+  
   & div:first-child {
     & div:first-child {
       & img {
-        margin-bottom: 1rem;
+        margin-bottom: calc(20px * var(--scale-y)); // 1rem;
       }
     }
   }
