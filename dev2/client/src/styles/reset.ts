@@ -138,6 +138,8 @@ export default createGlobalStyle`
     --device-height: 790;
     --scale-x: calc(var(--device-width) / var(--artwork-width));
     --scale-y: calc(var(--device-height) / var(--artwork-height));
+	--speed: 400ms;
+    --ease: ease;
   }
 
   * {

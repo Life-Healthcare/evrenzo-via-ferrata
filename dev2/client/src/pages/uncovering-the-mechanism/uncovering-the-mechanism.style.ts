@@ -16,6 +16,16 @@ const fadeUp = keyframes`
   }
 `;
 
+const tap = keyframes`
+0%, 100% {
+  transform: scaleY(1);
+}
+
+50% {
+  transform: scaleY(0.8);
+}
+`;
+
 interface Props {
   backgroundColor?: string;
 }
@@ -72,7 +82,8 @@ export const Main = styled.main`
   }
 
   .tap-img {
-    width: calc(214px * var(--scale-x)); 
+    width: calc(214px * var(--scale-x));
+	animation: ${tap} calc(var(--speed) * 2.5) var(--ease) infinite calc(var(--speed) * 5 * 0.5);
   }
 
   h3 {
