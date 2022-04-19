@@ -14,18 +14,38 @@ export default function App() {
     setUsertouched(+new Date());
   };
 
-  React.useEffect(() => {
-    const delay = 60;
-    window.addEventListener("touchstart", handleUserTouch);
-    let timer1 = setTimeout(() => {
-      navigate("/");
-    }, delay * 1000);
+  //   React.useEffect(() => {
+  //     const delay = 60;
+  //     window.addEventListener("touchstart", handleUserTouch);
+  //     let timer1 = setTimeout(() => {
+  //       navigate("/");
+  //     }, delay * 1000);
 
+  //     return () => {
+  //       clearTimeout(timer1);
+  //       window.removeEventListener("touchstart", handleUserTouch);
+  //     };
+  //   }, [handleUserTouch]);
+
+  React.useEffect(() => {
+    function onResize() {
+      document.documentElement.style.setProperty(
+        "--device-width",
+        String(window.innerWidth)
+      );
+      document.documentElement.style.setProperty(
+        "--device-height",
+        String(window.innerHeight)
+      );
+    }
+
+    onResize();
+
+    window.addEventListener("resize", onResize);
     return () => {
-      clearTimeout(timer1);
-      window.removeEventListener("touchstart", handleUserTouch);
+      window.removeEventListener("resize", onResize);
     };
-  }, [handleUserTouch]);
+  }, []);
 
   return (
     <>
