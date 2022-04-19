@@ -41,6 +41,7 @@ export const Header = styled.div`
   letter-spacing: calc(1.6px * var(--scale-x)); // 0.08rem;
   font-weight: bold;
   & sup {
+    line-height: 0;
     font-size: medium;
   }
 `;
@@ -65,9 +66,10 @@ export const Main = styled.main`
     overflow: hidden;
     font-family: "Trade Gothic LT Std Extended";
     background-image: url("./assets/first-treatment/tap_ico.png");
-	background-size: calc(58px * var(--scale-x)) calc(100px * var(--scale-y));
+    background-size: calc(58px * var(--scale-x)) calc(100px * var(--scale-y));
     background-repeat: no-repeat;
-    background-position: calc(100px * var(--scale-x)) calc(30px * var(--scale-y)); // 5rem 1.5rem;
+    background-position: calc(100px * var(--scale-x))
+      calc(30px * var(--scale-y)); // 5rem 1.5rem;
 
     & button {
       font-size: calc(30px * var(--scale-x)); // 1.5rem;
@@ -86,9 +88,10 @@ export const Main = styled.main`
         text-align: left;
         margin-left: calc(140px * var(--scale-x)); // 7rem;
         margin-top: calc(8px * var(--scale-y)); // 0.4rem;
-		line-height: calc(37px * var(--scale-x));
+        line-height: calc(36px * var(--scale-x));
 
         & sup {
+          line-height: 0;
           font-size: xx-small;
         }
       }
@@ -101,6 +104,7 @@ export const Main = styled.main`
       font-size: calc(32px * var(--scale-x)); // 1.6rem;
       line-height: calc(44px * var(--scale-y)); // 2.2rem;
       & sup {
+        line-height: 0;
         font-size: x-small;
       }
     }
@@ -175,12 +179,12 @@ export const Card = styled.div<Props>`
   position: relative;
 
   & img {
-	width: calc(1417px * var(--scale-x)); // 70.897rem;
-  height: calc(1180px * var(--scale-y)); // 58.984rem;
+    width: calc(1417px * var(--scale-x)); // 70.897rem;
+    height: calc(1180px * var(--scale-y)); // 58.984rem;
   }
 
   & > button {
-	font-size: calc(40px * var(--scale-x)); // 2rem;
+    font-size: calc(40px * var(--scale-x)); // 2rem;
     text-align: end;
     display: flex;
     justify-content: start;
@@ -189,7 +193,7 @@ export const Card = styled.div<Props>`
     width: calc(40px * var(--scale-x)); // 2rem;
     height: calc(40px * var(--scale-y)); // 2rem;
     padding: 0;
-	${(Props) => `color: ${Props.color};`}
+    ${(Props) => `color: ${Props.color};`}
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
