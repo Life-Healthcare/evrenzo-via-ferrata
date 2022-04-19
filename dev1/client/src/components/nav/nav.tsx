@@ -25,7 +25,7 @@ const Nav: React.FC<{ back?: number; forward?: string }> = (props) => {
         </ParallelogramButton>
       )}
       <ParallelogramButton>
-        <button onClick={() => navigate("/home")}>
+        <button onClick={() => navigate("/")}>
           <img src="./assets/nav-home-ico.png" alt="go back" className="icon3"/>
         </button>
       </ParallelogramButton>
