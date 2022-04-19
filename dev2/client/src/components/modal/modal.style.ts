@@ -26,7 +26,7 @@ export const ModalOverLay = styled.div`
   top: 20vh;
   left: 5%;
   width: 90%;
-  padding: 1rem;
+  padding: calc(20px * var(--scale-x));  //1rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   justify-content: center;
@@ -36,6 +36,6 @@ export const ModalOverLay = styled.div`
   animation: ${SlideDown} 300ms ease-out forwards;
 
   & > .content {
-    padding: 1rem;
+    padding: calc(20px * var(--scale-x));  //1rem;
   }
 `;

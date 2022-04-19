@@ -22,8 +22,8 @@ export const Section = styled.section`
   width: 100vw;
   height: 100vh;
   display: inline-block;
-  padding-left: 4.5rem;
-  padding-top: 6.4rem;
+  padding-left: calc(90px * var(--scale-x)); 
+  padding-top: calc(128px * var(--scale-y)); 
 
   &:-webkit-scrollbar {
     display: none;
@@ -32,28 +32,28 @@ export const Section = styled.section`
 
 export const Header = styled.div`
   color: #007a33;
-  font-size: 2.6rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.08rem;
+  font-size: calc(52px * var(--scale-x)); // 2.6rem;
+  line-height: calc(46px * var(--scale-y)); // 2.3rem;
+  letter-spacing: calc(1.6px * var(--scale-x));  // 0.08rem;
   font-weight: bold;
 `;
 
 export const Main = styled.main`
-  margin-top: 3.5rem;
+  margin-top: calc(70px * var(--scale-x));  // 3.5rem;
   display: flex;
   justify-content: start;
   color: #4d4d4f;
   font-family: "Trade Gothic LT Std";
   font-weight: lighter;
-  letter-spacing: 0.06rem;
-  gap: 2.4rem;
+  letter-spacing: calc(1.2px * var(--scale-x));  // 0.06rem;
+  gap: calc(48px * var(--scale-x));  // 2.4rem;
 
   & > div:first-of-type {
-    width: 45.6rem;
+    width: calc(912px * var(--scale-x));  // 45.6rem;
     & p {
-      font-size: 1.6rem;
-      line-height: 2.2rem;
-      margin-bottom: 1rem;
+      font-size: calc(32px * var(--scale-x));  // 1.6rem;
+      line-height: calc(44px * var(--scale-y));  // 2.2rem;
+      margin-bottom: calc(20px * var(--scale-y));  // 1rem;
       & .dashed {
         list-style-type: none;
       }
@@ -65,9 +65,9 @@ export const Main = styled.main`
     & .bold {
       font-weight: bold;
       font-style: italic;
-      letter-spacing: 0.06rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      letter-spacing: calc(1.2px * var(--scale-x));  // 0.06rem;
+      margin-top: calc(20px * var(--scale-y));  // 1rem;
+      margin-bottom: calc(20px * var(--scale-x));  // 1rem;
     }
 
     & .smaller {
@@ -76,8 +76,8 @@ export const Main = styled.main`
       }
       & p {
         font-weight: lighter;
-        font-size: 1.15rem;
-        line-height: 1.7rem;
+        font-size: calc(23px * var(--scale-x));  // 1.15rem;
+        line-height: calc(34px * var(--scale-y));  // 1.7rem;
       }
     }
   }
@@ -85,20 +85,24 @@ export const Main = styled.main`
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: 4rem;
+  bottom: calc(80px * var(--scale-y));  // 4rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  & img {
+	  width: calc(496px * var(--scale-x));
+	  height: calc(108px * var(--scale-y));
+  }
   & div:first-child {
     & div:first-child {
       & img {
-        margin-bottom: 1rem;
+        margin-bottom: calc(20px * var(--scale-y));  // 1rem; 
       }
     }
 
     & div:nth-child(2) {
       & img {
-        margin-top: 2rem;
+        margin-top: calc(40px * var(--scale-y));  // 2rem;
       }
     }
   }

@@ -255,8 +255,9 @@ export const Card = styled.div<Props>`
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    width: calc(30.74px * var(--scale-x)); 
-    height: calc(30.74px * var(--scale-y)); 
+    width: calc(31px * var(--scale-x)); 
+    height: calc(31px * var(--scale-y)); 
+	background-size: calc(31px * var(--scale-x)) calc(31px * var(--scale-y)); 
     position: absolute;
     top: calc(40px * var(--scale-y)); 
     right: calc(40px * var(--scale-x)); 
