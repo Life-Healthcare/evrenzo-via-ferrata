@@ -39,13 +39,13 @@ export default function LivingAtHigh() {
           </Animation>
         </Right>
       </Main>
-      <Footer>
+      {/* <Footer>
         <Left>
           <div>
             <img src="./assets/living-at-high/footer.png" alt="" className="footer"/>
           </div>
         </Left>
-      </Footer>
+      </Footer> */}
       <Nav back={-1} forward="/surmounting-the-impossible" />
     </Section>
   );
