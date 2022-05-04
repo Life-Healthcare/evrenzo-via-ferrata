@@ -28,7 +28,6 @@ export const ModalOverLay = styled.div`
   width: 90%;
   padding: calc(20px * var(--scale-x));  //1rem;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   justify-content: center;
   align-items: center;
   display: flex;

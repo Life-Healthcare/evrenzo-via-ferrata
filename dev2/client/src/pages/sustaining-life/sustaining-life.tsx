@@ -22,7 +22,11 @@ export default function LivingAtHigh() {
         <Left>
           <Animation>
             <div>
-              <img src={`${imgPath}/content.png`} className="content"/>
+              <h3>
+                When oxygen levels are low<sup>2</sup>
+              </h3>
+              <img src={`${imgPath}/content.png`} className="content" />
+			  <p>HIF, hypoxia-inducible factor; HRE, specific DNA sequences; OH, hydroxyl group; VHL, von Hippel-Lindau.</p>
             </div>
           </Animation>
         </Left>
@@ -38,15 +42,15 @@ export default function LivingAtHigh() {
               oncologist).<sup>1</sup>
             </p>
             <p>
-              The award was for their discovery about how cells sense and adapt
-              to oxygen availability.<sup>1</sup>
+              The award was for their discovery of how cells sense and adapt to
+              oxygen availability.<sup>1</sup>
             </p>
           </Left>
           <Right>
             <p>
               Oxygen plays a fundamental role in sustaining life, but the
               molecular mechanisms underlying how cells adapt to variations in
-              oxygen remained elusive until recently.<sup>1</sup>
+              oxygen remained elusive until this discovery.<sup>1</sup>
             </p>
             <p>
               Working separately and then combining their knowledge, the trio
@@ -57,7 +61,16 @@ export default function LivingAtHigh() {
           </Right>
         </FlexRow>
         <FlexRow>
-          <p>1. https://www.nobelprize.org/prizes/medicine/2019/summary/</p>
+          <ul>
+            <li>
+              1. https://www.nobelprize.org/prizes/medicine/2019/summary/
+              (accessed April 2022)
+            </li>
+            <li>
+              2. Mandl M, Depping R. Mol Med. 2014;20(1):215-20. doi:
+              10.2119/molmed.2014.00032.
+            </li>
+          </ul>
         </FlexRow>
       </Footer>
       <Nav back={-1} forward="/uncovering-the-mechanism" />

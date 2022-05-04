@@ -88,8 +88,10 @@ export const Main = styled.main`
 
   h3 {
     font-size: calc(40px * var(--scale-x));
-    text-align: center;
-    margin-bottom: calc(50px * var(--scale-y)); 
+    text-align: left;
+    margin-bottom: calc(50px * var(--scale-y));
+	font-family: "Trade Gothic LT Std Extended";
+	line-height: calc(44px * var(--scale-x)); 
 
     & sup {
         font-size: x-small;
@@ -254,6 +256,10 @@ export const Card = styled.div<Props>`
     font-weight: lighter;
     font-size: calc(32px * var(--scale-x)); 
     line-height: calc(44px * var(--scale-x)); 
+
+	& sup, sub {
+      font-size: x-small;
+    }
   }
 
   & > button {
