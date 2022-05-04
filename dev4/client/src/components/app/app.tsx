@@ -14,18 +14,29 @@ export default function App() {
     setUsertouched(+new Date());
   };
 
-    React.useEffect(() => {
-      const delay = 60;
-      window.addEventListener("touchstart", handleUserTouch);
-      let timer1 = setTimeout(() => {
-        navigate("/");
-      }, delay * 1000);
+  React.useEffect(() => {
+    function onContextMenu(event: MouseEvent) {
+      event.preventDefault();
+    }
 
-      return () => {
-        clearTimeout(timer1);
-        window.removeEventListener("touchstart", handleUserTouch);
-      };
-    }, [handleUserTouch]);
+    document.addEventListener("contextmenu", onContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", onContextMenu);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    const delay = 60;
+    window.addEventListener("touchstart", handleUserTouch);
+    let timer1 = setTimeout(() => {
+      navigate("/");
+    }, delay * 1000);
+
+    return () => {
+      clearTimeout(timer1);
+      window.removeEventListener("touchstart", handleUserTouch);
+    };
+  }, [handleUserTouch]);
 
   React.useEffect(() => {
     function onResize() {

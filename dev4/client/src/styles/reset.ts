@@ -30,6 +30,7 @@ export default createGlobalStyle`
     /* Disable overscroll history navigation (touch gesture) */
     overscroll-behavior: none;
     overflow: hidden;
+	user-select: none;
   }
 
   html {
@@ -58,5 +59,11 @@ export default createGlobalStyle`
     border: none;
     padding: 0.25em 0.5em;
     cursor: pointer;
+  }
+
+  svg, img {
+    pointer-events: none;
+    user-select: none;
+    height: auto;
   }
 `;

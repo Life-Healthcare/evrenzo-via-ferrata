@@ -15,6 +15,17 @@ export default function App() {
   };
 
   React.useEffect(() => {
+    function onContextMenu(event: MouseEvent) {
+      event.preventDefault();
+    }
+
+    document.addEventListener("contextmenu", onContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", onContextMenu);
+    };
+  }, []);
+
+  React.useEffect(() => {
     const delay = 60;
     window.addEventListener("touchstart", handleUserTouch);
     let timer1 = setTimeout(() => {
