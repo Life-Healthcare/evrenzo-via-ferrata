@@ -17,7 +17,7 @@ export default function LivingAtHigh() {
         <div>
           <video
             poster={`${imgPath}/poster.png`}
-            src="https://mz-website.uat.finervision.com/assets/@cms/videos/test.mp4"
+            src={`${imgPath}/video.mp4`}
             playsInline
             controls
           ></video>

@@ -124,7 +124,11 @@ export const Main = styled.main`
       }
     }
     & > div:last-child {
+      gap: calc(40px * var(--scale-x)); // 2rem;
       & .item:nth-child(1) {
+        background-color: #40146e;
+      }
+      & .item:nth-child(2) {
         background-color: #ad1aac;
       }
     }
@@ -156,9 +160,8 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
-  align-items: start;
 `;
 
 export const FlexRow = styled.div`
