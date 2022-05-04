@@ -20,10 +20,11 @@ export default function LivingAtHigh() {
       <Main>
         <Left>
           <Animation>
-            <h3>
+            <h3 className="doubleMarginBottom">
               The HIF (hypoxia-inducible factor) pathway plays a central role in
               erythropoiesis<sup>1,2</sup>
             </h3>
+            <h3>HIF-PH inhibition:</h3>
             <p>
               <ul>
                 <li>
@@ -40,14 +41,17 @@ export default function LivingAtHigh() {
             </p>
             <p>
               In normoxic conditions, the HIF pathway is not activated and the
-              HIF-α subunit is rapidly degraded via HIF prolyl-hydroxylase
+              HIF-1α subunit is rapidly degraded via HIF prolyl-hydroxylase
               (HIF-PH):<sup>3</sup>
             </p>
           </Animation>
           <Animation>
             <h3>Normal oxygen</h3>
             <div>
-              <img src={`${imgPath}/left-content.png`} className='leftContentImg'/>
+              <img
+                src={`${imgPath}/left-content.png`}
+                className="leftContentImg"
+              />
             </div>
           </Animation>
           <Animation className="smaller">
@@ -74,20 +78,20 @@ export default function LivingAtHigh() {
         </Left>
         <Right>
           <FlexRow>
-            <Left>
-              <Animation>
-                <h3>Hypoxia</h3>
-                <p>
-                  In hypoxic conditions, the HIF pathway is activated: the HIF-α
-                  subunit is not degraded, allowing dimerisation with the HIF-ß
-                  subunit and so inducing the transcription and translation of
-                  target hypoxia response genes involved in erythropoiesis,
-                  including:<sup>3-6</sup>
-                </p>
-              </Animation>
-            </Left>
-            <Right>
-              <Animation>
+            <Animation>
+              <h3>Hypoxia</h3>
+              <p>
+                In hypoxic conditions, the HIF pathway is activated: the HIF-1α
+                subunit is not degraded, allowing dimerisation with the HIF-1ß
+                subunit and so inducing the transcription and translation of
+                target hypoxia response genes involved in erythropoiesis,
+                including:<sup>3-6</sup>
+              </p>
+            </Animation>
+          </FlexRow>
+          <FlexRow>
+            <Animation>
+              <Left>
                 <div className="rectangle text1">Erythropoietin</div>
                 <img src={`${imgPath}/plus.png`} />
                 <div className="rectangle text2">
@@ -97,8 +101,8 @@ export default function LivingAtHigh() {
                 <div className="rectangle text3">
                   Genes involved in downregulating hepcidin levels
                 </div>
-              </Animation>
-            </Right>
+              </Left>
+            </Animation>
           </FlexRow>
           <FlexRow>
             <p>

@@ -55,6 +55,10 @@ export const Main = styled.main`
     margin-bottom: calc(20px * var(--scale-y)); // 1rem;
   }
 
+  & .doubleMarginBottom {
+    margin-bottom: calc(40px * var(--scale-y)); // 1rem;
+  }
+
   & sup {
     font-size: x-small;
   }
@@ -97,9 +101,9 @@ export const Main = styled.main`
 
   & > div:last-child {
     & .rectangle {
-      background-size: calc(342px * var(--scale-x)) calc(183px * var(--scale-y)); // 342px 183px;
+      background-size: calc(280px * var(--scale-x)) calc(183px * var(--scale-y)); // 342px 183px;
       background-color: #40146e;
-      width: calc(342px * var(--scale-x));
+      width: calc(280px * var(--scale-x));
       height: calc(183px * var(--scale-y));
       display: flex;
       justify-content: center;
@@ -108,6 +112,11 @@ export const Main = styled.main`
       padding: 0 calc(20px * var(--scale-x)); // 0 1rem;
       animation: ${fadeUp} 1s forwards;
       opacity: 0;
+      font-family: "Trade Gothic LT Std Extended";
+      font-size: calc(24px * var(--scale-x));
+      line-height: calc(26px * var(--scale-y));
+      color: #fff;
+      text-align: center;
 
       & img {
         margin-left: calc(10px * var(--scale-x)); // 0.5rem;
@@ -131,23 +140,17 @@ export const Main = styled.main`
       gap: calc(40px * var(--scale-x)); // 2rem;
 
       & > div:first-child {
-        width: calc(520px * var(--scale-x)); // 26rem;
+        width: calc(921px * var(--scale-x)); // 26rem;
       }
 
       & > div:last-child {
-        font-family: "Trade Gothic LT Std Extended";
-        font-size: calc(26px * var(--scale-x)); // 1.3rem;
-        line-height: calc(29px * var(--scale-y)); // 1.45rem;
-
-        color: #fff;
-        text-align: center;
-
         & > div {
           gap: calc(10px * var(--scale-x)); // 0.5rem;
-          display: grid;
+          display: flex;
+          flex-direction: row;
           align-items: center;
           text-align: center;
-          margin-top: calc(60px * var(--scale-y)); // 3rem;
+          margin-top: calc(20px * var(--scale-y)); // 1rem;
 
           & img {
             margin: 0 auto;
@@ -199,7 +202,7 @@ export const Animation = styled.div`
   animation: ${fadeUp} 1s forwards;
 
   .leftContentImg {
-	  width: calc(852px * var(--scale-x));
-	  height: calc(331px * var(--scale-y));
+    width: calc(852px * var(--scale-x));
+    height: calc(331px * var(--scale-y));
   }
 `;
