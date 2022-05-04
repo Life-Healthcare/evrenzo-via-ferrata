@@ -75,7 +75,6 @@ export const Card = styled.div`
     width: calc(40px * var(--scale-x)); // 2rem;
     height: calc(40px * var(--scale-y)); // 2rem;
     padding: 0;
-    ${(Props) => `color: ${Props.color};`}
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -91,7 +90,6 @@ export const Card = styled.div`
 export const Iframe = styled.iframe`
   width: 100%;
   height: 100%;
-  /* margin-top: var(--gap); */
   border: none;
   display: block;
 `;
