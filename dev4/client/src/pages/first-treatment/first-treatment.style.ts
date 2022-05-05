@@ -72,8 +72,8 @@ export const Main = styled.main`
       calc(30px * var(--scale-y)); // 5rem 1.5rem;
 
     & button {
-      font-size: calc(30px * var(--scale-x)); // 1.5rem;
-      line-height: calc(3.6px * var(--scale-y)); // 1.8rem;
+      font-size: calc(25px * var(--scale-y)); // 1.5rem;
+      line-height: calc(29px * var(--scale-y)); // 1.8rem;
       width: inherit;
       height: inherit;
       background-color: transparent;
