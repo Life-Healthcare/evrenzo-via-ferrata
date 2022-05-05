@@ -17,7 +17,7 @@ export const Modal = ({ onClose, children }: OverLayComponentProps) => {
         portalElement
       )}
       {ReactDOM.createPortal(
-        <ModalOverLay onClick={onClose}>
+        <ModalOverLay>
           <div className="content">{children}</div>
         </ModalOverLay>,
         portalElement
