@@ -85,7 +85,7 @@ export const Main = styled.main`
 
 export const Footer = styled.div`
   position: absolute;
-  bottom: calc(80px * var(--scale-y));  // 4rem;
+  bottom: calc(30px * var(--scale-y));  // 4rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
