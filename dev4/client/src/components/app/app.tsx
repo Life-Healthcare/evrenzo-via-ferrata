@@ -63,7 +63,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/first-treatment" element={<FirstTreatment />} />
-        <Route path="/evrenzo-at-work" element={<EvrenzoAtWork />} />
+        <Route
+          path="/evrenzo-at-work"
+          element={<EvrenzoAtWork handleUserTouch={handleUserTouch} />}
+        />
         <Route path="/congratulations" element={<Congratulations />} />
       </Routes>
     </>

@@ -11,12 +11,18 @@ import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
 
-export default function LivingAtHigh() {
+type Props = {
+  handleUserTouch: () => void;
+};
+
+export default function LivingAtHigh({ handleUserTouch }: Props) {
+  const [playing, setPlaying] = React.useState(false);
+  const [played, setPlayed] = React.useState(false);
+  const videoRef = React.useRef<HTMLVideoElement>(null);
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
   const imgPath = "./assets/hlf-pathway-in-action";
 
   const showCartHandler = () => {
-    console.log("ff");
     setPdfIsShown(true);
   };
 
@@ -24,12 +30,30 @@ export default function LivingAtHigh() {
     setPdfIsShown(false);
   };
 
+  React.useEffect(() => {
+    if (!playing) return;
+    let timer1 = setInterval(() => {
+      handleUserTouch();
+    }, 1000);
+
+    return () => {
+      clearInterval(timer1);
+    };
+  }, [playing]);
+
+  const play = React.useCallback(() => {
+    if (videoRef.current === null) return;
+    videoRef.current.play().catch((err) => {
+      console.error(err);
+    });
+  }, []);
+
   return (
     <>
       {pdfIsShown && (
         <Modal onClose={() => hideCartHandler()}>
           <Card>
-            <LegalPdf prefix="./assets/legal-pdf" pages={53}/>
+            <LegalPdf prefix="./assets/legal-pdf" pages={53} />
             <button onClick={() => hideCartHandler()}>X</button>
           </Card>
         </Modal>
@@ -40,10 +64,18 @@ export default function LivingAtHigh() {
         </Header>
         <Main>
           <video
+            ref={videoRef}
             poster={`${imgPath}/poster.png`}
             src="https://mz-website.uat.finervision.com/assets/@cms/videos/test.mp4"
             playsInline
-            controls
+            controls={playing}
+            onPlay={() => {
+              setPlaying(true);
+              setPlayed(true);
+            }}
+            onPause={() => setPlaying(false)}
+            onEnded={() => setPlaying(false)}
+            onClick={play}
           ></video>
         </Main>
         <Footer>

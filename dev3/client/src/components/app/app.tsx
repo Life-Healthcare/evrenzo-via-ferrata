@@ -62,7 +62,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ScreenSaver />} />
         <Route path="/hlf" element={<Hlf />} />
-        <Route path="/hlf-pathway-in-action" element={<HlfVideo />} />
+        <Route path="/hlf-pathway-in-action" element={<HlfVideo handleUserTouch={handleUserTouch} />} />
       </Routes>
     </>
   );
