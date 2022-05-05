@@ -86,10 +86,3 @@ export const Card = styled.div`
     right: calc(40px * var(--scale-x)); // 2rem;
   }
 `;
-
-export const Iframe = styled.iframe`
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-`;

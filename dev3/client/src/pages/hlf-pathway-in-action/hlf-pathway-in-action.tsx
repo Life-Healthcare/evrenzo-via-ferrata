@@ -5,11 +5,11 @@ import {
   Main,
   Left,
   Footer,
-  Iframe,
   Card,
 } from "@/pages/hlf-pathway-in-action/hlf-pathway-in-action.style";
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
+import LegalPdf from "@/pdf/pdf";
 
 export default function LivingAtHigh() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
@@ -29,9 +29,7 @@ export default function LivingAtHigh() {
       {pdfIsShown && (
         <Modal onClose={() => hideCartHandler()}>
           <Card>
-            <Iframe
-              src={`./assets/evrenzo-epar-product-information_en.pdf#toolbar=0`}
-            />
+            <LegalPdf prefix="./assets/legal-pdf" pages={53}/>
             <button onClick={() => hideCartHandler()}>X</button>
           </Card>
         </Modal>
