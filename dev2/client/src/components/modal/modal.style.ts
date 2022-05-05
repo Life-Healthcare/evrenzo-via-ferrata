@@ -23,7 +23,7 @@ export const Backdrop = styled.div`
 
 export const ModalOverLay = styled.div`
   position: fixed;
-  top: 20vh;
+  top: 10vh;
   left: 5%;
   width: 90%;
   padding: calc(20px * var(--scale-x));  //1rem;
