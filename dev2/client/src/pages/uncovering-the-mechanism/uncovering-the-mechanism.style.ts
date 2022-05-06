@@ -245,6 +245,7 @@ export const Card = styled.div<Props>`
     font-size: calc(52px * var(--scale-x)); 
     line-height: calc(53px * var(--scale-x)); 
     margin-bottom: calc(20px * var(--scale-y)); 
+	font-weight: bold;
 
     & sub {
       font-size: x-small;

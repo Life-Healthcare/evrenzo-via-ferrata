@@ -94,7 +94,8 @@ export const Main = styled.main`
     font-size: calc(32px * var(--scale-x));
     text-align: left;
     margin-top: calc(50px * var(--scale-y));
-    font-family: "Trade Gothic LT Std Extended";
+    font-family: "Trade Gothic LT Std";
+	font-weight: bold;
     line-height: calc(44px * var(--scale-x));
 
     & sup {
