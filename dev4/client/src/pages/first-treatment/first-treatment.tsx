@@ -60,7 +60,10 @@ export default function LivingAtHigh() {
           <FlexRow>
             <Animation>
               <p>
-				EVRENZO is the first HIF-PH inhibitor in the world to gain Marketing Authorisation. It has been licensed in China and Japan since 2019,<sup>2</sup> and has now gained marketing authorisation in Europe and the UK.3,4
+                EVRENZO is the first HIF-PH inhibitor in the world to gain
+                Marketing Authorisation. It has been licensed in China and Japan
+                since 2019,<sup>2</sup> and has now gained marketing
+                authorisation in Europe and the UK.<sup>3,4</sup>
               </p>
             </Animation>
           </FlexRow>
@@ -73,7 +76,9 @@ export default function LivingAtHigh() {
                   }
                 >
                   <p>
-					EVRENZO mimics the body’s natural response to hypoxia by activating the HIF pathway and increasing plasma EPO<sup>5,6</sup>
+                    EVRENZO mimics the body’s natural response to hypoxia by
+                    activating the HIF pathway and increasing plasma EPO
+                    <sup>5,6</sup>
                   </p>
                 </button>
               </div>
@@ -97,7 +102,11 @@ export default function LivingAtHigh() {
                     card({ image: `${imagePath}/card3.png`, color: "#000000" })
                   }
                 >
-                  <p>EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis<sup>6</sup></p>
+                  <p>
+                    EVRENZO has demonstrated Hb improvements comparable to ESA
+                    in patients not on dialysis, just started on dialysis and
+                    stable on dialysis<sup>6</sup>
+                  </p>
                 </button>
               </div>
               <div className="item">
@@ -122,7 +131,7 @@ export default function LivingAtHigh() {
                 </li>
                 <li>
                   2. Japanese Pharmaceuticals and Medical Devices Agency.
-                  https://www.pmda.go.jp/files/000234811.pdf (accessed January
+                  https://www.pmda.go.jp/files/000234811.pdf (accessed April
                   2022).
                 </li>
                 <li>

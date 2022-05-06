@@ -47,7 +47,7 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
             src={`${imgPath}/video.mp4`}
             playsInline
             controls={playing}
-            style={!played ? { maxHeight: "48vw" } : {}}
+            style={!played ? { objectFit: "cover" } : {}}
             onPlay={() => {
               setPlaying(true);
               setPlayed(true);

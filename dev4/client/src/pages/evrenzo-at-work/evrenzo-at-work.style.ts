@@ -7,6 +7,7 @@ export const Section = styled.section`
   height: 100vh;
   display: inline-block;
   padding-left: calc(90px * var(--scale-x)); // 4.5rem;
+  padding-right: calc(90px * var(--scale-x)); // 4.5rem;
   padding-top: calc(148px * var(--scale-y)); // 7.4rem;
 
   &:-webkit-scrollbar {
@@ -26,13 +27,21 @@ export const Main = styled.main`
   margin-top: calc(40px * var(--scale-y)); // 2rem;
   display: flex;
   justify-content: start;
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   max-width: calc(1848px * var(--scale-x)); // 1848px;
+  position: relative;
 
-  & video {
-    display: block;
+  & > div {
+    position: absolute;
+    top: 0;
     width: 100%;
-    cursor: pointer;
+    & video {
+      display: block;
+      width: 100%;
+	  max-height: calc(1041px * var(--scale-y));
+	  cursor: pointer;
+    }
   }
 `;
 
@@ -46,8 +55,8 @@ export const Footer = styled.div`
     & div:first-child {
       & img {
         margin-bottom: calc(20px * var(--scale-y)); // 1rem;
-		width: calc(496px * var(--scale-x));
-		height: calc(108px * var(--scale-y));
+        width: calc(496px * var(--scale-x));
+        height: calc(108px * var(--scale-y));
       }
     }
   }
