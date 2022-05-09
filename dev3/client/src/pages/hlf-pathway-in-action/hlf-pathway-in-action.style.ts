@@ -28,6 +28,7 @@ export const Main = styled.main`
   justify-content: start;
   width: 100%;
   max-width: calc(1848px * var(--scale-x)); // 1848px;
+  flex-direction: column;
 
   & video {
     display: block;

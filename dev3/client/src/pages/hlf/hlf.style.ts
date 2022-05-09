@@ -67,6 +67,7 @@ export const Main = styled.main`
     font-size: calc(32px * var(--scale-x)); // 1.6rem;
     line-height: calc(44px * var(--scale-y)); // 2.2rem;
     margin-bottom: calc(20px * var(--scale-y)); // 1rem;
+	white-space: pre-line;
     & ul {
       list-style-type: none;
       & span {

@@ -80,13 +80,12 @@ export default function LivingAtHigh() {
           <FlexRow>
             <Animation>
               <h3>Hypoxia</h3>
-              <p>
-                In hypoxic conditions, the HIF pathway is activated: the HIF-1α
-                subunit is not degraded, allowing dimerisation with the HIF-1ß
-                subunit and so inducing the transcription and translation of
-                target hypoxia response genes involved in erythropoiesis,
-                including:<sup>3-6</sup>
-              </p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "In hypoxic conditions, the HIF pathway is activated:\nthe HIF-1α subunit is not degraded, allowing dimerisation with the HIF-1ß subunit and so inducing the transcription and translation of target hypoxia response genes involved in erythropoiesis, including:<sup>3-6</sup>"
+                }}
+              />
             </Animation>
           </FlexRow>
           <FlexRow>
@@ -109,11 +108,7 @@ export default function LivingAtHigh() {
               In CKD, oxygen sensing via HIF is impaired, and this contributes
               to the development of anaemia.<sup>7</sup>
             </p>
-            <p>
-              CKD, chronic kidney disease; HIF, hypoxia-inducible factor;
-              HIF-PH, hypoxia-inducible factor prolyl-hydroxylase; EPO,
-              erythropoietin.
-            </p>
+            <p dangerouslySetInnerHTML={{__html: 'CKD, chronic kidney disease; HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl-hydroxylase;\nEPO, erythropoietin.'}} />
           </FlexRow>
         </Right>
       </Main>
