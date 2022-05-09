@@ -100,7 +100,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "EPO gene",
                         content:
-                          "Professor Gregg Semenza found that specific DNA segments located next to the EPO gene mediated the response to hypoxia.<sup>1</sup>",
+                          "Professor Gregg Semenza found that\nspecific DNA segments located next\nto the EPO gene mediated the\nresponse to hypoxia.<sup>1</sup>",
                         backgroundColor: "#007A33",
                       })
                     }
@@ -114,7 +114,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "O<sub>2</sub> sensing mechanism",
                         content:
-                          "Professor Semenza’s group discovered how the EPO gene is regulated by varying O<sub>2</sub> levels, and Sir Peter Ratcliffe’s group found that this mechanism is functional in many different cell types (not only in the kidney).<sup>1</sup>",
+                          "Professor Semenza’s group\ndiscovered how the EPO gene is\nregulated by varying O<sub>2</sub> levels,\nand Sir Peter Ratcliffe’s group\nfound that this mechanism is\nfunctional in many different cell\ntypes (not only in the kidney).<sup>1</sup>",
                         backgroundColor: "#AD1AAC",
                       })
                     }
@@ -136,7 +136,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "HIF",
                         content:
-                          "Professor Semenza discovered a protein complex that binds to the DNA segment in an oxygen-dependent manner. This complex, which he called the hypoxia-inducible factor (HIF), consisted of two transcription factors: HIF-1α and HIF-1ß.<sup>1</sup>",
+                          "Professor Semenza discovered a protein\ncomplex that binds to the DNA segment in\nan oxygen-dependent manner. This\ncomplex, which he called the hypoxia-\ninducible factor (HIF), consisted of two transcription factors: HIF-1α and HIF-1ß.<sup>1</sup>",
                         backgroundColor: "#43B02A",
                       })
                     }
@@ -150,7 +150,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "VHL and HIF-1α",
                         content:
-                          "Professor Ratcliffe’s group demonstrated that VHL interacts with HIF-1α and is required for its degradation, so linking VHL to HIF-1α.<sup>1</sup>",
+                          "Professor Ratcliffe’s group\ndemonstrated that VHL interacts with\nHIF-1α and is required for its\ndegradation, so linking VHL to HIF-1α.<sup>1</sup>",
                         backgroundColor: "#40146E",
                       })
                     }
@@ -164,7 +164,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "VHL",
                         content:
-                          "Cancer researcher Professor William Kaelin showed that a gene associated with von Hippel-Lindau’s (VHL) disease was also involved in controlling responses to hypoxia.<sup>1</sup>",
+                          "Cancer researcher Professor William\nKaelin showed that a gene associated\nwith von Hippel-Lindau’s (VHL)\ndisease was also involved in\ncontrolling responses to hypoxia.<sup>1</sup>",
                         backgroundColor: "#4EC3E0",
                       })
                     }
@@ -179,7 +179,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "HIF-PHIs identified",
                         content:
-                          "Professor Radcliffe identified  prolyl hydroxylase and also showed that the gene activating function of HIF-1α was regulated by oxygen-dependent hydroxylation.<sup>1</sup>",
+                          "Professor Radcliffe identified\nprolyl hydroxylase and also\nshowed that the gene\nactivating function of HIF-1α\nwas regulated by oxygen-\ndependent hydroxylation.<sup>1</sup>",
                         backgroundColor: "#004C2F",
                       })
                     }
@@ -193,7 +193,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "HIF-PH",
                         content:
-                          "Professors Ratcliffe and Kaelin independently showed that in normoxia, hydroxyl groups are added to HIF-1α (prolyl hydroxylation). This allows VHL to recognise and bind to HIF-1α, and explains how normal oxygen levels control HIF-1α degradation with the help of oxygen-sensitive enzymes (prolyl hydroxylases or HIF-PH).<sup>1</sup>",
+                          "Professors Ratcliffe and Kaelin\nindependently showed that in normoxia,\nhydroxyl groups are added to HIF-1α\n<i>(prolyl hydroxylation).</i> This allows VHL to\nrecognise and bind to HIF-1α, and\nexplains how normal oxygen levels control\nHIF-1α degradation with the help of\noxygen-sensitive enzymes <i>(prolyl hydroxylases or HIF-PH).</i><sup>1</sup>",
                         backgroundColor: "#005893",
                       })
                     }

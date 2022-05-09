@@ -257,6 +257,7 @@ export const Card = styled.div<Props>`
     font-weight: lighter;
     font-size: calc(32px * var(--scale-x)); 
     line-height: calc(44px * var(--scale-x)); 
+	white-space: pre-line;
 
 	& sup, sub {
       font-size: x-small;

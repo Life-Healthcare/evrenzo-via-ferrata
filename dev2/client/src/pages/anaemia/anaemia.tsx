@@ -60,11 +60,7 @@ export default function LivingAtHigh() {
                   <li>- Iron deficiency</li>
                 </ul>
               </p>
-              <p>
-                EPO is produced by cells in the kidney and is essential for
-                controlling the formation of red blood cells, through the HIF
-                pathway.<sup>1</sup>
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: 'EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the\nHIF pathway.<sup>1</sup>' }} />
               <p>
                 The HIF pathway is therefore a target for new treatments to
                 manage anaemia of CKD.

@@ -47,6 +47,7 @@ export const Main = styled.main`
   font-weight: lighter;
   letter-spacing: calc(1.2px * var(--scale-x));  // 0.06rem;
   gap: calc(48px * var(--scale-x));  // 2.4rem;
+  white-space: pre-line;
 
   & > div:first-of-type {
     width: calc(912px * var(--scale-x));  // 45.6rem;
