@@ -66,7 +66,7 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
           <video
             ref={videoRef}
             poster={`${imgPath}/poster.png`}
-            src="https://mz-website.uat.finervision.com/assets/@cms/videos/test.mp4"
+            src={`${imgPath}/video.mp4`}
             playsInline
             controls={playing}
             onPlay={() => {
