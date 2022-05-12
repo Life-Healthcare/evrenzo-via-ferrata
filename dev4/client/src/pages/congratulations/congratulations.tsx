@@ -13,7 +13,6 @@ export default function LivingAtHigh() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
   const imgPath = "./assets/congratulations";
   const showCartHandler = () => {
-    console.log("ff");
     setPdfIsShown(true);
   };
 

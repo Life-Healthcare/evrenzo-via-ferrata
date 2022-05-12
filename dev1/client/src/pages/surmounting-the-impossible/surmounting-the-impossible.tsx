@@ -18,7 +18,6 @@ export default function LivingAtHigh() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
   const imgPath = "./assets/surmounting-the-impossible";
   const showCartHandler = () => {
-    console.log("ff");
     setPdfIsShown(true);
   };
 
