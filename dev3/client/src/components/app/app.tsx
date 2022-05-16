@@ -31,9 +31,18 @@ export default function App() {
     let timer1 = setTimeout(() => {
       navigate("/");
     }, delay * 1000);
+	
+	let timeout: NodeJS.Timeout;
+    // Send sessions to server every 1 minute
+    (async function sendToServer() {
+      await sessionManager.sendToServer();
+	  clearTimeout(timeout);
+      timeout = setTimeout(() => sessionManager.sendToServer(), delay * 1000);
+    })();
 
     return () => {
       clearTimeout(timer1);
+	  clearTimeout(timeout);
       window.removeEventListener("touchstart", handleUserTouch);
     };
   }, [handleUserTouch]);
@@ -56,17 +65,6 @@ export default function App() {
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  }, []);
-
-  React.useEffect(() => {
-    let timeout: NodeJS.Timeout;
-    // Send sessions to server every 1 minute
-    (async function sendToServer() {
-      await sessionManager.sendToServer();
-      clearTimeout(timeout);
-      timeout = setTimeout(() => sessionManager.sendToServer(), 60000);
-    })();
-    return () => clearTimeout(timeout);
   }, []);
 
   return (
