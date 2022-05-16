@@ -7,9 +7,16 @@ import {
   Footer,
 } from "@/pages/home/home.style";
 import Nav from "@/components/nav/nav";
+import sessionManager from "@/services/session-manager";
 
 export default function Home() {
   const imgPath = "./assets/home";
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("home");
+  }, []);
+
   return (
     <Section>
       <Header>
@@ -32,7 +39,7 @@ export default function Home() {
       <Footer>
         <Left>
           <div>
-            <img src={`${imgPath}/footer.png`} alt="" className="footer"/>
+            <img src={`${imgPath}/footer.png`} alt="" className="footer" />
           </div>
         </Left>
       </Footer>

@@ -10,32 +10,48 @@ import {
   Footer,
 } from "@/pages/living-at-high/living-at-high.style";
 import Nav from "@/components/nav/nav";
+import sessionManager from "@/services/session-manager";
 
 export default function LivingAtHigh() {
+  React.useEffect(() => {
+    sessionManager.page("page-1");
+  }, []);
   return (
     <Section>
       <Header>
         <FlexRow>
-          <img src="./assets/living-at-high/title.png" className="title"/>
+          <img src="./assets/living-at-high/title.png" className="title" />
         </FlexRow>
       </Header>
       <Main>
         <Left>
           <Animation>
             <div>
-              <img src="./assets/living-at-high/left-content1.png" className="leftContent1"/>
+              <img
+                src="./assets/living-at-high/left-content1.png"
+                className="leftContent1"
+              />
             </div>
           </Animation>
           <Animation>
-            <img src="./assets/living-at-high/left-content2.png" className="leftContent2"/>
+            <img
+              src="./assets/living-at-high/left-content2.png"
+              className="leftContent2"
+            />
           </Animation>
           <Animation>
-            <img src="./assets/living-at-high/left-content3.png" className="leftContent3"/>
+            <img
+              src="./assets/living-at-high/left-content3.png"
+              className="leftContent3"
+            />
           </Animation>
         </Left>
         <Right>
           <Animation>
-            <img src="./assets/living-at-high/right-content.png" className="rightContent1"/>
+            <img
+              src="./assets/living-at-high/right-content.png"
+              className="rightContent1"
+            />
           </Animation>
         </Right>
       </Main>

@@ -5,6 +5,7 @@ import {
   Main,
 } from "@/pages/evrenzo-at-work/evrenzo-at-work.style";
 import Nav from "@/components/nav/nav";
+import sessionManager from "@/services/session-manager";
 
 type Props = {
   handleUserTouch: () => void;
@@ -32,6 +33,10 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
     videoRef.current.play().catch((err) => {
       console.error(err);
     });
+  }, []);
+
+  React.useEffect(() => {
+    sessionManager.page("page-1");
   }, []);
 
   return (

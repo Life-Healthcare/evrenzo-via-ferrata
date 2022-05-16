@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import Hlf from "@/pages/hlf/hlf";
 import HlfVideo from "@/pages/hlf-pathway-in-action/hlf-pathway-in-action";
+import sessionManager from "@/services/session-manager";
 
 export default function App() {
   const navigate = useNavigate();
@@ -55,6 +56,17 @@ export default function App() {
     return () => {
       window.removeEventListener("resize", onResize);
     };
+  }, []);
+
+  React.useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    // Send sessions to server every 1 minute
+    (async function sendToServer() {
+      await sessionManager.sendToServer();
+      clearTimeout(timeout);
+      timeout = setTimeout(() => sessionManager.sendToServer(), 60000);
+    })();
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

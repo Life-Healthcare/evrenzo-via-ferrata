@@ -13,6 +13,7 @@ import {
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
+import sessionManager from "@/services/session-manager";
 
 export default function LivingAtHigh() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
@@ -24,6 +25,11 @@ export default function LivingAtHigh() {
   const hideCartHandler = () => {
     setPdfIsShown(false);
   };
+
+  React.useEffect(() => {
+    sessionManager.page("page-2");
+  }, []);
+
   return (
     <>
       {pdfIsShown && (
@@ -59,7 +65,12 @@ export default function LivingAtHigh() {
                   <li>- Iron deficiency</li>
                 </ul>
               </p>
-              <p dangerouslySetInnerHTML={{ __html: 'EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the\nHIF pathway.<sup>1</sup>' }} />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the\nHIF pathway.<sup>1</sup>",
+                }}
+              />
               <p>
                 The HIF pathway is therefore a target for new treatments to
                 manage anaemia of CKD.

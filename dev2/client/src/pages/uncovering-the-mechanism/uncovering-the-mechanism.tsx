@@ -13,6 +13,7 @@ import {
 } from "@/pages/uncovering-the-mechanism/uncovering-the-mechanism.style";
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
+import sessionManager from "@/services/session-manager";
 
 type cardType = {
   title: string;
@@ -40,6 +41,10 @@ export default function LivingAtHigh() {
     setBackgroundColoe(backgroundColor);
     showCartHandler();
   };
+
+  React.useEffect(() => {
+    sessionManager.page("page-1");
+  }, []);
 
   return (
     <>

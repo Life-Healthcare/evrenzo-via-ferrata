@@ -5,6 +5,7 @@ import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import SustainingLife from "@/pages/sustaining-life/sustaining-life";
 import UncoveringTheMechanism from "@/pages/uncovering-the-mechanism/uncovering-the-mechanism";
 import Anaemia from "@/pages/anaemia/anaemia";
+import sessionManager from "@/services/session-manager";
 
 export default function App() {
   const navigate = useNavigate();
@@ -56,6 +57,17 @@ export default function App() {
     return () => {
       window.removeEventListener("resize", onResize);
     };
+  }, []);
+
+  React.useEffect(() => {
+    let timeout: NodeJS.Timeout;
+    // Send sessions to server every 1 minute
+    (async function sendToServer() {
+      await sessionManager.sendToServer();
+      clearTimeout(timeout);
+      timeout = setTimeout(() => sessionManager.sendToServer(), 60000);
+    })();
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

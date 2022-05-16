@@ -12,6 +12,7 @@ import {
 } from "@/pages/first-treatment/first-treatment.style";
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
+import sessionManager from "@/services/session-manager";
 
 type cardType = {
   image: string;
@@ -37,6 +38,11 @@ export default function LivingAtHigh() {
     setColor(color);
     showCartHandler();
   };
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("home");
+  }, []);
 
   return (
     <>

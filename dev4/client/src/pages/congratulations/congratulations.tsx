@@ -8,6 +8,7 @@ import {
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
+import sessionManager from "@/services/session-manager";
 
 export default function LivingAtHigh() {
   const [pdfIsShown, setPdfIsShown] = React.useState(false);
@@ -19,6 +20,11 @@ export default function LivingAtHigh() {
   const hideCartHandler = () => {
     setPdfIsShown(false);
   };
+
+  React.useEffect(() => {
+    sessionManager.page("page-2");
+  }, []);
+
   return (
     <>
       {pdfIsShown && (

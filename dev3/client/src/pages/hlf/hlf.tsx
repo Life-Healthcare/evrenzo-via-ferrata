@@ -9,9 +9,16 @@ import {
   Right,
 } from "@/pages/hlf/hlf.style";
 import Nav from "@/components/nav/nav";
+import sessionManager from "@/services/session-manager";
 
 export default function LivingAtHigh() {
   const imgPath = "./assets/hlf";
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("home");
+  }, []);
+  
   return (
     <Section>
       <Header>

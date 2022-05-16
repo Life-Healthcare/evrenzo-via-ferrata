@@ -10,9 +10,16 @@ import {
   Footer,
 } from "@/pages/sustaining-life/sustaining-life.style";
 import Nav from "@/components/nav/nav";
+import sessionManager from "@/services/session-manager";
 
 export default function LivingAtHigh() {
   const imgPath = "./assets/sustaining-life";
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("home");
+  }, []);
+
   return (
     <Section>
       <Header>

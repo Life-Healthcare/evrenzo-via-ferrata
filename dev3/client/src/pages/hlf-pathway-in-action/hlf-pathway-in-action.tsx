@@ -10,6 +10,7 @@ import {
 import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
+import sessionManager from "@/services/session-manager";
 
 type Props = {
   handleUserTouch: () => void;
@@ -46,6 +47,11 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
     videoRef.current.play().catch((err) => {
       console.error(err);
     });
+  }, []);
+
+  React.useEffect(() => {
+    sessionManager.start();
+    sessionManager.page("page-1");
   }, []);
 
   return (
