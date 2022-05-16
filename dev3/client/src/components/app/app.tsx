@@ -37,7 +37,7 @@ export default function App() {
     (async function sendToServer() {
       await sessionManager.sendToServer();
 	  clearTimeout(timeout);
-      timeout = setTimeout(() => sessionManager.sendToServer(), delay * 1000);
+      timeout = setTimeout(() => sendToServer(), delay * 1000);
     })();
 
     return () => {
