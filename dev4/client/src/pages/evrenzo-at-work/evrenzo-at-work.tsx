@@ -6,6 +6,7 @@ import {
 } from "@/pages/evrenzo-at-work/evrenzo-at-work.style";
 import Nav from "@/components/nav/nav";
 import sessionManager from "@/services/session-manager";
+import emitter from "@/services/emitter"
 
 type Props = {
   handleUserTouch: () => void;
@@ -60,6 +61,7 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
             onPause={() => setPlaying(false)}
             onEnded={() => setPlaying(false)}
             onClick={play}
+			onTimeUpdate={() => emitter.emit("interaction")}
           ></video>
         </div>
       </Main>

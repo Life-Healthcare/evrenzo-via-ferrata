@@ -11,6 +11,7 @@ import Nav from "@/components/nav/nav";
 import { Modal } from "@/components/modal/modal";
 import LegalPdf from "@/pdf/pdf";
 import sessionManager from "@/services/session-manager";
+import emitter from "@/services/emitter"
 
 type Props = {
   handleUserTouch: () => void;
@@ -82,6 +83,7 @@ export default function LivingAtHigh({ handleUserTouch }: Props) {
             onPause={() => setPlaying(false)}
             onEnded={() => setPlaying(false)}
             onClick={play}
+			onTimeUpdate={() => emitter.emit("interaction")}
           ></video>
         </Main>
         <Footer>

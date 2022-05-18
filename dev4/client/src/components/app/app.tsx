@@ -6,6 +6,7 @@ import EvrenzoAtWork from "@/pages/evrenzo-at-work/evrenzo-at-work";
 import FirstTreatment from "@/pages/first-treatment/first-treatment";
 import Congratulations from "@/pages/congratulations/congratulations";
 import sessionManager from "@/services/session-manager";
+import emitter from "@/services/emitter"
 
 export default function App() {
   const navigate = useNavigate();
@@ -41,10 +42,14 @@ export default function App() {
       timeout = setTimeout(() => sendToServer(), delay * 1000);
     })();
 
+	emitter.on("interaction", handleUserTouch);
+
+
     return () => {
       clearTimeout(timer1);
 	  clearTimeout(timeout);
       window.removeEventListener("touchstart", handleUserTouch);
+	  emitter.off("interaction", handleUserTouch);
     };
   }, [handleUserTouch]);
 

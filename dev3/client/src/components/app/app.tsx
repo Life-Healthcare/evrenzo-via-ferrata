@@ -5,6 +5,7 @@ import ScreenSaver from "@/pages/screen-saver/screen-saver";
 import Hlf from "@/pages/hlf/hlf";
 import HlfVideo from "@/pages/hlf-pathway-in-action/hlf-pathway-in-action";
 import sessionManager from "@/services/session-manager";
+import emitter from "@/services/emitter"
 
 export default function App() {
   const navigate = useNavigate();
@@ -40,10 +41,13 @@ export default function App() {
       timeout = setTimeout(() => sendToServer(), delay * 1000);
     })();
 
+	emitter.on("interaction", handleUserTouch);
+
     return () => {
       clearTimeout(timer1);
 	  clearTimeout(timeout);
       window.removeEventListener("touchstart", handleUserTouch);
+	  emitter.off("interaction", handleUserTouch);
     };
   }, [handleUserTouch]);
 
