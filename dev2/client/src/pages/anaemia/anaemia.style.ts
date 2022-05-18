@@ -59,7 +59,7 @@ export const Main = styled.main`
         list-style-type: none;
       }
       & sup {
-        font-size: medium;
+        font-size: x-small;
       }
     }
 

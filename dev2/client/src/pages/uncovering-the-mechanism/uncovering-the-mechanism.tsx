@@ -184,7 +184,7 @@ export default function LivingAtHigh() {
                       card({
                         title: "HIF-PHIs identified",
                         content:
-                          "Professor Radcliffe identified\nprolyl hydroxylase and also\nshowed that the gene\nactivating function of HIF-1α\nwas regulated by oxygen-\ndependent hydroxylation.<sup>1</sup>",
+                          "Professor Ratcliffe identified\nprolyl hydroxylase and also\nshowed that the gene\nactivating function of HIF-1α\nwas regulated by oxygen-\ndependent hydroxylation.<sup>1</sup>",
                         backgroundColor: "#004C2F",
                       })
                     }
