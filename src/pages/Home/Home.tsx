@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import ButtonStart from "../../components/ButtonStart"
 import logo from "../../images/logo.svg"
-import section1Bg from "../../images/section1-bg.png"
+import homeBg from "../../images/section1-ss.png"
 import { motion } from "framer-motion"
 import Slide from "../../variants/Slide"
 
@@ -10,9 +10,9 @@ export default () => {
 
     return (
         <motion.article 
-        variants={Slide} exit="exit"
-        style={{ backgroundImage: `url(${section1Bg})`}}
-        className="bottom-mask relative flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
+        variants={Slide} exit="exit" animate="animate"
+        style={{ backgroundImage: `url(${homeBg})`}}
+        className="bottom-mask absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
             <header className="flex">
                 <img 
                 className="w-[396px] h-[134px]"
@@ -28,7 +28,7 @@ export default () => {
                 </div>
             </header>
             <section className="flex flex-col flex-grow justify-center items-center gap-24">
-                <p className="text-7xl w-[800px]">Is the answer to anaemia of CKD in his blood?</p>
+                <h1 className="text-7xl w-[800px]">Is the answer to anaemia of CKD in his blood?</h1>
                 <ButtonStart onClick={() => navigate("/1")}/>
             </section>
             <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
