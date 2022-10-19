@@ -17,21 +17,16 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          rm -rf node_modules package-lock.json
+          rm -rf node_modules yarn.lock
           npm install
           PUBLIC_PATH=./ npm run build
-          mkdir build
-          cp -R dev1/client/build build/dev1
-          cp -R dev2/client/build build/dev2
-          cp -R dev3/client/build build/dev3
-          cp -R dev4/client/build build/dev4
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: build
+          folder: dist
           clean: true
 
       - name: Slack Notification
