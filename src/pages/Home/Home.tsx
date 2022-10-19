@@ -16,7 +16,7 @@ export default () => {
             <header className="flex">
                 <img 
                 className="w-[396px] h-[134px]"
-                src="./images/logo.svg" alt="logo" />
+                src="./images/Logo.svg" alt="logo" />
                 <div className="flex flex-grow justify-center mt-14">
                     <div className="flex flex-col gap-7 w-[800px] translate-x-[calc(-396px/2)]">
                         <p className="text-3xl">This information is intended for international audiences.</p>
