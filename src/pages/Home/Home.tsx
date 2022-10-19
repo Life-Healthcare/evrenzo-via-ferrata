@@ -1,14 +1,22 @@
+import { useNavigate } from "react-router-dom"
 import ButtonStart from "../../components/ButtonStart"
+import logo from "../../images/logo.svg"
+import section1Bg from "../../images/section1-bg.png"
+import { motion } from "framer-motion"
+import Slide from "../../variants/Slide"
 
 export default () => {
+    const navigate = useNavigate();
+
     return (
-        <section 
-        style={{ backgroundImage: 'url(./images/home-bg.png)'}}
+        <motion.article 
+        variants={Slide} exit="exit"
+        style={{ backgroundImage: `url(${section1Bg})`}}
         className="bottom-mask relative flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
-            <div className="flex">
+            <header className="flex">
                 <img 
                 className="w-[396px] h-[134px]"
-                src="./images/logo.svg" alt="logo" />
+                src={logo} alt="logo" />
                 <div className="flex flex-grow justify-center mt-14">
                     <div className="flex flex-col gap-7 w-[800px] translate-x-[calc(-396px/2)]">
                         <p className="text-3xl">This information is intended for international audiences.</p>
@@ -18,12 +26,12 @@ export default () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-col flex-grow justify-center items-center gap-24">
+            </header>
+            <section className="flex flex-col flex-grow justify-center items-center gap-24">
                 <p className="text-7xl w-[800px]">Is the answer to anaemia of CKD in his blood?</p>
-                <ButtonStart/>
-            </div>
-            <div className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+                <ButtonStart onClick={() => navigate("/1")}/>
+            </section>
+            <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p className="w-[1153px]">
                     This information is intended for international Healthcare Professionals and was created by Astellas Pharma Inc.
                     This medication is subject to additional monitoring.
@@ -41,7 +49,7 @@ export default () => {
                     All trademarks are the property of their respective owners.
                     </p>
                 </div>
-            </div>
-        </section>
+            </footer>
+        </motion.article>
     )
 }
