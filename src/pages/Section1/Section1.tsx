@@ -1,16 +1,18 @@
 import { useNavigate } from "react-router-dom"
 import bg from "../../images/section1-bg.png"
 import { motion } from "framer-motion"
-import Slide from "../../variants/Slide"
 import logo2 from "../../images/Logo2.svg"
 import Navbar from "../../components/Navbar/Navbar"
+import { useContext } from "react"
+import SlideContext from "../../contexts/SlideContext"
 
 export default () => {
     const navigate = useNavigate();
+    const [slideDirection] = useContext(SlideContext);
 
     return (
         <motion.article 
-        variants={Slide} exit="exit" animate="animate" initial="initial"
+        variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(${bg})`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-12 text-center">
             <header className="flex justify-end">
@@ -40,7 +42,7 @@ export default () => {
                 EVRENZO™ is only available by prescription.
                 Prescribing information may vary. Please refer to your local prescribing information.
                 </p>
-                <Navbar/>
+                <Navbar next="2"/>
             </footer>
         </motion.article>
     )

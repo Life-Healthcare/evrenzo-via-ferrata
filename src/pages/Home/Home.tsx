@@ -3,14 +3,16 @@ import ButtonStart from "../../components/ButtonStart"
 import logo from "../../images/logo.svg"
 import homeBg from "../../images/section1-ss.png"
 import { motion } from "framer-motion"
-import Slide from "../../variants/Slide"
+import { useContext } from "react"
+import SlideContext from "../../contexts/SlideContext"
 
 export default () => {
     const navigate = useNavigate();
+    const [slideDirection] = useContext(SlideContext);
 
     return (
         <motion.article 
-        variants={Slide} exit="exit" animate="animate"
+        variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(${homeBg})`}}
         className="bottom-mask absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
             <header className="flex">
