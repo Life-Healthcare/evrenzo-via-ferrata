@@ -14,8 +14,7 @@ export default () => {
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home/>}/>
-          <Route path="/1" element={<Section1/>}/>
-          <Route path="/2" element={<Home/>}/>
+          <Route path="/:section/:page" element={<Section1/>}/>
         </Routes>
       </AnimatePresence>
     </SlideContext.Provider>
