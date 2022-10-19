@@ -19,7 +19,7 @@ export default ({next}: NavbarProps) => {
                     navigate(-1)
                 }, 100);
             }}>
-                <img src="/images/navbar-left.svg" alt="left" />
+                <img src="./images/navbar-left.svg" alt="left" />
             </ButtonNavbar>
             <ButtonNavbar onClick={() => {
                 setSlideDirection(right)
@@ -27,10 +27,10 @@ export default ({next}: NavbarProps) => {
                     navigate(`/${next}`)
                 }, 100);
             }}>
-                <img src="/images/navbar-right.svg" alt="right" />
+                <img src="./images/navbar-right.svg" alt="right" />
             </ButtonNavbar>
             <ButtonNavbar onClick={() => navigate("/")}>
-                <img src="/images/navbar-home.svg" alt="home" />
+                <img src="./images/navbar-home.svg" alt="home" />
             </ButtonNavbar>
         </nav>
     )

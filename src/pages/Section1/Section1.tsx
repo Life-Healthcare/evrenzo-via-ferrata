@@ -11,7 +11,7 @@ export default () => {
     return (
         <motion.article 
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
-        style={{ backgroundImage: `url(/images/section1-bg.png)`}}
+        style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-12 text-center">
             <header className="flex justify-end">
                 <div className="flex flex-col gap-5 justify-center mt-14 text-2xl w-96">
@@ -28,7 +28,7 @@ export default () => {
                 </p>
                 <img 
                 className="w-[375px] h-[122px]"
-                src="/images/Logo2.svg" alt="logo" />
+                src="./images/Logo2.svg" alt="logo" />
             </section>
             <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p className="w-[1153px]">
