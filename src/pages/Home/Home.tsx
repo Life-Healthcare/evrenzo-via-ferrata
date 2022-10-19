@@ -3,7 +3,7 @@ import ButtonStart from "../../components/ButtonStart"
 export default () => {
     return (
         <section 
-        style={{ backgroundImage: 'url(./images/section1-bg.png)'}}
+        style={{ backgroundImage: 'url(./images/home-bg.png)'}}
         className="bottom-mask relative flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
             <div className="flex">
                 <img 
