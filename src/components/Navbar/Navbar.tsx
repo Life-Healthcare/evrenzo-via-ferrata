@@ -1,7 +1,4 @@
 import ButtonNavbar from "./ButtonNavbar"
-import homeIcon from "../../images/navbar-home.svg"
-import leftIcon from "../../images/navbar-left.svg"
-import rightIcon from "../../images/navbar-right.svg"
 import { useNavigate } from "react-router-dom"
 import { useContext } from "react"
 import SlideContext, { left, right } from "../../contexts/SlideContext"
@@ -22,7 +19,7 @@ export default ({next}: NavbarProps) => {
                     navigate(-1)
                 }, 100);
             }}>
-                <img src={leftIcon} alt="left" />
+                <img src="/images/navbar-left.svg" alt="left" />
             </ButtonNavbar>
             <ButtonNavbar onClick={() => {
                 setSlideDirection(right)
@@ -30,10 +27,10 @@ export default ({next}: NavbarProps) => {
                     navigate(`/${next}`)
                 }, 100);
             }}>
-                <img src={rightIcon} alt="right" />
+                <img src="/images/navbar-right.svg" alt="right" />
             </ButtonNavbar>
             <ButtonNavbar onClick={() => navigate("/")}>
-                <img src={homeIcon} alt="home" />
+                <img src="/images/navbar-home.svg" alt="home" />
             </ButtonNavbar>
         </nav>
     )
