@@ -9,7 +9,8 @@ interface NavbarProps {
 }
 
 const sectionLength: Record<string, number> = {
-    1: 2
+    1: 3,
+    2: 3
 }
 
 export default () => {
@@ -17,15 +18,13 @@ export default () => {
     const navigate = useNavigate()
     const { section, page } = useParams();
 
+    const isFirstPage = page === "0"
+    const isLastPage = Number(page!) < sectionLength[section!];
+
     useEffect(() => {
-        if(page === "0") {
-            navigate("/")
-            if(Number(section) > 1) {
-                navigate(`/${Number(section) - 1}/1`)
-            } else {
-                navigate('/')
-            }
-        } else if (Number(page!) > sectionLength[section!]) {
+        if(isFirstPage) {
+            navigate(`/`)
+        } else if (!isLastPage) {
             navigate(`/${Number(section) + 1}/1`)
         }
     }, [page])
@@ -34,23 +33,28 @@ export default () => {
         <motion.nav
         exit={{ opacity: 0}}
         className="absolute bottom-0 right-20 flex gap-2 z-50">
-            <ButtonNavbar onClick={() => {
+            {!isFirstPage && <ButtonNavbar onClick={() => {
                 setSlideDirection(left)
                 setTimeout(() => {
                     navigate(`/${section}/${Number(page!) - 1}`)
                 }, 100);
             }}>
                 <img src="./images/navbar-left.svg" alt="left" />
-            </ButtonNavbar>
-            <ButtonNavbar onClick={() => {
+            </ButtonNavbar>}
+            {isLastPage && <ButtonNavbar onClick={() => {
                 setSlideDirection(right)
                 setTimeout(() => {
                     navigate(`/${section}/${Number(page!) + 1}`)
                 }, 100);
             }}>
                 <img src="./images/navbar-right.svg" alt="right" />
-            </ButtonNavbar>
-            <ButtonNavbar onClick={() => navigate("/")}>
+            </ButtonNavbar>}
+            <ButtonNavbar onClick={() => {
+                setSlideDirection(left)
+                setTimeout(() => {
+                    navigate(`/${section}/1`)
+                }, 100);
+            }}>
                 <img src="./images/navbar-home.svg" alt="home" />
             </ButtonNavbar>
         </motion.nav>

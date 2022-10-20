@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion"
 import { useContext } from "react"
-import SlideContext from "../../contexts/SlideContext"
+import SlideContext from "../../../contexts/SlideContext"
 
 export default () => {
     const [slideDirection] = useContext(SlideContext);
