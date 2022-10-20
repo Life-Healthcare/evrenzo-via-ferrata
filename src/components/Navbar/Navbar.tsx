@@ -9,8 +9,8 @@ interface NavbarProps {
 }
 
 const sectionLength: Record<string, number> = {
-    1: 3,
-    2: 4
+    1: 4,
+    2: 5
 }
 
 export default () => {
