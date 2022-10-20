@@ -10,9 +10,9 @@ interface NavbarProps {
 
 const sectionLength: Record<string, number> = {
     1: 4,
-    2: 5,
-    3: 4,
-    4: 5
+    2: 4,
+    3: 3,
+    4: 4
 }
 
 export default () => {
@@ -21,15 +21,7 @@ export default () => {
     const { section, page } = useParams();
 
     const isFirstPage = page === "0"
-    const isLastPage = (Number(page!) < sectionLength[section!]);
-
-    useEffect(() => {
-        if(isFirstPage) {
-            navigate(`/`)
-        } else if (!isLastPage) {
-            navigate(`/${Number(section) + 1}/1`)
-        }
-    }, [page])
+    const isLastPage = (Number(page!) === sectionLength[section!]);
 
     return (
         <motion.nav
@@ -43,7 +35,7 @@ export default () => {
             }}>
                 <img src="./images/navbar-left.svg" alt="left" />
             </ButtonNavbar>}
-            {isLastPage && !((section === "4" && page === "4")) && <ButtonNavbar onClick={() => {
+            {!isLastPage && <ButtonNavbar onClick={() => {
                 setSlideDirection(right)
                 setTimeout(() => {
                     navigate(`/${section}/${Number(page!) + 1}`)
