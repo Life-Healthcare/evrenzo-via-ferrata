@@ -39,24 +39,24 @@ export default () => {
                                 <Box className="before:bg-green-700" title="EPO Gene" line="bottom">
                                     Professor Gregg Semenza found that specific DNA segments located next to the EPO gene mediated the response to hypoxia.1
                                 </Box>
-                                <Box className=" before:bg-[#ad1aac]" title="O2 sensing mechanism">
+                                <Box className=" before:bg-[#ad1aac]" title="O2 sensing mechanism" line="bottom">
                                     Professor Semenza’s group discovered how the EPO gene is regulated by varying O2 levels, and Sir Peter Ratcliffe’s group found that this mechanism is functional in many different cell types (not only in the kidney).1
                                 </Box>
                                 <div className="flex flex-col items-center justify-center gap-10">
                                     <img src="./images/prompt-tap.svg" alt="tap" />
                                     <p>Tap to select</p>
                                 </div>
-                                <Box className="before:bg-green-500" title="HIF">
+                                <Box className="before:bg-green-500" title="HIF" line="right">
                                     Professor Semenza discovered a protein complex that binds to the DNA segment in an oxygen-dependent manner. This complex, which he called the hypoxia-inducible factor (HIF), consisted of two transcription factors: HIF-1α and HIF-1ß.1
                                 </Box>
-                                <Box className="before:bg-purple-900" title="VHL and HIF-1a">
+                                <Box className="before:bg-purple-900" title="VHL and HIF-1a" line="bottom-right">
                                     Professor Ratcliffe’s group demonstrated that VHL interacts with HIF-1α and is required for its degradation, so linking VHL to HIF-1α.1
                                 </Box>
-                                <Box className="before:bg-[#4ec3e0]" title="VHL">
+                                <Box className="before:bg-[#4ec3e0]" title="VHL" line="bottom">
                                     Cancer researcher Professor William Kaelin showed that a gene associated with von Hippel-Lindau’s (VHL) disease was also involved in controlling responses to hypoxia.1
                                 </Box>
                                 <div></div>
-                                <Box className="before:bg-green-900" title="HIF-PHIs identified">
+                                <Box className="before:bg-green-900" title="HIF-PHIs identified" line="right">
                                     Professor Radcliffe identified  prolyl hydroxylase and also showed that the gene activating function of HIF-1α was regulated by oxygen-dependent hydroxylation.1
                                 </Box>
                                 <Box className="before:bg-[#005893]" title="HIF-PH">

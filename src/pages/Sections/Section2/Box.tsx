@@ -6,7 +6,7 @@ interface BoxProps {
     title: string,
     children?: React.ReactNode,
     className?: string,
-    line?: 'left' | 'right' | 'bottom-left' | 'bottom-right' | 'top' | 'bottom' | 'top-right' | 'top-left'
+    line?: 'bottom' | 'right' | 'bottom-right'
 }
 
 export default ({children, className, title, line}: BoxProps) => {
@@ -43,8 +43,10 @@ export default ({children, className, title, line}: BoxProps) => {
                     initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                     className="w-full h-full flex items-center justify-center z-10 relative">
                         <h3 className="text-white text-3xl w-40 text-center">{title}</h3>
-                        {line === "bottom" && <div className="absolute bg-black z-10 -bottom-20 left-2/4 -translate-x-2/4 h-20 w-1"></div>}
                     </motion.div>
+                    {line === "bottom" && <Line className="-bottom-20 left-2/4 -translate-x-2/4 h-20 w-1"/>}
+                    {line === "right" && <Line className="-right-20 top-2/4 -translate-y-2/4 h-1 w-20"/>}
+                    {line === "bottom-right" && <Line className="-bottom-[4.9rem] right-0 -translate-x-2/4 h-40 w-1 -rotate-45 z-0"/>}
                 </>}
                 {show && <>
                     <button 
@@ -64,5 +66,22 @@ export default ({children, className, title, line}: BoxProps) => {
             {show && <div></div>}
 
         </>
+    )
+}
+
+
+const Line = ({className}: {className: string} ) => {
+    return (
+        <motion.div 
+            initial={{
+                opacity: 0
+            }}
+            animate={{
+                opacity: 1,
+                transition: {
+                    delay: 0.3
+                }
+            }} 
+            className={`absolute bg-black z-10 ${className}`}/>
     )
 }
