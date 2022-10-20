@@ -21,7 +21,7 @@ export default () => {
     const { section, page } = useParams();
 
     const isFirstPage = page === "0"
-    const isLastPage = Number(page!) < sectionLength[section!];
+    const isLastPage = (Number(page!) < sectionLength[section!]);
 
     useEffect(() => {
         if(isFirstPage) {
@@ -43,7 +43,7 @@ export default () => {
             }}>
                 <img src="./images/navbar-left.svg" alt="left" />
             </ButtonNavbar>}
-            {isLastPage && <ButtonNavbar onClick={() => {
+            {isLastPage && !((section === "4" && page === "4")) && <ButtonNavbar onClick={() => {
                 setSlideDirection(right)
                 setTimeout(() => {
                     navigate(`/${section}/${Number(page!) + 1}`)
