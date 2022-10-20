@@ -27,7 +27,7 @@ h1 {
 }
 
 .section4-2-img:before {
-  background: url("./images/section4-2-img3.png")
+  background: url("./images/section4-2-img3.png");
 }
 
 @layer utilities {
