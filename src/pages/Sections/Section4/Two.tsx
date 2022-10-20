@@ -82,7 +82,9 @@ export default () => {
                         <Box 
                         className="bg-[#ad1aac]"
                         title="Proud to be first"
-                        image="before:bg-[url(./images/section4-2-img3.png)]">
+                        style={{
+                            background: 'url(./images/section4-2-img3.png)'
+                        }}>
                             <div className="flex justify-between">
                                 <p className="text-5xl mb-20">Proud to be first</p>
                                 <img className="w-[300px] -translate-y-7" src="./images/Logo2.svg" alt="logo" />
