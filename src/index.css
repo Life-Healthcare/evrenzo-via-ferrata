@@ -26,6 +26,10 @@ h1 {
   filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(6307%) hue-rotate(156deg) brightness(95%) contrast(101%);
 }
 
+.section4-2-img:before {
+  background: url(./images/section4-2-img3.png)
+}
+
 @layer utilities {
   .bottom-mask::before {
     content: '';

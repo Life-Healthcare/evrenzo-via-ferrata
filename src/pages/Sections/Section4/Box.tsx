@@ -1,15 +1,15 @@
 import { useContext } from "react"
 import { currentBoxContext } from "./Two"
-import { motion, MotionStyle } from "framer-motion"
+import { motion } from "framer-motion"
 
 interface BoxProps {
     title: string,
     children?: React.ReactNode,
     className?: string,
-    style?: MotionStyle | undefined
+    image?: boolean
 }
 
-export default ({children, className, title, style}: BoxProps) => {
+export default ({children, className, title, image}: BoxProps) => {
     const [currentBox, setCurrentBox] = useContext(currentBoxContext);
     const show = title === currentBox;
 
@@ -27,15 +27,14 @@ export default ({children, className, title, style}: BoxProps) => {
             {show && <motion.div 
             initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
             transition={{duration: 0.3}}
-            style={style}
-            className={`flex flex-col p-32 gap-5 text-black ${!style && 'before:bg-white'} absolute z-50 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[1418px] h-[1180px] border-bottom-right-cut-sm`}>
+            className={`flex flex-col p-32 gap-5 text-black ${image ? 'section4-2-img' : 'before:bg-white'} absolute z-50 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-[1418px] h-[1180px] border-bottom-right-cut-sm`}>
                 <div className="relative w-full h-full z-50">
                     {children}
                 </div>
                 <button 
                     onClick={(e) => {e.stopPropagation(); setCurrentBox(null)}}
                     className="absolute top-10 right-10 z-20">
-                    <img className={style ? 'brightness-0' : 'filter-green'} src="./images/close.svg" alt="close" />
+                    <img className={image ? 'brightness-0' : 'filter-green'} src="./images/close.svg" alt="close" />
                 </button>
             </motion.div>}
         </>
