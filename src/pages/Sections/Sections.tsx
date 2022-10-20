@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import Section1 from "./Section1/Section1"
 import Section2 from "./Section2/Section2"
 import Section3 from "./Section3/Section3"
+import Section4 from "./Section4/Section4"
 
 export default () => {
     const { section } = useParams()
@@ -11,6 +12,7 @@ export default () => {
             {section === "1" && <Section1/>}
             {section === "2" && <Section2/>}
             {section === "3" && <Section3/>}
+            {section === "4" && <Section4/>}
         </>
     )
 }

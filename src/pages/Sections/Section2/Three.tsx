@@ -66,14 +66,15 @@ export default () => {
                         </AnimateSharedLayout>
                         <AnimatePresence>
                             {currentBox && <motion.div 
+                            onClick={() => setCurrentBox(null)}
                             initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                             transition={{duration: 0.3}}
-                            className="w-screen h-screen absolute top-0 left-0 pointer-events-none bg-black/50"></motion.div>}
+                            className="w-screen h-screen absolute top-0 left-0 bg-black/50"></motion.div>}
                         </AnimatePresence>
                     </div>
                 </div>
             </section>
-            <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+            <footer className="flex flex-grow flex-col pointer-events-none justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p className="w-[787px]">
                     EPO, erythropoietin; HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase; HIF-PHI, hypoxia-inducible factor prolyl hydroxylase inhibitor; VHL, von Hippel-Lindau.
                 </p>

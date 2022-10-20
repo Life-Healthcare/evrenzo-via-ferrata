@@ -18,6 +18,14 @@
   font-family: TradeGothic;
 }
 
+h1 {
+  @apply font-bold;
+}
+
+.filter-green {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(90%) saturate(6307%) hue-rotate(156deg) brightness(95%) contrast(101%);
+}
+
 @layer utilities {
   .bottom-mask::before {
     content: '';
@@ -26,6 +34,13 @@
 
   .border-bottom-right-cut:before {
     clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 84% 100%, 0% 100%);
+    content: '';
+    z-index: 1;
+    @apply w-full h-full absolute top-0 left-0;
+  }
+
+  .border-bottom-right-cut-sm:before {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 93% 100%, 0% 100%);
     content: '';
     z-index: 1;
     @apply w-full h-full absolute top-0 left-0;
