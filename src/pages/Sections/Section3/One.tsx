@@ -29,7 +29,7 @@ export default () => {
             </header>
             <section className="flex flex-col flex-grow justify-center items-center gap-24">
                 <h1 className="text-7xl w-[800px] text-gray-700">HIF opens the way to new treatment options</h1>
-                <ButtonStart className="text-gray-700" onClick={() => navigate("/2/2")}/>
+                <ButtonStart className="text-gray-700" onClick={() => navigate("/3/2")}/>
             </section>
             <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p className="w-[1153px]">
