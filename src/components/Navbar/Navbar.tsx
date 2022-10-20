@@ -10,7 +10,7 @@ interface NavbarProps {
 
 const sectionLength: Record<string, number> = {
     1: 3,
-    2: 3
+    2: 4
 }
 
 export default () => {
