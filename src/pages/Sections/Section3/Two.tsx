@@ -35,7 +35,7 @@ export default () => {
                 <div className="flex flex-col gap-5">
                     <p>Hypoxia</p>
                     <p>In hypoxic conditions, the HIF pathway is activated: the HIF-1α subunit is not degraded, allowing dimerisation with the HIF-1ß subunit and so inducing the transcription and translation of target hypoxia response genes involved in erythropoiesis, including:3–6</p>
-                    <img src="./images/section3-2-img2.png" alt="image" />
+                    <img src="./images/section3-2-img2.svg" alt="image" />
                     <p>In CKD, oxygen sensing via HIF is impaired, and this contributes to the development of anaemia.7</p>
                     <p>CKD, chronic kidney disease; EPO, erythropoietin; 
 HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
