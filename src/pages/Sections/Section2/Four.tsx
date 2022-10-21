@@ -39,7 +39,7 @@ HIF pathway.1 </p>
                     <div className="w-full flex justify-end translate-y-14">
                         <p className="w-[400px] text-3xl">Oxygen sensing is central to a large number of diseases1</p>
                     </div>
-                    <div className="flex flex-col absolute -translate-y-2/4 top-2/4 right-0 gap-5">
+                    <div className="flex flex-col absolute -translate-y-2/4 top-2/4 right-0 gap-5 z-10">
                         {['Anaemia', 'Cancer', 'Stroke', 'Infection', 'Wound Healing', 'Myocardial Infarction'].map((text, i) => {
                             const labelColour = i === 0 ? 'bg-primary' : 'bg-[#4a4a4a]'
                             return (
@@ -51,7 +51,7 @@ HIF pathway.1 </p>
                             )
                         })}
                     </div>
-                    <img src="./images/section2-4-image.png" alt="" />
+                    <img className="mix-blend-multiply relative z-0" src="./images/section2-4-img.png" alt="body"/>
                     <p className="text-2xl">CKD, chronic kidney disease; EPO, erythropoietin; HIF, hypoxia-inducible factor.</p>
                 </div>
             </section>
