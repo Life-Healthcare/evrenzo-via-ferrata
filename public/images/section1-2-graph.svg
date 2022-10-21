@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="887.535" height="592.629" viewBox="0 0 887.535 592.629">
+  <g id="Group_13722" data-name="Group 13722" transform="translate(-43.074 -154.128)">
+    <text id="_50" data-name="50" transform="translate(133.386 171.128)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-24.471" y="0">50</tspan></text>
+    <text id="_40" data-name="40" transform="translate(133.386 268.252)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-24.471" y="0">40</tspan></text>
+    <text id="_30" data-name="30" transform="translate(133.386 370.773)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-24.471" y="0">30</tspan></text>
+    <text id="_20" data-name="20" transform="translate(133.386 467.896)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-24.471" y="0">20</tspan></text>
+    <text id="_10" data-name="10" transform="translate(133.386 567.718)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-24.471" y="0">10</tspan></text>
+    <text id="_0" data-name="0" transform="translate(134.141 666.372)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-12.235" y="0">0</tspan></text>
+    <text id="_0-2" data-name="0" transform="translate(150.682 694.222)" fill="#4d4c4e" font-size="20" font-family="Helvetica"><tspan x="-5.562" y="0">0</tspan></text>
+    <text id="_200" data-name="200" transform="translate(275.03 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-18.353" y="0">200</tspan></text>
+    <text id="_400" data-name="400" transform="translate(404.529 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-18.353" y="0">400</tspan></text>
+    <text id="_600" data-name="600" transform="translate(531.331 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-18.353" y="0">600</tspan></text>
+    <text id="_800" data-name="800" transform="translate(652.736 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-18.353" y="0">800</tspan></text>
+    <text id="_1_000" data-name="1,000" transform="translate(783.901 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-27.527" y="0">1,000</tspan></text>
+    <text id="_1013.2_mb" data-name="1013.2 mb" transform="translate(802.139 584.607)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-51.981" y="0">1013.2 mb</tspan></text>
+    <text id="Stratosphere" transform="translate(529.62 201.506)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-62.981" y="0">Stratosphere</tspan></text>
+    <text id="Troposphere" transform="translate(529.344 581.909)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-61.966" y="0">Troposphere</tspan></text>
+    <text id="_1_200" data-name="1,200" transform="translate(902.609 695.222)" fill="#4d4c4e" font-size="22" font-family="Helvetica"><tspan x="-27.527" y="0">1,200</tspan></text>
+    <text id="Altitude_km_" data-name="Altitude (km)" transform="translate(65.074 404.979) rotate(-90)" fill="#4d4c4e" font-size="28" font-family="Helvetica"><tspan x="-78.572" y="0">Altitude (km)</tspan></text>
+    <text id="Pressure_mb_" data-name="Pressure (mb)" transform="translate(520.015 740.758)" fill="#4d4c4e" font-size="28" font-family="Helvetica"><tspan x="-88.683" y="0">Pressure (mb)</tspan></text>
+    <line id="Line_117" data-name="Line 117" x1="758.151" transform="translate(151.236 660.226)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="2.898"/>
+    <line id="Line_118" data-name="Line 118" y1="497.892" transform="translate(152.498 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="2.898"/>
+    <line id="Line_119" data-name="Line 119" y2="505.036" transform="translate(278.08 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_120" data-name="Line 120" x1="776.994" transform="translate(140.487 165.112)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_121" data-name="Line 121" x1="776.994" transform="translate(140.487 264.035)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_122" data-name="Line 122" x1="776.994" transform="translate(140.487 362.957)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_123" data-name="Line 123" x1="776.994" transform="translate(140.487 461.88)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_124" data-name="Line 124" x1="776.994" transform="translate(140.487 560.803)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_125" data-name="Line 125" x1="776.994" transform="translate(140.487 536.522)" fill="none" stroke="#676767" stroke-miterlimit="18" stroke-width="0.435" stroke-dasharray="4.348"/>
+    <line id="Line_126" data-name="Line 126" y2="505.036" transform="translate(405.218 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_127" data-name="Line 127" y2="505.036" transform="translate(532.356 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_128" data-name="Line 128" y2="505.036" transform="translate(659.495 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <line id="Line_129" data-name="Line 129" y2="505.036" transform="translate(786.633 162.334)" fill="none" stroke="#676767" stroke-miterlimit="10" stroke-width="0.435"/>
+    <path id="Path_74661" data-name="Path 74661" d="M101.972,161.028s-.579,204.491,26.4,269.24c22.781,54.674,56.655,107.915,180.759,140.291,0,0,208.391,49.294,270.117,58.37l176.389,23.516" transform="translate(49.886 5.083)" fill="none" stroke="#014b29" stroke-miterlimit="10" stroke-width="5.797"/>
+    <line id="Line_130" data-name="Line 130" y2="48.562" transform="translate(806.867 591.829)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2.898"/>
+    <path id="Path_74662" data-name="Path 74662" d="M446.573,407.1H473.21l-13.319,29.93Z" transform="translate(346.805 217.105)"/>
+  </g>
+</svg>

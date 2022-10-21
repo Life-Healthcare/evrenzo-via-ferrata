@@ -36,7 +36,7 @@ export default ({children, className, title, line}: BoxProps) => {
             transition={{
                 duration: .3
             }}
-            className={`${show ? 'absolute z-50 left-[35%] top-[20%]' : 'relative left-[unset] max-w-[277px] max-h-[277px]'} text-white border-bottom-right-cut aspect-square ${className || 'after:bg-white'}`}>
+            className={`${show ? 'absolute z-50 left-[32%] top-[20%]' : 'relative left-[unset] max-w-[277px] max-h-[277px]'} text-white border-bottom-right-cut aspect-square ${className || 'after:bg-white'}`}>
                 {!show && 
                 <>
                     <motion.div 

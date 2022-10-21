@@ -31,7 +31,7 @@ export default () => {
                     <p className="text-center flex items-center justify-center mb-4">
                         <span className="w-[500px]">Change in average atmospheric pressure with altitude<SmallText>2</SmallText></span>
                     </p>
-                    <img src="./images/section1-2-graph.png" alt="graph" />
+                    <img src="./images/section1-2-graph.svg" alt="graph" />
                 </div>
                 <div className="flex flex-col gap-5">
                     <p>
