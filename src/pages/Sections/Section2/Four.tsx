@@ -26,7 +26,7 @@ export default () => {
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
                 <div className="flex flex-col gap-5">
                     <p>The discovery of HIF provided a central cellular pathway with far-ranging implications for human physiology, disease states, and medicine.<SmallText>1</SmallText></p>
-                    <p>Patients with chronic kidney disease (CKD) often suffer from anaemia due to:2–6 
+                    <p>Patients with chronic kidney disease (CKD) often suffer from anaemia due to:<SmallText>2-6</SmallText> 
 - Reduced oxygen sensing 
 - Reduced EPO production 
 - Chronic inflammation resulting in increased hepcidin levels 
