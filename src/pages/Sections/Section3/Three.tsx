@@ -10,7 +10,7 @@ export default () => {
     return (
         <motion.article 
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
-        style={{ backgroundImage: `url(./images/section4-bg.png)`}}
+        style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-0 text-center">
             <header className="flex justify-between mt-14 -mb-20">
                 <h1 className="text-5xl text-primary">
