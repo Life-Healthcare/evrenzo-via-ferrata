@@ -24,7 +24,7 @@ export default () => {
             <section className="grid grid-cols-2 text-[32px] text-start gap-10">
                 <div className="flex items-center justify-center col-span-2 gap-10">
                     <div className="flex flex-col">
-                        <span>When oxygen levels are low<SmallText>1</SmallText></span>
+                        <span className="font-bold2">When oxygen levels are low<SmallText>1</SmallText></span>
                         <img src="./images/section2-2-img.png" alt="image" />
                     </div>
                     <p className="text-2xl w-80">
@@ -41,7 +41,7 @@ export default () => {
                 </div>
             </section>
             <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
-                <div className="flex flex-col">
+                <div className="flex flex-col font-reg">
                     <p>1. Mandl M, Depping R. Mol Med. 2014;20(1):215–220.</p>
                     <p>2. The Nobel Prize. Available at: https://www.nobelprize.org/prizes/medicine/2019/summary/. Date accessed: October 2022.</p>
                 </div>

@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion"
 import { useContext } from "react"
+import DisclaimerTop from "../../../components/DisclaimerTop";
 import SmallText from "../../../components/SmallText";
 import SlideContext from "../../../contexts/SlideContext"
 
@@ -16,22 +17,16 @@ export default () => {
                 <h1 className="text-5xl text-primary">
                     Living at high altitude
                 </h1>
-                <div className="flex flex-col gap-5 justify-center text-2xl w-96">
-                    <p>This information is intended for international audiences.</p>
-                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
-                </div>
+                <DisclaimerTop/>
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-10">
                 <div className="">
                     High altitude is a challenging environment for most humans.<SmallText>1</SmallText> As elevation above sea level increases, the concentration of oxygen molecules decreases, causing hypoxia.
                     <SmallText>1</SmallText>
 
-                    How oxygen varies with weight<SmallText>2</SmallText>
+                    <p className="font-bold2 my-10">How oxygen varies with weight<SmallText>2</SmallText></p>
 
-                    <p className="text-center flex items-center justify-center mb-4">
-                        <span className="w-[500px]">Change in average atmospheric pressure with altitude<SmallText>2</SmallText></span>
-                    </p>
-                    <img src="./images/section1-2-graph.svg" alt="graph" />
+                    <img src="./images/section1-2-graph.png" alt="graph" />
                 </div>
                 <div className="flex flex-col gap-5">
                     <p>

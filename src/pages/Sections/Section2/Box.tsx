@@ -42,7 +42,7 @@ export default ({children, className, title, line}: BoxProps) => {
                     <motion.div 
                     initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                     className="w-full h-full flex items-center justify-center z-10 relative">
-                        <h3 className="text-white text-3xl w-40 text-center">{title}</h3>
+                        <h3 className="text-white text-3xl w-40 text-center font-bold-ext">{title}</h3>
                     </motion.div>
                     {line === "bottom" && <Line className="-bottom-20 left-2/4 -translate-x-2/4 h-20 w-1"/>}
                     {line === "right" && <Line className="-right-20 top-2/4 -translate-y-2/4 h-1 w-20"/>}
@@ -55,7 +55,7 @@ export default ({children, className, title, line}: BoxProps) => {
                         <img src="./images/close.svg" alt="close" />
                     </button>
                     <div className="w-full h-full flex flex-col gap-5 items-center justify-center z-10 relative">
-                        <motion.h3 initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="text-5xl">{title}</motion.h3>
+                        <motion.h3 initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="text-5xl font-bold-ext">{title}</motion.h3>
                         <motion.p initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                         className="max-w-[523px] text-center z-10 relative">
                             {children}

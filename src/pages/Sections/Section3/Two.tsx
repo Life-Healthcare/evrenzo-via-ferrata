@@ -22,26 +22,26 @@ export default () => {
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
                 <div className="flex flex-col gap-5">
-                    <p>The HIF (hypoxia-inducible factor) pathway plays a central role in erythropoiesis1,2</p>
-                    <p>HIF-PH inhibition:</p>
+                    <p className="font-bold2">The HIF (hypoxia-inducible factor) pathway plays a central role in erythropoiesis<SmallText>1,2</SmallText></p>
+                    <p className="font-bold2">HIF-PH inhibition:</p>
                     <ul>
-                        <li>•	Increases erythropoietin (EPO) production</li>
-                        <li>•	Suppresses hepcidin production</li>
-                        <li>•	Increases iron absorption, transport and mobilisation</li>
+                        <li><span className="text-primary">•</span>	Increases erythropoietin (EPO) production</li>
+                        <li><span className="text-primary">•</span>	Suppresses hepcidin production</li>
+                        <li><span className="text-primary">•</span>	Increases iron absorption, transport and mobilisation</li>
                     </ul>
-                    <p>In normoxic conditions, the HIF pathway is not activated and the HIF-1α subunit is rapidly degraded via HIF prolyl-hydroxylase (HIF-PH):3</p>
+                    <p>In normoxic conditions, the HIF pathway is not activated and the HIF-1α subunit is rapidly degraded via HIF prolyl-hydroxylase (HIF-PH):<SmallText>3</SmallText></p>
                     <img src="./images/section3-2-img.png" alt="image" />
                 </div>
                 <div className="flex flex-col gap-5">
-                    <p>Hypoxia</p>
-                    <p>In hypoxic conditions, the HIF pathway is activated: the HIF-1α subunit is not degraded, allowing dimerisation with the HIF-1ß subunit and so inducing the transcription and translation of target hypoxia response genes involved in erythropoiesis, including:3–6</p>
-                    <img src="./images/section3-2-img2.svg" alt="image" />
-                    <p>In CKD, oxygen sensing via HIF is impaired, and this contributes to the development of anaemia.7</p>
-                    <p>CKD, chronic kidney disease; EPO, erythropoietin; 
+                    <p className="font-bold2">Hypoxia</p>
+                    <p>In hypoxic conditions, the HIF pathway is activated: the HIF-1α subunit is not degraded, allowing dimerisation with the HIF-1ß subunit and so inducing the transcription and translation of target hypoxia response genes involved in erythropoiesis, including:<SmallText>3-6</SmallText></p>
+                    <img src="./images/section3-2-img2.png" alt="image" />
+                    <p className="mt-20">In CKD, oxygen sensing via HIF is impaired, and this contributes to the development of anaemia.<SmallText>7</SmallText></p>
+                    <p className="text-2xl w-[570px]">CKD, chronic kidney disease; EPO, erythropoietin; 
 HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
                 </div>
             </section>
-            <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+            <footer className="flex flex-grow flex-col font-reg justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <ul>
                     <li>1. Locatelli F et al. Am J Nephrol. 2017;45(3):187–199.</li>
                     <li>2. Koury MJ, Haase VH. Nat Rev Nephrol. 2015;11(7):394–410.</li>

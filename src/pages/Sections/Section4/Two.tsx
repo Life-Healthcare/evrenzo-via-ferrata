@@ -26,7 +26,7 @@ export default () => {
             </header>
             <section className="flex flex-col text-[32px] text-start gap-20">
                 <div className="flex flex-col gap-5">
-                    <p>EVRENZO is the first HIF-PH inhibitor in the world to gain Marketing Authorisation.1 It has been licensed in China and Japan since December 2018 and September 2019, respectively,2,3 and has now gained marketing authorisation in the EU and the UK.4,5</p>
+                    <p>EVRENZO is the first HIF-PH inhibitor in the world to gain Marketing Authorisation.<SmallText>1</SmallText> It has been licensed in China and Japan since December 2018 and September 2019, respectively,<SmallText>2,3</SmallText> and has now gained marketing authorisation in the EU and the UK.<SmallText>4,5</SmallText></p>
                 </div>
                 <div className="grid grid-cols-2 w-11/12 gap-12">
                     <currentBoxContext.Provider value={[currentBox, setCurrentBox]}>
@@ -115,7 +115,7 @@ export default () => {
                     </AnimatePresence>
                 </div>
             </section>
-            <footer className="flex flex-grow flex-col pointer-events-none justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+            <footer className="flex flex-grow flex-col font-reg pointer-events-none justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p>
                 EPO, erythropoietin; ESA, erythropoiesis-stimulating agent; HIF, hypoxia-inducible factor.
                 </p>

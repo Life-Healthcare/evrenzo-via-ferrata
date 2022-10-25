@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion"
 import { useContext } from "react"
+import QRInfo from "../../../components/QRInfo";
 import SmallText from "../../../components/SmallText";
 import SlideContext from "../../../contexts/SlideContext"
 
@@ -25,19 +26,19 @@ export default () => {
                 <div className="flex flex-col gap-5">
                     <p>Sherpa people, who live in the mountainous regions of Nepal and Tibet, are physiologically well suited to high altitudes.<SmallText>1</SmallText></p>
                     <p>They were valued as mountain guides by early explorers to the Himalayas, and are now globally renowned as elite mountaineers. In 2019 the Nepali mountaineer Nimsdai (Nims) Purja achieved the seemingly impossible challenge of summiting all 14 of the world’s 8,000 m peaks inside seven months - a feat commemorated in the movie ‘14 Peaks’.<SmallText>6</SmallText></p>
-                    <p>What equips some individuals to perform so well at these heights? </p>
+                    <p className="font-bold2 w-11/12">What equips some individuals to perform so well at these heights? </p>
                     <p>In addition to their physical toughness and experience, it has been speculated that Sherpas benefit from a unique haemoglobin-binding capacity. Is the reason they can climb mountains without bottled oxygen that they carry extra oxygen in their blood?</p>
                 </div>
                 <div className="flex flex-col gap-5">
-                    <p>The genetic link</p>
+                    <p className="font-bold2">The genetic link</p>
                     <p>Genome sequencing of Tibetans identified more than 30 genetic factors that adapt them for high altitude, including a mutation near a gene called EPAS1, which regulates production of haemoglobin and codes for a protein involved in sensing oxygen levels.<SmallText>7</SmallText></p>
                     <p>Comparison of Tibetans and Han Chinese has highlighted a number of genes that are targets of selection in hypoxic environments, including 3 key genes (EPAS1, EGLN1 and PPARA) that are part of a mechanism called the
     HIF pathway.<SmallText>1</SmallText></p>
-                    <p>To find out why the HIF pathway has excited interest among clinicians, take the next step on the EVRENZO Via Ferrata. </p>
+                    <p className="font-bold2 italic w-[648px]">To find out why the HIF pathway has excited interest among clinicians, take the next step on the EVRENZO Via Ferrata. </p>
                 </div>
             </section>
             <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
-                <div>
+                <div className="font-reg">
                     <p>HIF, hypoxia-inducible factor.</p>
                     <p>1. Witt KE, Huerta-Sanchez E. Philos Trans R Soc Lond B Biol Sci. 2019;374(1777):20180235.</p>
                     <p>2. PhysicalGeography.net. Available at: http://www.physicalgeography.net/fundamentals/7d.html. Date accessed: October 2022.</p>
@@ -47,21 +48,7 @@ export default () => {
                     <p>6. Nimsdai. Available at: https://www.nimsdai.com/14-peaks-film. Date accessed: October 2022.</p>
                     <p>7. Yi X et al. Science. 2010;329(5987):75–78.</p>
                 </div>
-                <div className="flex flex-col gap-3">
-                    <p>EVRENZO™ is only available by prescription.</p>
-                    <div className="grid grid-cols-2 gap-10 text-2xl w-[1257px]">
-                        <div className="flex">
-                            <p>Astellas Pharma B.V., Sylviusweg 62, 2333 BE Leiden. For full prescribing information see, please scan the QR code or click here
-For adverse events reporting, please contact Pharmacovigilance.EST-C@astellas.com</p>
-                            <img className="w-28 aspect-square" src="./images/section1-3-qr1.svg" alt="qr1" />
-                        </div>
-                        <div className="flex">
-                            <p>For more information, please consult the complete product information for EVRENZO (EMA). To access it, please scan the QR code or click here</p>
-                            <img className="w-28 aspect-square" src="./images/section1-3-qr2.svg" alt="qr2" />
-                        </div>
-                    </div>
-                    <p>Prescribing information may vary. Please refer to your local prescribing information.</p>
-                </div>
+                <QRInfo/>
             </footer>
         </motion.article>
     )

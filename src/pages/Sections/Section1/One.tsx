@@ -3,6 +3,9 @@ import ButtonStart from "../../../components/ButtonStart"
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import SlideContext from "../../../contexts/SlideContext"
+import Triangle from "../../../components/Triangle"
+import DisclaimerBottom from "../../../components/DisclaimerBottom"
+import ScreensaverFooter from "../../../components/ScreensaverFooter"
 
 export default () => {
     const navigate = useNavigate();
@@ -28,28 +31,10 @@ export default () => {
                 </div>
             </header>
             <section className="flex flex-col flex-grow justify-center items-center gap-24">
-                <h1 className="text-7xl w-[800px]">Is the answer to anaemia of CKD in his blood?</h1>
+                <h1 className="text-7xl w-[1000px]">Is the answer to anaemia of CKD in his blood?</h1>
                 <ButtonStart onClick={() => navigate("/1/2")}/>
             </section>
-            <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
-                <p className="w-[1153px]">
-                    This information is intended for international Healthcare Professionals and was created by Astellas Pharma Inc.
-                    This medication is subject to additional monitoring.
-                    EVRENZO™ is only available by prescription.
-                    Prescribing information may vary. Please refer to your local prescribing information.
-                </p>
-                <div className="flex justify-between">
-                    <p>
-                        MAT-NL-EVZ-2022-00020
-                        Date of preparation: October 2022
-                        Date of expiry: October 2022
-                    </p>
-                    <p className="w-[625px]">
-                    © October 2022 Astellas Pharma Inc. or its affiliates.
-                    All trademarks are the property of their respective owners.
-                    </p>
-                </div>
-            </footer>
+            <ScreensaverFooter/>
         </motion.article>
     )
 }

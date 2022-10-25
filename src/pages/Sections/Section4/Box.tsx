@@ -15,7 +15,7 @@ export default ({children, className, title, image}: BoxProps) => {
 
     return (
         <>
-            <div onClick={() => setCurrentBox(title)} className={`flex items-center relative w-[854px] h-[156px] px-20 text-white`}>
+            <div onClick={() => setCurrentBox(title)} className={`flex font-bold-ext items-center relative w-[854px] h-[156px] px-14 text-white`}>
                 <div className={`-skew-x-[20deg] w-full h-full absolute top-0 left-0 ${className}`}></div>
                 <div className="flex gap-20 items-center relative z-10">
                     <img src="./images/prompt-tap.svg" className="brightness-[1000]" alt="tap" />
