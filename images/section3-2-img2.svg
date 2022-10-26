@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="921.44" height="183" viewBox="0 0 921.44 183">
+  <g id="Group_13723" data-name="Group 13723" transform="translate(-1052 -737)">
+    <g id="Group_13675" data-name="Group 13675" transform="translate(1052 737)">
+      <rect id="Rectangle_17563" data-name="Rectangle 17563" width="280.167" height="183" transform="translate(0 0)" fill="#40146e"/>
+      <text id="Erythropoietin" transform="translate(134.487 97)" fill="#fff" font-size="24" font-family="Helvetica"><tspan x="-74.039" y="0">Erythropoietin</tspan></text>
+    </g>
+    <path id="plus" d="M7.831,0V7.831H0v6.188H7.831V21.85h6.188V14.019H21.85V7.831H14.019V0Z" transform="translate(1341.646 817.575)"/>
+    <path id="plus-2" data-name="plus" d="M7.831,0V7.831H0v6.188H7.831V21.85h6.188V14.019H21.85V7.831H14.019V0Z" transform="translate(1662.766 817.575)"/>
+    <g id="Group_13685" data-name="Group 13685" transform="translate(1373.131 737)">
+      <rect id="Rectangle_17589" data-name="Rectangle 17589" width="280" height="183" transform="translate(-0.001)" fill="#40146e"/>
+      <text id="Genes_involved_in_iron_metabolism" data-name="Genes involved
+in iron metabolism" transform="translate(137.605 84)" fill="#fff" font-size="24" font-family="Helvetica"><tspan x="-82.717" y="0">Genes involved</tspan><tspan x="-97.371" y="26">in iron metabolism</tspan></text>
+    </g>
+    <g id="Group_13684" data-name="Group 13684" transform="translate(1694.094 737)">
+      <rect id="Rectangle_17590" data-name="Rectangle 17590" width="279.347" height="183" transform="translate(0)" fill="#40146e"/>
+      <text id="Genes_involved_in_downregulating_hepcidin_levels" data-name="Genes involved in
+downregulating
+hepcidin levels" transform="translate(138.635 71)" fill="#fff" font-size="24" font-family="Helvetica"><tspan x="-95.391" y="0">Genes involved in</tspan><tspan x="-81.393" y="26">downregulating</tspan><tspan x="-78.715" y="52">hepcidin levels</tspan></text>
+    </g>
+  </g>
+</svg>
