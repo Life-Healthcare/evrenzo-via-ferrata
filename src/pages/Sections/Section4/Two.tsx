@@ -37,14 +37,14 @@ export default () => {
                             <img src="./images/section4-2-img.png" className="mb-10" alt="" />
                             <div className="grid grid-cols-2 gap-16 text-3xl">
                                 <p>
-                                    EVRENZO inhibits HIF-PH, thus preventing breakdown of HIF-1α and activating the HIF pathway4,6
+                                    EVRENZO inhibits HIF-PH, thus preventing breakdown of HIF-1α and activating the HIF pathway<SmallText>4,6</SmallText>
                                 </p>
                                 <p>
-                                    This induces transcription and translation of genes involved in erythropoiesis4,6
+                                    This induces transcription and translation of genes involved in erythropoiesis<SmallText>4,6</SmallText>
                                 </p>
                                 <p className="col-span-2">
                                 HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis
-(as is observed at low oxygen pressure) but do so at normal oxygen concentrations.7
+(as is observed at low oxygen pressure) but do so at normal oxygen concentrations.<SmallText>7</SmallText>
                                 </p>
                                 <p className="text-2xl col-span-2">
                                     HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
@@ -55,20 +55,20 @@ export default () => {
                         title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis4">
                             <div className="text-3xl">
                                 <p className="mb-20">
-                                Through the inhibition of HIF-PH, EVRENZO stimulates a coordinated erythropoietic response that not only increases erythropoietin (EPO) levels, but also increases iron mobilisation, as well as helping to overcome the effects of inflammation by suppressing hepcidin.4
+                                Through the inhibition of HIF-PH, EVRENZO stimulates a coordinated erythropoietic response that not only increases erythropoietin (EPO) levels, but also increases iron mobilisation, as well as helping to overcome the effects of inflammation by suppressing hepcidin.<SmallText>4</SmallText>
                                 </p>
                                 <div className="grid grid-cols-2 gap-20 items-center ml-24">
                                     <img src="./images/section4-2-img2.png" className="mb-10" alt="" />
                                     <p className="text-2xl w-[390px]">
-                                        Functional iron deficiency is mediated by the liver hormone hepcidin. Hepcidin decreases the membrane expression of ferroportin, an iron exporter, leading to reduced circulating iron levels.8
+                                        Functional iron deficiency is mediated by the liver hormone hepcidin. Hepcidin decreases the membrane expression of ferroportin, an iron exporter, leading to reduced circulating iron levels.<SmallText>8</SmallText>
                                     </p>
                                 </div>
                                 <p className="mt-10">
-                                EVRENZO is indicated for the treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD)4
+                                EVRENZO is indicated for the treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD)<SmallText>4</SmallText>
                                 </p>
                                 <div className="mt-40 text-2xl">
                                     <p>
-                                        Adapted from Haase, 2017.8
+                                        Adapted from Haase, 2017.<SmallText>8</SmallText>
                                     </p>
                                     <p>
                                         CKD, chronic kidney disease; EPO, erythropoietin; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.
@@ -88,11 +88,11 @@ export default () => {
                                 <img className="w-[300px] -translate-y-7" src="./images/Logo2.svg" alt="logo" />
                             </div>
                             <ul className="flex flex-col gap-10">
-                                <ListItem>First-in-class HIF-PHI1</ListItem>
+                                <ListItem>First-in-class HIF-PHI<SmallText>1</SmallText></ListItem>
                                 <ListItem>First oral treatment in the past 30 years for symptomatic anaemia of CKD</ListItem>
-                                <ListItem>First HIF-PHI with the convenience of oral administration2,3</ListItem>
-                                <ListItem>First HIF-PHI to demonstrate comparable efficacy to ESA in raising and maintaining Hb levels,3 irrespective of inflammatory status and without the need for dose escalation4</ListItem>
-                                <ListItem>First HIF-PHI to demonstrate reduced use of IV iron vs. ESA3</ListItem>
+                                <ListItem>First HIF-PHI with the convenience of oral administration<SmallText>2,3</SmallText></ListItem>
+                                <ListItem>First HIF-PHI to demonstrate comparable efficacy to ESA in raising and maintaining Hb levels,<SmallText>3</SmallText> irrespective of inflammatory status and without the need for dose escalation<SmallText>8</SmallText></ListItem>
+                                <ListItem>First HIF-PHI to demonstrate reduced use of IV iron vs. ESA<SmallText>3</SmallText></ListItem>
                             </ul>
                             <div className="text-2xl">
                                 <p className="mt-20">
