@@ -53,7 +53,27 @@ export default () => {
                         <Box 
                         className="bg-purple-900"
                         title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis4">
-                            <div className="text-3xl">
+                            <p className="text-5xl mb-20">EVRENZO – mimicking hypoxia</p>
+                            <img src="./images/section4-2-img.png" className="mb-10" alt="" />
+                            <div className="grid grid-cols-2 gap-16 text-3xl">
+                                <p>
+                                    EVRENZO inhibits HIF-PH, thus preventing breakdown of HIF-1α and activating the HIF pathway<SmallText>4,6</SmallText>
+                                </p>
+                                <p>
+                                    This induces transcription and translation of genes involved in erythropoiesis<SmallText>4,6</SmallText>
+                                </p>
+                                <p className="col-span-2">
+                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis
+(as is observed at low oxygen pressure) but do so at normal oxygen concentrations.<SmallText>7</SmallText>
+                                </p>
+                                <p className="text-2xl col-span-2">
+                                    HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
+                            </div>
+                        </Box>
+                        <Box
+                        className="bg-[#43b02a]"
+                        title="EVRENZO reduces hepcidin levels and improves iron bioavailability4">
+                                                        <div className="text-3xl">
                                 <p className="mb-20">
                                 Through the inhibition of HIF-PH, EVRENZO stimulates a coordinated erythropoietic response that not only increases erythropoietin (EPO) levels, but also increases iron mobilisation, as well as helping to overcome the effects of inflammation by suppressing hepcidin.<SmallText>4</SmallText>
                                 </p>
@@ -76,9 +96,6 @@ export default () => {
                                 </div>
                             </div>
                         </Box>
-                        <Box
-                        className="bg-[#43b02a]"
-                        title="EVRENZO reduces hepcidin levels and improves iron bioavailability4"/>
                         <Box 
                         className="bg-[#ad1aac]"
                         title="Proud to be first"
