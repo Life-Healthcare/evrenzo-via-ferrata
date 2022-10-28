@@ -22,7 +22,7 @@ export default () => {
                     <div className="flex flex-col gap-7 w-[800px] translate-x-[calc(-396px/2)]">
                         <p className="text-3xl">This information is intended for international audiences.</p>
                         <p className="text-4xl">EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
-                        <p className="text-2xl">EVRENZO (roxadustat) has marketing authorisations in Japan, the European Union (EU) and the United Kingdom (UK),
+                        <p className="text-2xl">EVRENZO (roxadustat) has marketing authorisations in Japan, the <br/> European Union (EU) and the United Kingdom (UK),
                         Turkey, Russia, South Africa, Egypt, UAE and Kuwait.
                         </p>
                     </div>
