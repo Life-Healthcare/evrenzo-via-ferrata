@@ -27,12 +27,12 @@ export default () => {
                         <span className="font-bold2">When oxygen levels are low<SmallText>1</SmallText></span>
                         <img src="./images/section2-2-img.png" alt="image" />
                     </div>
-                    <p className="text-2xl w-80">
+                    <p className="text-2xl w-[330px]">
                     HIF, hypoxia-inducible factor; HRE, specific DNA sequences; OH, hydroxyl group; VHL, von Hippel-Lindau.
                     </p>
                 </div>
                 <div className="flex flex-col gap-5">
-                    <p>The Nobel Prize in Physiology or Medicine 2019 was awarded jointly to three Professors working in three different disciplines - Sir Peter J. Ratcliffe (a nephrologist), Professor Gregg L. Semenza (a paediatric geneticist) and Professor William G. Kaelin Jr (an oncologist).<SmallText>2</SmallText></p>
+                    <p>The Nobel Prize in Physiology or Medicine 2019 was awarded jointly to three Professors working in three different disciplines - Sir Peter J. Ratcliffe (a nephrologist), Professor Gregg L. Semenza <br/> (a paediatric geneticist) and Professor William G. Kaelin Jr <br/> (an oncologist).<SmallText>2</SmallText></p>
                     <p>The award was for their discovery of how cells sense and adapt to oxygen availability.<SmallText>2</SmallText></p>
                 </div>
                 <div className="flex flex-col gap-5">

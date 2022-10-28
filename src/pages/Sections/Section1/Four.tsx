@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { useContext } from "react"
 import QRInfo from "../../../components/QRInfo";
 import SmallText from "../../../components/SmallText";
+import Triangle from "../../../components/Triangle";
 import SlideContext from "../../../contexts/SlideContext"
 
 export default () => {
@@ -26,7 +27,7 @@ export default () => {
                 <div className="flex flex-col gap-5">
                     <p>Sherpa people, who live in the mountainous regions of Nepal and Tibet, are physiologically well suited to high altitudes.<SmallText>1</SmallText></p>
                     <p>They were valued as mountain guides by early explorers to the Himalayas, and are now globally renowned as elite mountaineers. In 2019 the Nepali mountaineer Nimsdai (Nims) Purja achieved the seemingly impossible challenge of summiting all 14 of the world’s 8,000 m peaks inside seven months - a feat commemorated in the movie ‘14 Peaks’.<SmallText>6</SmallText></p>
-                    <p className="font-bold2 w-11/12">What equips some individuals to perform so well at these heights? </p>
+                    <p className="font-bold2 w-11/12">What equips some individuals to perform so well at <br/> these heights? </p>
                     <p>In addition to their physical toughness and experience, it has been speculated that Sherpas benefit from a unique haemoglobin-binding capacity. Is the reason they can climb mountains without bottled oxygen that they carry extra oxygen in their blood?</p>
                 </div>
                 <div className="flex flex-col gap-5">
@@ -39,7 +40,7 @@ export default () => {
             </section>
             <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <div className="font-reg">
-                    <p>HIF, hypoxia-inducible factor.</p>
+                    <p className="mb-3">HIF, hypoxia-inducible factor.</p>
                     <p>1. Witt KE, Huerta-Sanchez E. Philos Trans R Soc Lond B Biol Sci. 2019;374(1777):20180235.</p>
                     <p>2. PhysicalGeography.net. Available at: http://www.physicalgeography.net/fundamentals/7d.html. Date accessed: October 2022.</p>
                     <p>3. Hypoxico. Available at: https://hypoxico.com/pages/altitude-to-oxygen-chart. Date accessed: October 2022.</p>
@@ -50,6 +51,7 @@ export default () => {
                 </div>
                 <QRInfo/>
             </footer>
+            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }

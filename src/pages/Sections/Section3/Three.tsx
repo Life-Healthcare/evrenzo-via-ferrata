@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useEffect, useRef, useState } from "react"
 import QRInfo from "../../../components/QRInfo";
 import SmallText from "../../../components/SmallText";
+import Triangle from "../../../components/Triangle";
 import SlideContext from "../../../contexts/SlideContext"
 
 export default () => {
@@ -50,6 +51,7 @@ export default () => {
             <footer className="flex flex-col justify-end mt-10 gap-10 text-2xl text-start font-semibold relative z-10">
                 <QRInfo className="mb-3"/>
             </footer>
+            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }

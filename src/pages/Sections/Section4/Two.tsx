@@ -43,7 +43,7 @@ export default () => {
                                     This induces transcription and translation of genes involved in erythropoiesis<SmallText>4,6</SmallText>
                                 </p>
                                 <p className="col-span-2">
-                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis
+                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis 
 (as is observed at low oxygen pressure) but do so at normal oxygen concentrations.<SmallText>7</SmallText>
                                 </p>
                                 <p className="text-2xl col-span-2">
@@ -118,7 +118,7 @@ export default () => {
                                 <ul>
                                     <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
                                     <li>2. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
-                                    <li>3. EVRENZO EU SmPC, July 2022.</li>
+                                    <li>3. EVRENZO EU SmPC, September 2022.</li>
                                     <li>4. Pollock C et al. Kidney International Reports. 2021;6(4):S108.</li>
                                 </ul>
                             </div>
@@ -140,7 +140,7 @@ export default () => {
                     <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
                     <li>2. FibroGen. Available at: https://investor.fibrogen.com/news-releases/news-release-details/fibrogen-announces-approval-roxadustat-china-treatment-anemia. Date accessed: October 2022.</li> 
                     <li>3. Astellas. Available at: https://www.astellas.com/en/news/15096. Date accessed: October 2022.</li>
-                    <li>4. EVRENZO EU SmPC, July 2022.</li>
+                    <li>4. EVRENZO EU SmPC, September 2022.</li>
                     <li>5. MHRA. Available at: https://products.mhra.gov.uk/product/?product=EVRENZO. Date accessed: October 2022.</li>
                     <li>6. Del Vecchio L, LocateIIi F. Expert Opin Investig Drugs. 2018;27(1):125–133.</li>
                     <li>7. Locatelli F et al. Am J Nephrol. 2017;45(3):187–199.</li>

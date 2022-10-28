@@ -21,16 +21,16 @@ export default () => {
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-10">
                 <div className="">
-                    High altitude is a challenging environment for most humans.<SmallText>1</SmallText> As elevation above sea level increases, the concentration of oxygen molecules decreases, causing hypoxia.
+                    High altitude is a challenging environment for most humans.<SmallText>1</SmallText> <br/> As elevation above sea level increases, the concentration of oxygen molecules decreases, causing hypoxia.
                     <SmallText>1</SmallText>
 
-                    <p className="font-bold2 my-10">How oxygen varies with weight<SmallText>2</SmallText></p>
+                    <p className="font-bold2 my-10">How oxygen varies with height<SmallText>2</SmallText></p>
 
                     <img src="./images/section1-2-graph.png" alt="graph" />
                 </div>
                 <div className="flex flex-col gap-5">
                     <p>
-                        Oxygen partial pressure reduces exponentially asheight increases.<SmallText>3</SmallText>
+                        Oxygen partial pressure reduces exponentially as height increases.<SmallText>3</SmallText>
                     </p>
                     <p>
                     Oxygen partial pressure is only half its sea-level value at 5,000 m, the altitude of the Everest Base Camp, and only a third at the summit of Mount Everest.<SmallText>3</SmallText>

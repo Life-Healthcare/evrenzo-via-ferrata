@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import SmallText from "../../../components/SmallText";
+import Triangle from "../../../components/Triangle";
 import SlideContext from "../../../contexts/SlideContext"
 
 export default () => {
@@ -22,14 +23,14 @@ export default () => {
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
                 <div className="flex flex-col gap-5">
-                    <p className="font-bold2">The HIF (hypoxia-inducible factor) pathway plays a central role in erythropoiesis<SmallText>1,2</SmallText></p>
+                    <p className="font-bold2">The HIF (hypoxia-inducible factor) pathway plays <br/> a central role in erythropoiesis<SmallText>1,2</SmallText></p>
                     <p className="font-bold2">HIF-PH inhibition:</p>
                     <ul>
                         <li><span className="text-primary">•</span>	Increases erythropoietin (EPO) production</li>
                         <li><span className="text-primary">•</span>	Suppresses hepcidin production</li>
                         <li><span className="text-primary">•</span>	Increases iron absorption, transport and mobilisation</li>
                     </ul>
-                    <p>In normoxic conditions, the HIF pathway is not activated and the HIF-1α subunit is rapidly degraded via HIF prolyl-hydroxylase (HIF-PH):<SmallText>3</SmallText></p>
+                    <p>In normoxic conditions, the HIF pathway is not activated and the HIF-1α subunit is rapidly degraded via HIF prolyl-hydroxylase <br/> (HIF-PH):<SmallText>3</SmallText></p>
                     <img src="./images/section3-2-img.png" alt="image" />
                 </div>
                 <div className="flex flex-col gap-5">
@@ -48,10 +49,11 @@ HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxyla
                     <li>3. Haase VH. Hemodial Int. 2017;21:S110–S124.</li>
                     <li>4. Biggar P, Gheun-Ho K. Kidney Res Clin Pract. 2017;36(3):209–223.</li>
                     <li>5. Del Vecchio L, Locatelli F. Expert Opin Investig Drugs. 2018;27(7):613–621.</li>
-                    <li>6. EVRENZO EU SmPC, July 2022.</li>
+                    <li>6. EVRENZO EU SmPC, September 2022.</li>
                     <li>7. Guedes M et al. Kidney360. 2020;1(8):855–862.</li>
                 </ul>
             </footer>
+            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }

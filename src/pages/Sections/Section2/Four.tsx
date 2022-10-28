@@ -18,29 +18,32 @@ export default () => {
                 <h1 className="text-5xl text-primary">
                     What this means for anaemia of CKD
                 </h1>
-                <div className="flex flex-col gap-5 justify-center text-2xl w-96 -translate-y-14">
+                <div className="flex flex-col gap-3 justify-center text-2xl w-96 -translate-y-14">
                     <p>This information is intended for international audiences.</p>
                     <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
                 </div>
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
-                <div className="flex flex-col gap-5">
-                    <p>The discovery of HIF provided a central cellular pathway with far-ranging implications for human physiology, disease states, and medicine.<SmallText>1</SmallText></p>
+                <div className="flex flex-col gap-3">
+                    <p>The discovery of HIF provided a central cellular pathway with <br/> far-ranging implications for human physiology, disease states, <br/> and medicine.<SmallText>1</SmallText></p>
                     <p>Patients with chronic kidney disease (CKD) often suffer from anaemia due to:<SmallText>2-6</SmallText> 
-- Reduced oxygen sensing 
-- Reduced EPO production 
-- Chronic inflammation resulting in increased hepcidin levels 
-- Iron deficiency </p>
-                    <p>EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the
+                        <ul>
+                            <li>- Reduced oxygen sensing </li>
+                            <li>- Reduced EPO production </li>
+                            <li>- Chronic inflammation resulting in increased hepcidin levels </li>
+                            <li>- Iron deficiency</li>
+                        </ul>
+                    </p>
+                    <p>EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the <br/>
 HIF pathway.<SmallText>1</SmallText> </p>
                     <p>The HIF pathway is therefore a target for new treatments to manage anaemia of CKD.</p>
-                    <p>To find out how patients with symptomatic anaemia of CKD are benefiting from a new class of treatment, take the next step on the EVRENZO Via Ferrata. </p>
+                    <p>To find out how patients with symptomatic anaemia of CKD are benefiting from <span className="font-bold italic">a new</span> class of treatment, take the next step on the EVRENZO Via Ferrata. </p>
                 </div>
-                <div className="flex flex-col gap-5 text-center relative">
+                <div className="flex flex-col gap-3 text-center relative">
                     <div className="w-full flex justify-end translate-y-20">
                         <p className="w-[430px] text-4xl font-bold2 italic text-left">Oxygen sensing is central to a large number of diseases<SmallText>1</SmallText></p>
                     </div>
-                    <div className="flex flex-col absolute -translate-y-2/4 top-2/4 right-0 gap-5 z-10">
+                    <div className="flex flex-col absolute -translate-y-2/4 top-2/4 right-0 gap-3 z-10">
                         {['Anaemia', 'Cancer', 'Stroke', 'Infection', 'Wound Healing', 'Myocardial Infarction'].map((text, i) => {
                             const labelColour = i === 0 ? 'bg-primary' : 'bg-[#4a4a4a]'
                             return (

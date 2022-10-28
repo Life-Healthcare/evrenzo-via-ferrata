@@ -32,6 +32,14 @@ export default () => {
                 <p className="w-[599px] font-reg">
                     In the EU, EVRENZOTM (roxadustat) is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD)
                 </p>
+                <div className="flex gap-3">
+                    <p className="w-[599px] font-reg">
+                    Astellas Pharma B.V., Sylviusweg 62, 2333 BE Leiden.
+                    For full prescribing information, please scan the QR code or visit:
+                    https://www.astellas.com/nl/products
+                    </p>
+                    <img src="./images/section1-3-qr1.svg" alt="" />
+                </div>
                 <DisclaimerBottom/>
             </footer>
         </motion.article>
