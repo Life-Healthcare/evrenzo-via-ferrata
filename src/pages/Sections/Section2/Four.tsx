@@ -20,7 +20,7 @@ export default () => {
                 </h1>
                 <div className="flex flex-col gap-3 justify-center text-2xl w-96 -translate-y-14">
                     <p>This information is intended for international audiences.</p>
-                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
+                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE <br/> UNITED STATES</p>
                 </div>
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
@@ -36,7 +36,7 @@ export default () => {
                     </p>
                     <p>EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the <br/>
 HIF pathway.<SmallText>1</SmallText> </p>
-                    <p>The HIF pathway is therefore a target for new treatments to manage anaemia of CKD.</p>
+                    <p>The HIF pathway is therefore a target for innovative treatments to manage anaemia of CKD.</p>
                     <p>To find out how patients with symptomatic anaemia of CKD are benefiting from <span className="font-bold italic">a new</span> class of treatment, take the next step on the EVRENZO Via Ferrata. </p>
                 </div>
                 <div className="flex flex-col gap-3 text-center relative">

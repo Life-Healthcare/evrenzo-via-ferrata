@@ -19,10 +19,10 @@ export default () => {
             </header>
             <section className="flex flex-col flex-grow justify-center items-center gap-14">
                 <h1 className="text-7xl w-[1000px] text-primary">
-                    Welcome to the EVRENZO<SmallText className="text-4xl">TM</SmallText> Via Ferrata
+                    Welcome to the EVRENZO<SmallText className="text-4xl -translate-y-6">TM</SmallText> Via Ferrata
                 </h1>
                 <p className="text-[42px] w-[1171px]">
-                    A journey through the HIF pathway, its discovery, and the part it has played in the development of new treatment options for symptomatic anaemia of CKD (chronic kidney disease)
+                    A journey through the HIF pathway, its discovery, and the part it has played in the development of innovative treatment options for symptomatic anaemia of CKD (chronic kidney disease)
                 </p>
                 <img 
                 className="w-[375px] h-[122px]"
@@ -30,7 +30,7 @@ export default () => {
             </section>
             <footer className="flex flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
                 <p className="w-[599px] font-reg">
-                    In the EU, EVRENZOTM (roxadustat) is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD)
+                    In the EU, EVRENZO<SmallText>TM</SmallText> (roxadustat) is indicated for treatment of adult patients with symptomatic anaemia associated with chronic kidney disease (CKD)
                 </p>
                 <div className="flex gap-3">
                     <p className="w-[599px] font-reg">

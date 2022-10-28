@@ -18,7 +18,7 @@ export default () => {
                 </h1>
                 <div className="flex flex-col gap-5 justify-center text-2xl w-96 -translate-y-14">
                     <p>This information is intended for international audiences.</p>
-                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
+                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE <br/> UNITED STATES</p>
                 </div>
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">

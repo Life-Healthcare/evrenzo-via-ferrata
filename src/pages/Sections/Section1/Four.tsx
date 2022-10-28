@@ -20,7 +20,7 @@ export default () => {
                 </h1>
                 <div className="flex flex-col gap-5 justify-center text-2xl w-96 -translate-y-14">
                     <p>This information is intended for international audiences.</p>
-                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
+                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE <br/> UNITED STATES</p>
                 </div>
             </header>
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
@@ -32,8 +32,8 @@ export default () => {
                 </div>
                 <div className="flex flex-col gap-5">
                     <p className="font-bold2">The genetic link</p>
-                    <p>Genome sequencing of Tibetans identified more than 30 genetic factors that adapt them for high altitude, including a mutation near a gene called EPAS1, which regulates production of haemoglobin and codes for a protein involved in sensing oxygen levels.<SmallText>7</SmallText></p>
-                    <p>Comparison of Tibetans and Han Chinese has highlighted a number of genes that are targets of selection in hypoxic environments, including 3 key genes (EPAS1, EGLN1 and PPARA) that are part of a mechanism called the
+                    <p>Genome sequencing of Tibetans identified more than 30 genetic factors that adapt them for high altitude, including a mutation near a gene called <span className="font-bold italic">EPAS1</span>, which regulates production of haemoglobin and codes for a protein involved in sensing oxygen levels.<SmallText>7</SmallText></p>
+                    <p>Comparison of Tibetans and Han Chinese has highlighted a number of genes that are targets of selection in hypoxic environments, including 3 key genes (<span className="font-bold italic">EPAS1</span>, <span className="font-bold italic">EGLN1</span> and <span className="font-bold italic">PPARA</span>) that are part of a mechanism called the
     HIF pathway.<SmallText>1</SmallText></p>
                     <p className="font-bold2 italic w-[648px]">To find out why the HIF pathway has excited interest among clinicians, take the next step on the EVRENZO Via Ferrata. </p>
                 </div>

@@ -15,7 +15,7 @@ export default () => {
             <header className="flex justify-end mt-14 -mb-20">
                 <div className="flex flex-col gap-5 justify-center text-2xl w-96 -translate-y-20">
                     <p>This information is intended for international audiences.</p>
-                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
+                    <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE <br/> UNITED STATES</p>
                 </div>
             </header>
             <section className="flex flex-grow justify-center items-center text-[32px] w-full text-center">
