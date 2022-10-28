@@ -1,11 +1,21 @@
-import { motion } from "framer-motion"
-import { useContext } from "react"
+import { AnimatePresence, motion } from "framer-motion"
+import { useContext, useEffect, useRef, useState } from "react"
 import QRInfo from "../../../components/QRInfo";
 import SmallText from "../../../components/SmallText";
 import SlideContext from "../../../contexts/SlideContext"
 
 export default () => {
     const [slideDirection] = useContext(SlideContext);
+    const [playing, setPlaying] = useState(false)
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
+    useEffect(() => {
+        if(playing) {
+            videoRef.current?.play()
+        } else {
+            videoRef.current?.pause()
+        }
+    }, [playing])
 
     return (
         <motion.article 
@@ -21,10 +31,23 @@ export default () => {
                     <p>EVRENZO (roxadustat) IS NOT APPROVED FOR USE IN THE UNITED STATES</p>
                 </div>
             </header>
-            <section className=" text-[32px] text-start w-full">
-                <img className="w-full" src="./images/section3-3-vid.png" alt="" />
+            <section className=" text-[32px] text-start w-full flex flex-grow">
+                <video 
+                className="w-full bg-no-repeat bg-cover max-h-[1050px] min-h-max-h-[1050px]"
+                poster="./images/transparent.png"
+                style={{backgroundImage: "url(./images/section3-3-vid.png)"}}
+                onClick={() => setPlaying(!playing)}
+                    ref={el => videoRef.current = el} src="./videos/work.mp4"/>
+                    <AnimatePresence>
+                        {!playing && <motion.img
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0}}
+                        transition={{duration: 0.3}}
+                        src="./images/play.svg" className="drop-shadow-lg pointer-events-none w-40 aspect-square absolute z-50 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"/>}
+                    </AnimatePresence>
             </section>
-            <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+            <footer className="flex flex-col justify-end mt-10 gap-10 text-2xl text-start font-semibold relative z-10">
                 <QRInfo className="mb-3"/>
             </footer>
         </motion.article>
