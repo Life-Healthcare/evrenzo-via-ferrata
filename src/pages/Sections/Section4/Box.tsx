@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { currentBoxContext } from "./Two"
 import { motion } from "framer-motion"
+import SmallText from "../../../components/SmallText"
 
 interface BoxProps {
     title: string,
@@ -13,6 +14,8 @@ export default ({children, className, title, image}: BoxProps) => {
     const [currentBox, setCurrentBox] = useContext(currentBoxContext);
     const show = title === currentBox;
 
+    const [titl, superscript] = title.split("|");
+
     return (
         <>
             <div onClick={() => setCurrentBox(title)} className={`flex font-bold-ext items-center relative w-[854px] h-[156px] px-14 text-white`}>
@@ -20,7 +23,7 @@ export default ({children, className, title, image}: BoxProps) => {
                 <div className="flex gap-20 items-center relative z-10">
                     <img src="./images/prompt-tap.svg" className="brightness-[1000]" alt="tap" />
                     <p className="text-2xl">
-                        {title}
+                        {titl}{superscript && <SmallText>{superscript}</SmallText>}
                     </p>
                 </div>
             </div>

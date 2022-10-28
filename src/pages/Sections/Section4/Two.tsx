@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useState, createContext } from "react"
 import SmallText from "../../../components/SmallText";
+import Triangle from "../../../components/Triangle";
 import SlideContext from "../../../contexts/SlideContext"
 import Box from "./Box";
 
@@ -32,7 +33,7 @@ export default () => {
                     <currentBoxContext.Provider value={[currentBox, setCurrentBox]}>
                         <Box 
                         className="bg-green-700"
-                        title="EVRENZO mimics the body’s natural response to hypoxia by activating the HIF pathway and increasing plasma EPO4,6">
+                        title="EVRENZO mimics the body’s natural response to hypoxia by activating the HIF pathway and increasing plasma EPO|4,6">
                             <p className="text-5xl mb-20">EVRENZO – mimicking hypoxia</p>
                             <img src="./images/section4-2-img.png" className="mb-10" alt="" />
                             <div className="grid grid-cols-2 gap-16 text-3xl">
@@ -52,7 +53,7 @@ export default () => {
                         </Box>
                         <Box 
                         className="bg-purple-900"
-                        title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis4">
+                        title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis|4">
                             <p className="text-5xl mb-20">EVRENZO – mimicking hypoxia</p>
                             <img src="./images/section4-2-img.png" className="mb-10" alt="" />
                             <div className="grid grid-cols-2 gap-16 text-3xl">
@@ -72,7 +73,7 @@ export default () => {
                         </Box>
                         <Box
                         className="bg-[#43b02a]"
-                        title="EVRENZO reduces hepcidin levels and improves iron bioavailability4">
+                        title="EVRENZO reduces hepcidin levels and improves iron bioavailability|4">
                                                         <div className="text-3xl">
                                 <p className="mb-20">
                                 Through the inhibition of HIF-PH, EVRENZO stimulates a coordinated erythropoietic response that not only increases erythropoietin (EPO) levels, but also increases iron mobilisation, as well as helping to overcome the effects of inflammation by suppressing hepcidin.<SmallText>4</SmallText>
@@ -98,7 +99,7 @@ export default () => {
                         </Box>
                         <Box 
                         className="bg-[#ad1aac]"
-                        title="Proud to be first"
+                        title="Proud to be first|"
                         image={true}>
                             <div className="flex justify-between">
                                 <p className="text-5xl mb-20">Proud to be first</p>
@@ -108,12 +109,12 @@ export default () => {
                                 <ListItem>First-in-class HIF-PHI<SmallText>1</SmallText></ListItem>
                                 <ListItem>First oral treatment in the past 30 years for symptomatic anaemia of CKD</ListItem>
                                 <ListItem>First HIF-PHI with the convenience of oral administration<SmallText>2,3</SmallText></ListItem>
-                                <ListItem>First HIF-PHI to demonstrate comparable efficacy to ESA in raising and maintaining Hb levels,<SmallText>3</SmallText> irrespective of inflammatory status and without the need for dose escalation<SmallText>8</SmallText></ListItem>
+                                <ListItem up={true}>First HIF-PHI to demonstrate comparable efficacy to ESA in raising and maintaining Hb levels,<SmallText>3</SmallText> irrespective of inflammatory status and without the need for dose escalation<SmallText>4</SmallText></ListItem>
                                 <ListItem>First HIF-PHI to demonstrate reduced use of IV iron vs. ESA<SmallText>3</SmallText></ListItem>
                             </ul>
                             <div className="text-2xl">
-                                <p className="mt-20">
-                                CKD, chronic kidney disease; ESA, erythropoiesis-stimulating agent; Hb, haemoglobin; HIF-PHI, hypoxia-inducible factor prolyl hydroxylase inhibitor; IV, intravenous.
+                                <p className="mt-20 mb-3">
+                                CKD, chronic kidney disease; ESA, erythropoiesis-stimulating agent; Hb, haemoglobin; <br/> HIF-PHI, hypoxia-inducible factor prolyl hydroxylase inhibitor; IV, intravenous.
                                 </p>
                                 <ul>
                                     <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
@@ -148,14 +149,19 @@ export default () => {
                     <li>9. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
                 </ul>
             </footer>
+            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }
 
-const ListItem = ({children}: React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>) => {
+interface ListItemProps extends React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+    up?: boolean
+}
+
+const ListItem = ({children, up}: ListItemProps) => {
     return (
         <li className="flex items-center gap-10">
-            <img className="-translate-y-1" src="./images/checkmark.svg" alt="checkmark"/>
+            <img className={`-translate-y-1 ${up && '-translate-y-12'}`} src="./images/checkmark.svg" alt="checkmark"/>
             <span>{children}</span>
         </li>
     )
