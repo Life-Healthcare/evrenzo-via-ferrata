@@ -47,10 +47,10 @@ export default () => {
                                     <p>Tap to select</p>
                                 </div>
                                 <Box className="before:bg-green-500" title="HIF" line="right">
-                                    Professor Semenza discovered a protein complex that binds to the DNA segment in an oxygen-dependent manner. This complex, which he called the hypoxia-inducible factor (HIF), consisted of two transcription factors: HIF-1α and HIF-1ß.<SmallText>1</SmallText>
+                                    Professor Semenza discovered a protein complex that binds to the DNA segment in an oxygen-dependent manner. This complex, which he called the hypoxia-inducible factor (HIF), consisted of two transcription factors: <br/> HIF-1α and HIF-1ß.<SmallText>1</SmallText>
                                 </Box>
-                                <Box className="before:bg-purple-900" title="VHL and HIF-1a" line="bottom-right">
-                                    Professor Ratcliffe’s group demonstrated that VHL interacts with HIF-1α and is required for its degradation, so linking VHL to HIF-1α.<SmallText>1</SmallText>
+                                <Box className="before:bg-purple-900" title="VHL and HIF-1α" line="bottom-right">
+                                    Professor Ratcliffe’s group demonstrated that VHL interacts with HIF-1α and is required for its degradation, so linking VHL <br/> to HIF-1α.<SmallText>1</SmallText>
                                 </Box>
                                 <Box className="before:bg-[#4ec3e0]" title="VHL" line="bottom">
                                     Cancer researcher Professor William Kaelin showed that a gene associated with von Hippel-Lindau’s (VHL) disease was also involved in controlling responses to hypoxia.<SmallText>1</SmallText>
