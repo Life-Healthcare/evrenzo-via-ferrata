@@ -7,10 +7,12 @@ export default () => {
     const [slideDirection] = useContext(SlideContext);
     const [playing, setPlaying] = useState(false)
     const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [videoStarted, setVideoStarted] = useState(false);
 
     useEffect(() => {
         if(playing) {
             videoRef.current?.play()
+            setVideoStarted(true)
         } else {
             videoRef.current?.pause()
         }
@@ -34,7 +36,7 @@ export default () => {
             <video 
                 className="w-full bg-no-repeat bg-cover max-h-[1050px] min-h-max-h-[1050px]"
                 poster="./images/transparent.png"
-                style={{backgroundImage: "url(./images/section4-3-img.png)"}}
+                style={(playing || videoStarted) ? {background: 'black'} : {backgroundImage: "url(./images/section4-3-img.png)"}}
                 onClick={() => setPlaying(!playing)}
                     ref={el => videoRef.current = el} src="./videos/moa.mp4"/>
                     <AnimatePresence>
