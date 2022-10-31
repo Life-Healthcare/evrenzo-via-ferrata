@@ -37,7 +37,7 @@ export default () => {
                     <p>EPO is produced by cells in the kidney and is essential for controlling the formation of red blood cells, through the <br/>
 HIF pathway.<SmallText>1</SmallText> </p>
                     <p>The HIF pathway is therefore a target for treatments to manage anaemia of CKD.</p>
-                    <p>To find out how patients with symptomatic anaemia of CKD are benefiting from <span className="font-bold italic">a new</span> class of treatment, take the next step on the EVRENZO Via Ferrata. </p>
+                    <p className="font-bold italic">To find out how patients with symptomatic anaemia of CKD are benefiting from an innovative class of treatment, take the next step on the EVRENZO Via Ferrata. </p>
                 </div>
                 <div className="flex flex-col gap-3 text-center relative">
                     <div className="w-full flex justify-end translate-y-20">

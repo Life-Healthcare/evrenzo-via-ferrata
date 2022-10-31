@@ -18,7 +18,7 @@ export default () => {
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-40 text-center">
             <header className="flex justify-between mt-14">
                 <h1 className="text-5xl text-primary w-[1000px] text-left">
-                    EVRENZO: the first treatment to harness the HIF pathway1
+                    EVRENZO: the first treatment to harness the HIF pathway<SmallText>1</SmallText>
                 </h1>
                 <div className="flex flex-col gap-5 justify-center text-2xl w-96 -translate-y-14">
                     <p>This information is intended for international audiences.</p>
@@ -120,7 +120,7 @@ export default () => {
                                     <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
                                     <li>2. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
                                     <li>3. EVRENZO EU SmPC, September 2022.</li>
-                                    <li>4. Pollock C et al. Kidney International Reports. 2021;6(4):S108.</li>
+                                    <li>4. Provenzano R et al. Nephrol Dial Transplant. 2021;36(9):1717–1730.</li>
                                 </ul>
                             </div>
                         </Box>
@@ -149,7 +149,6 @@ export default () => {
                     <li>9. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
                 </ul>
             </footer>
-            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }

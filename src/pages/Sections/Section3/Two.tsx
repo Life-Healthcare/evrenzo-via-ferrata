@@ -53,7 +53,6 @@ HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxyla
                     <li>7. Guedes M et al. Kidney360. 2020;1(8):855–862.</li>
                 </ul>
             </footer>
-            <p className="absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold"><Triangle/> This medication is subject to additional monitoring.</p>
         </motion.article>
     )
 }

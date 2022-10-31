@@ -11,7 +11,7 @@ export default () => {
                     <p>Date of expiry: October 2024</p>
                 </div>
                 <p className="w-[625px]">
-                © October 2024 Astellas Pharma Inc. or its affiliates.
+                © October 2022 Astellas Pharma Inc. or its affiliates.
                 <br />
                 All trademarks are the property of their respective owners.
                 </p>

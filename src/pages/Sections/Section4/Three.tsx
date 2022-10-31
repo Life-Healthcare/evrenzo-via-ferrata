@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useEffect, useRef, useState } from "react"
+import QRInfo from "../../../components/QRInfo";
 import SmallText from "../../../components/SmallText";
 import SlideContext from "../../../contexts/SlideContext"
 
@@ -48,6 +49,9 @@ export default () => {
                         src="./images/play.svg" className="drop-shadow-lg pointer-events-none w-40 aspect-square absolute z-50 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"/>}
                     </AnimatePresence>
             </section>
+            <footer className="flex flex-col justify-end mt-10 gap-10 text-2xl text-start font-semibold relative z-10">
+                <QRInfo className="mb-3"/>
+            </footer>
         </motion.article>
     )
 }
