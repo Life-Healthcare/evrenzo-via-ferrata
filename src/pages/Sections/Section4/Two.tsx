@@ -53,7 +53,8 @@ export default () => {
                         </Box>
                         <Box 
                         className="bg-purple-900"
-                        title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis|4">
+                        title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis|4"
+                        image={true}>
                             <div className="flex justify-between">
                                 <p className="text-5xl mb-20">Proud to be first</p>
                                 <img className="w-[300px] -translate-y-7" src="./images/Logo2.svg" alt="logo" />
