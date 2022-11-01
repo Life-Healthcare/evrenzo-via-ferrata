@@ -59,7 +59,7 @@ HIF pathway.<SmallText>1</SmallText> </p>
                     <p className="text-2xl">CKD, chronic kidney disease; EPO, erythropoietin; HIF, hypoxia-inducible factor.</p>
                 </div>
             </section>
-            <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10">
+            <footer className="flex flex-grow flex-col justify-end gap-10 h-[223px] text-2xl text-start font-semibold relative z-10 -translate-y-6">
                 <div className="font-reg">
                 <p>1. The Nobel Prize. Available at: https://www.nobelprize.org/prizes/medicine/2019/summary/. </p>
                 <p>Date accessed: October 2022.</p>
