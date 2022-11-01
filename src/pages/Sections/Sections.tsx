@@ -1,6 +1,8 @@
+import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import SmallText from "../../components/SmallText"
 import Triangle from "../../components/Triangle"
+import sessionManager from "../../services/session-manager"
 import Section1 from "./Section1/Section1"
 import Section2 from "./Section2/Section2"
 import Section3 from "./Section3/Section3"
@@ -8,6 +10,29 @@ import Section4 from "./Section4/Section4"
 
 export default () => {
     const { section, page } = useParams()
+
+    useEffect(() => {
+        let timeout: number | undefined;
+        // Send sessions to server every 1 minute
+        (async function sendToServer() {
+          await sessionManager.sendToServer();
+          clearTimeout(timeout);
+          timeout = setTimeout(sendToServer, 60000);
+        })();
+        return () => clearTimeout(timeout);
+      }, []);
+
+    useEffect(() => {
+        if(page === "1") {
+            sessionManager.start();
+        }
+        
+        sessionManager.page(page!);
+
+        if(["1,4", "2,4", "3,3", "4,4"].includes(`${section},${page}`)) {
+            sessionManager.end();
+        }
+    }, [page]);  
 
     return (
         <>
