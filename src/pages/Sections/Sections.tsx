@@ -25,12 +25,15 @@ export default () => {
     useEffect(() => {
         if(page === "1") {
             sessionManager.start();
+            console.log("session started")
         }
         
         sessionManager.page(page!);
+        console.log('session page', page)
 
         if(["1,4", "2,4", "3,3", "4,4"].includes(`${section},${page}`)) {
             sessionManager.end();
+            console.log('session ended')
         }
     }, [page]);  
 
