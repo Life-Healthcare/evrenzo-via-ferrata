@@ -18,9 +18,9 @@ type SessionPage = {
   class SessionManager {
     private serverEndpoint = "https://analytics-server.finervision.com/api/save-sessions";
   
-    private cacheKeyPrefix = "evrenzo";
+    private cacheKeyPrefix = "evrenzo-via-ferrata";
   
-    private projectId = "evrenzo";
+    private projectId = "evrenzo-via-ferrata";
   
     private readonly deviceId;
   
