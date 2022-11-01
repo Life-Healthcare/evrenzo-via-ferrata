@@ -40,7 +40,7 @@ export default () => {
                 poster="./images/transparent.png"
                 style={(playing || videoStarted) ? {background: 'black'} : {backgroundImage: "url(./images/section3-3-vid.png)"}}
                 onClick={() => setPlaying(!playing)}
-                    ref={el => videoRef.current = el} src="./videos/moa.mp4"/>
+                    ref={el => videoRef.current = el} src="./videos/sec3.mp4"/>
                     <AnimatePresence>
                         {!playing && <motion.img
                         initial={{opacity: 0}}
