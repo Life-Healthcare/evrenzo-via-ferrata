@@ -54,21 +54,27 @@ export default () => {
                         <Box 
                         className="bg-purple-900"
                         title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis|4">
-                            <p className="text-5xl mb-20">EVRENZO – mimicking hypoxia</p>
-                            <img src="./images/section4-2-img.png" className="mb-10" alt="" />
-                            <div className="grid grid-cols-2 gap-16 text-3xl">
-                                <p>
-                                    EVRENZO inhibits HIF-PH, thus preventing breakdown of HIF-1α and activating the HIF pathway<SmallText>4,6</SmallText>
+                            <div className="flex justify-between">
+                                <p className="text-5xl mb-20">Proud to be first</p>
+                                <img className="w-[300px] -translate-y-7" src="./images/Logo2.svg" alt="logo" />
+                            </div>
+                            <ul className="flex flex-col gap-10">
+                                <ListItem>First-in-class HIF-PHI<SmallText>1</SmallText></ListItem>
+                                <ListItem>First oral treatment in the past 30 years for symptomatic anaemia of CKD</ListItem>
+                                <ListItem>First HIF-PHI with the convenience of oral administration<SmallText>2,3</SmallText></ListItem>
+                                <ListItem up={true}>First HIF-PHI to demonstrate comparable efficacy to ESA in raising and maintaining Hb levels,<SmallText>3</SmallText> irrespective of inflammatory status and without the need for dose escalation<SmallText>4</SmallText></ListItem>
+                                <ListItem>First HIF-PHI to demonstrate reduced use of IV iron vs. ESA<SmallText>3</SmallText></ListItem>
+                            </ul>
+                            <div className="text-2xl">
+                                <p className="mt-20 mb-3">
+                                CKD, chronic kidney disease; ESA, erythropoiesis-stimulating agent; Hb, haemoglobin; <br/> HIF-PHI, hypoxia-inducible factor prolyl hydroxylase inhibitor; IV, intravenous.
                                 </p>
-                                <p>
-                                    This induces transcription and translation of genes involved in erythropoiesis<SmallText>4,6</SmallText>
-                                </p>
-                                <p className="col-span-2">
-                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis
-(as is observed at low oxygen pressure) but do so at normal oxygen concentrations.<SmallText>7</SmallText>
-                                </p>
-                                <p className="text-2xl col-span-2">
-                                    HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
+                                <ul>
+                                    <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
+                                    <li>2. Akizawa T et al. J Am Soc Nephrol. 2020;31(7):1628–1639.</li>
+                                    <li>3. EVRENZO EU SmPC, September 2022.</li>
+                                    <li>4. Provenzano R et al. Nephrol Dial Transplant. 2021;36(9):1717–1730.</li>
+                                </ul>
                             </div>
                         </Box>
                         <Box
