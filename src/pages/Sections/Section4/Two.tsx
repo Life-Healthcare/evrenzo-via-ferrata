@@ -136,7 +136,7 @@ export default () => {
                         {currentBox && <motion.div onClick={() => setCurrentBox(null)}
                         initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                         transition={{duration: 0.3}}
-                        className="w-screen h-screen absolute top-0 left-0 bg-black/50 z-10"></motion.div>}
+                        className="w-full h-full absolute top-0 left-0 bg-black/50 z-10"></motion.div>}
                     </AnimatePresence>
                 </div>
             </section>
