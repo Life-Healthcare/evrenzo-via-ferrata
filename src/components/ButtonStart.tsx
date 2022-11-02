@@ -12,10 +12,9 @@ export default ({onClick, className}: React.DetailedHTMLProps<React.ButtonHTMLAt
                     onClick!(e)
                 }, 100);
             }}  className="relative text-white">
-                <div className="bg-primary w-[576px] h-24 -skew-x-[20deg]"></div>
-                <span className="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 text-3xl font-bold-ext">Start</span>
+                <img src="./images/start.svg" className="w-[calc(578px*var(--scale-x))] " />
             </button>
-            <p className={`w-80 text-xl font-bold2 ${className}`}>By clicking “Start” you confirm that you are a Healthcare Professional</p>
+            <img src="./images/start-text.svg" className="w-[calc(345px*var(--scale-x))] " />
         </div>
     )
 }
