@@ -36,14 +36,14 @@ export default () => {
             console.log('session ended')
         }
     }, [page]);  
-
+ 
     return (
-        <>
+        <div className="w-full h-full absolute top-0 left-0 overflow-hidden">
             {section === "1" && <Section1/>}
             {section === "2" && <Section2/>}
             {section === "3" && <Section3/>}
             {section === "4" && <Section4/>}
             {page !== "1" && <p className={`${`${section},${page}` === "1,3" && 'text-white ml-9'} absolute bottom-0 left-2/4 -translate-x-2/4 text-2xl font-bold`}><Triangle/> EVRENZO<SmallText>TM</SmallText> is subject to additional monitoring.</p>}
-        </>
+        </div>
     )
 }
