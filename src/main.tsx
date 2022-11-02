@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { HashRouter as Router } from 'react-router-dom'
 import App from './routes'
 import './index.css'
-
+console.log('1',process.env.NODE_ENV)
 if ("serviceWorker" in navigator && process.env.NODE_ENV !== "development") {
+  console.log('2',process.env.NODE_ENV)
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register("./service-worker.js")
