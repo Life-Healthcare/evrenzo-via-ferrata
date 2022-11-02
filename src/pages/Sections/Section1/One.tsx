@@ -22,7 +22,7 @@ export default () => {
     >
       <img
         className="w-[calc(1845px*var(--scale-x))] "
-        src="./images/section1-1.svg"
+        src="./images/1.1.svg"
       />
       <section className="flex flex-col flex-grow justify-center items-center gap-24 absolute top-1/2 left-1/2 -translate-x-1/2">
         <ButtonStart onClick={() => navigate("/1/2")} />
