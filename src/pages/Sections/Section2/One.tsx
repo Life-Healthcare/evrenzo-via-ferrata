@@ -15,6 +15,7 @@ export default () => {
         style={{ backgroundImage: `url(./images/section2-ss.png)`}}
         className="bottom-mask absolute w-full h-full">
             <img className="w-full h-full relative z-10" src="./pages/2.1.svg" alt="" />
+            <ButtonStart onClick={() => navigate("/1/2")}/>
         </motion.article>
     )
 }
