@@ -43,7 +43,22 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+const root = document.getElementById('root')!;
+
+function setViewport() {
+  root.style.cssText = `
+    height: ${window.innerHeight}px;
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+  `;
+}
+
+setViewport();
+
+window.addEventListener("resize", setViewport);
+
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <Router>
       <App />
