@@ -115,9 +115,9 @@ const config = {
 
 export default () => {
   if (!DEV_MODE) {
-    config.plugins.push(
-      new HtmlInlineScriptPlugin({ scriptMatchPattern: [/main.+[.]js$/] })
-    );
+    // config.plugins.push(
+    //   new HtmlInlineScriptPlugin({ scriptMatchPattern: [/main.+[.]js$/] })
+    // );
     config.plugins.push(
       new WorkboxPlugin.GenerateSW({
         // these options encourage the ServiceWorkers to get in there fast

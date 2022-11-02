@@ -1,4 +1,4 @@
-
+import React from "react";
 import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion"
 import { useContext, useState, createContext } from "react"
 import SmallText from "../../../components/SmallText"

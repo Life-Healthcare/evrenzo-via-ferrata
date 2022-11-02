@@ -1,3 +1,4 @@
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useEffect, useRef, useState } from "react"
 import QRInfo from "../../../components/QRInfo";

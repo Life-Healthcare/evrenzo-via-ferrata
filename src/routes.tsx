@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom"
 import Home from "./pages/Sections/Section1/One"
 import { AnimatePresence } from "framer-motion";

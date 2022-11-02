@@ -1,3 +1,4 @@
+import React from "react";
 export default ({className}: {className?: string}) => {
     return (
         <div className={"flex flex-col gap-3 "+className}>

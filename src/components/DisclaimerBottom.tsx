@@ -1,3 +1,4 @@
+import React from "react";
 import SmallText from "./SmallText"
 import Triangle from "./Triangle"
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion"
 import { useContext, useState } from "react"
 import { currentBoxContext } from "./Three"

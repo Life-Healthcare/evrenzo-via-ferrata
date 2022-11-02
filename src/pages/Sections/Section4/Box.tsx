@@ -1,3 +1,4 @@
+import React from "react";
 import { useContext } from "react"
 import { currentBoxContext } from "./Two"
 import { motion } from "framer-motion"

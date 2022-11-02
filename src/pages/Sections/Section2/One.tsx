@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom"
 import ButtonStart from "../../../components/ButtonStart"
 import { motion } from "framer-motion"

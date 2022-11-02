@@ -1,3 +1,4 @@
+import React from "react";
 export default ({onClick, children}: React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>) => {
     return (
         <div className="flex flex-col items-center gap-10">
