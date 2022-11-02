@@ -1,3 +1,4 @@
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useState, createContext } from "react"
 import SmallText from "../../../components/SmallText";
@@ -12,7 +13,7 @@ export default () => {
     const [currentBox, setCurrentBox] = useState<string | null>(null);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-40 text-center">
@@ -31,7 +32,7 @@ export default () => {
                 </div>
                 <div className="grid grid-cols-2 w-11/12 gap-12">
                     <currentBoxContext.Provider value={[currentBox, setCurrentBox]}>
-                        <Box 
+                        <Box
                         className="bg-green-700"
                         title="EVRENZO mimics the body’s natural response to hypoxia by activating the HIF pathway and increasing plasma EPO|4,6">
                             <p className="text-5xl mb-20">EVRENZO – mimicking hypoxia</p>
@@ -44,14 +45,14 @@ export default () => {
                                     This induces transcription and translation of genes involved in erythropoiesis<SmallText>4,6</SmallText>
                                 </p>
                                 <p className="col-span-2">
-                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis 
+                                HIF-PH inhibitors induce activation of the genes responsible for erythropoiesis
 (as is observed at low oxygen pressure) but do so at normal oxygen concentrations.<SmallText>7</SmallText>
                                 </p>
                                 <p className="text-2xl col-span-2">
                                     HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
                             </div>
                         </Box>
-                        <Box 
+                        <Box
                         className="bg-purple-900"
                         title="EVRENZO has demonstrated Hb improvements comparable to ESA in patients not on dialysis, just started on dialysis and stable on dialysis|4"
                         image={true}>
@@ -104,7 +105,7 @@ export default () => {
                                 </div>
                             </div>
                         </Box>
-                        <Box 
+                        <Box
                         className="bg-[#ad1aac]"
                         title="Proud to be first|"
                         image={true}>
@@ -146,7 +147,7 @@ export default () => {
                 </p>
                 <ul>
                     <li>1. Sanghani NS, Haase VH. Adv Chronic Kidney Dis. 2019;26(4):253–266.</li>
-                    <li>2. FibroGen. Available at: https://investor.fibrogen.com/news-releases/news-release-details/fibrogen-announces-approval-roxadustat-china-treatment-anemia. Date accessed: October 2022.</li> 
+                    <li>2. FibroGen. Available at: https://investor.fibrogen.com/news-releases/news-release-details/fibrogen-announces-approval-roxadustat-china-treatment-anemia. Date accessed: October 2022.</li>
                     <li>3. Astellas. Available at: https://www.astellas.com/en/news/15096. Date accessed: October 2022.</li>
                     <li>4. EVRENZO EU SmPC, September 2022.</li>
                     <li>5. MHRA. Available at: https://products.mhra.gov.uk/product/?product=EVRENZO. Date accessed: October 2022.</li>

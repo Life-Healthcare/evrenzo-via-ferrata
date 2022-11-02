@@ -1,4 +1,4 @@
-
+import React from "react";
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import DisclaimerBottom from "../../../components/DisclaimerBottom";
@@ -10,7 +10,7 @@ export default () => {
     const [slideDirection] = useContext(SlideContext);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-12 text-center">
@@ -24,7 +24,7 @@ export default () => {
                 <p className="text-[42px] w-[1171px]">
                     A journey through the HIF pathway, its discovery, and the part it has played in the development of innovative treatment options for symptomatic anaemia of CKD (chronic kidney disease)
                 </p>
-                <img 
+                <img
                 className="w-[375px] h-[122px]"
                 src="./images/Logo2.svg" alt="logo" />
             </section>

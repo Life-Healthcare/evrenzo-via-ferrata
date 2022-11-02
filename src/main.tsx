@@ -2,17 +2,43 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter as Router } from 'react-router-dom'
 import App from './routes'
-import './index.css'
 
-if ("serviceWorker" in navigator && process.env.NODE_ENV !== "development") {
+const VERSION = '0.0.1'
+if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("./service-worker.js")
+      .register(`./sw.js?v=${VERSION}`)
       .then((registration) => {
-        console.log("SW registered: ", registration);
+        registration.onupdatefound = () => {
+          const serviceWorker = registration.installing;
+          if (serviceWorker == null) return;
+          let updating = false;
+          serviceWorker.onstatechange = () => {
+            if (
+              serviceWorker.state === "installed" &&
+              navigator.serviceWorker.controller &&
+              registration &&
+              registration.waiting
+            ) {
+              updating = true;
+              registration.waiting.postMessage({ type: "SKIP_WAITING" });
+            }
+
+            if (updating && serviceWorker.state === "activated") {
+              registration
+                .update()
+                .then(() => {
+                  window.location.reload();
+                })
+                .catch((err) => {
+                  console.error(err);
+                });
+            }
+          };
+        };
       })
-      .catch((registrationError) => {
-        console.log("SW registration failed: ", registrationError);
+      .catch((err) => {
+        console.error(err);
       });
   });
 }

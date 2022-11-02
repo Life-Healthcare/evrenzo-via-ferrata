@@ -1,4 +1,4 @@
-
+import React from "react";
 import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion"
 import { useContext, useState, createContext } from "react"
 import SmallText from "../../../components/SmallText"
@@ -12,7 +12,7 @@ export default () => {
     const [currentBox, setCurrentBox] = useState<string | null>(null);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-12 text-center">
@@ -65,7 +65,7 @@ export default () => {
                             </currentBoxContext.Provider>
                         </AnimateSharedLayout>
                         <AnimatePresence>
-                            {currentBox && <motion.div 
+                            {currentBox && <motion.div
                             onClick={() => setCurrentBox(null)}
                             initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                             transition={{duration: 0.3}}

@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom"
 import ButtonStart from "../../../components/ButtonStart"
 import { motion } from "framer-motion"
@@ -10,12 +11,12 @@ export default () => {
     const [slideDirection] = useContext(SlideContext);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section3-ss.png)`}}
         className="bottom-mask absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-white p-24 pb-12 text-center">
             <header className="flex text-gray-700">
-                <img 
+                <img
                 className="w-[396px] h-[134px]"
                 src="./images/Logo2.svg" alt="logo" />
                 <div className="flex flex-grow justify-center mt-14">

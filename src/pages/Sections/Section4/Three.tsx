@@ -1,3 +1,4 @@
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion"
 import { useContext, useEffect, useRef, useState } from "react"
 import QRInfo from "../../../components/QRInfo";
@@ -20,7 +21,7 @@ export default () => {
     }, [playing])
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-0 text-center">
@@ -34,7 +35,7 @@ export default () => {
                 </div>
             </header>
             <section className="text-[32px] text-start w-full flex flex-grow">
-            <video 
+            <video
                 className="w-full bg-no-repeat bg-cover max-h-[1050px] min-h-max-h-[1050px]"
                 poster="./images/transparent.png"
                 style={(playing || videoStarted) ? {background: 'black'} : {backgroundImage: "url(./images/section4-3-img.png)"}}

@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion"
 import { useContext, useState } from "react"
 import { currentBoxContext } from "./Three"
@@ -15,12 +16,12 @@ export default ({children, className, title, line}: BoxProps) => {
 
     return (
         <>
-            <motion.div 
+            <motion.div
             onClick={() => {
                 setCurrentBox(title)
             }}
             layout
-            animate={show 
+            animate={show
                 ? {
                 width: 768,
                 height: 768,
@@ -37,9 +38,9 @@ export default ({children, className, title, line}: BoxProps) => {
                 duration: .3
             }}
             className={`${show ? 'absolute z-50 left-[32%] top-[20%]' : 'relative left-[unset] max-w-[277px] max-h-[277px]'} text-white border-bottom-right-cut aspect-square ${className || 'after:bg-white'}`}>
-                {!show && 
+                {!show &&
                 <>
-                    <motion.div 
+                    <motion.div
                     initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}
                     className="w-full h-full flex items-center justify-center z-10 relative">
                         <h3 className="text-white text-3xl w-40 text-center font-bold-ext">{title}</h3>
@@ -49,7 +50,7 @@ export default ({children, className, title, line}: BoxProps) => {
                     {line === "bottom-right" && <Line className="-bottom-[4.9rem] right-0 -translate-x-2/4 h-40 w-1 -rotate-45 z-0"/>}
                 </>}
                 {show && <>
-                    <button 
+                    <button
                         onClick={(e) => {e.stopPropagation(); setCurrentBox(null)}}
                         className="absolute top-10 right-10 z-20">
                         <img src="./images/close.svg" alt="close" />
@@ -72,7 +73,7 @@ export default ({children, className, title, line}: BoxProps) => {
 
 const Line = ({className}: {className: string} ) => {
     return (
-        <motion.div 
+        <motion.div
             initial={{
                 opacity: 0
             }}
@@ -81,7 +82,7 @@ const Line = ({className}: {className: string} ) => {
                 transition: {
                     delay: 0.3
                 }
-            }} 
+            }}
             className={`absolute bg-black z-10 ${className}`}/>
     )
 }

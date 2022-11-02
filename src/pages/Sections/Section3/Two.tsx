@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import SmallText from "../../../components/SmallText";
@@ -8,7 +9,7 @@ export default () => {
     const [slideDirection] = useContext(SlideContext);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-12 text-center">
@@ -38,7 +39,7 @@ export default () => {
                     <p>In hypoxic conditions, the HIF pathway is activated: the HIF-1α subunit is not degraded, allowing dimerisation with the HIF-1ß subunit and so inducing the transcription and translation of target hypoxia response genes involved in erythropoiesis, including:<SmallText>3-6</SmallText></p>
                     <img src="./images/section3-2-img2.png" alt="image" />
                     <p className="mt-20">In CKD, oxygen sensing via HIF is impaired, and this contributes to the development of anaemia.<SmallText>7</SmallText></p>
-                    <p className="text-2xl w-[570px]">CKD, chronic kidney disease; EPO, erythropoietin; 
+                    <p className="text-2xl w-[570px]">CKD, chronic kidney disease; EPO, erythropoietin;
 HIF, hypoxia-inducible factor; HIF-PH, hypoxia-inducible factor prolyl hydroxylase.</p>
                 </div>
             </section>

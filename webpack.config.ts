@@ -115,9 +115,9 @@ const config = {
 
 export default () => {
   if (!DEV_MODE) {
-    config.plugins.push(
-      new HtmlInlineScriptPlugin({ scriptMatchPattern: [/main.+[.]js$/] })
-    );
+    // config.plugins.push(
+    //   new HtmlInlineScriptPlugin({ scriptMatchPattern: [/main.+[.]js$/] })
+    // );
     config.plugins.push(
       new WorkboxPlugin.GenerateSW({
         // these options encourage the ServiceWorkers to get in there fast
@@ -125,6 +125,7 @@ export default () => {
         clientsClaim: true,
         skipWaiting: true,
         maximumFileSizeToCacheInBytes: 1000000 * 50,
+        swDest: path.join(BUILD_DIR, "sw.js"),
       })
     );
   }

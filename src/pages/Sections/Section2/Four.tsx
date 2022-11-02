@@ -1,4 +1,4 @@
-
+import React from "react";
 import { motion } from "framer-motion"
 import { useContext } from "react"
 import Label from "./Label";
@@ -10,7 +10,7 @@ export default () => {
     const [slideDirection] = useContext(SlideContext);
 
     return (
-        <motion.article 
+        <motion.article
         variants={slideDirection} exit="exit" animate="animate" initial="initial"
         style={{ backgroundImage: `url(./images/section1-bg.png)`}}
         className="absolute flex flex-col w-full h-full bg-cover bg-fixed bg-center text-gray-700 p-24 pb-3 text-center">
@@ -26,7 +26,7 @@ export default () => {
             <section className="grid grid-cols-2 text-[32px] text-start gap-20">
                 <div className="flex flex-col gap-3">
                     <p>The discovery of HIF provided a central cellular pathway with <br/> far-ranging implications for human physiology, disease states, <br/> and medicine.<SmallText>1</SmallText></p>
-                    <p>Patients with chronic kidney disease (CKD) often suffer from anaemia due to:<SmallText>2-6</SmallText> 
+                    <p>Patients with chronic kidney disease (CKD) often suffer from anaemia due to:<SmallText>2-6</SmallText>
                         <ul>
                             <li>- Reduced oxygen sensing </li>
                             <li>- Reduced EPO production </li>
@@ -47,7 +47,7 @@ HIF pathway.<SmallText>1</SmallText> </p>
                         {['Anaemia', 'Cancer', 'Stroke', 'Infection', 'Wound Healing', 'Myocardial Infarction'].map((text, i) => {
                             const labelColour = i === 0 ? 'bg-primary' : 'bg-[#4a4a4a]'
                             return (
-                               <Label 
+                               <Label
                                style={{
                                 marginLeft: `${i * 50}px`
                                }}

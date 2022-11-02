@@ -1,3 +1,4 @@
+import React from "react";
 import DisclaimerBottom from "./DisclaimerBottom"
 
 export default () => {

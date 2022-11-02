@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import SmallText from "../../components/SmallText"
@@ -27,7 +28,7 @@ export default () => {
             sessionManager.start();
             console.log("session started")
         }
-        
+
         sessionManager.page(page!);
         console.log('session page', page)
 
@@ -35,8 +36,8 @@ export default () => {
             sessionManager.end();
             console.log('session ended')
         }
-    }, [page]);  
- 
+    }, [page]);
+
     return (
         <div className="w-full h-full absolute top-0 left-0 overflow-hidden">
             {section === "1" && <Section1/>}
