@@ -17,7 +17,7 @@ export default () => {
         (async function sendToServer() {
           await sessionManager.sendToServer();
           clearTimeout(timeout);
-          timeout = setTimeout(sendToServer, 60000);
+          timeout = window.setTimeout(sendToServer, 60000);
         })();
         return () => clearTimeout(timeout);
       }, []);
